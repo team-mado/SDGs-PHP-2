@@ -1,0 +1,43 @@
+body {
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+main .gray-box {
+  width: 100%;
+  height: 200px;
+  background-color: #d4d6d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .gray-box .top-logo {
+  width: 300px;
+}
+
+main .button-box {
+  width: 100%;
+  text-align: center;
+}
+
+main .button-box bottom {
+  margin: 0 auto;
+}
+
+main .pw-text {
+  margin-top: -10px;
+}
+/*# sourceMappingURL=index.css.map */
