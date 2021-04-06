@@ -31,7 +31,9 @@ if ($status == false) {
   echo json_encode(["error_msg" => "{$error[2]}"]);
   exit();
 } else {
+  // var_dump("hoge");
+  // exit;
   // 正常にSQLが実行された場合は一覧ページファイルに移動し，一覧ページの処理を実行する
-  header("Location:ogp-ichiran.php");
+  header("Location:../ogp-ichiran.php");
   exit();
 }

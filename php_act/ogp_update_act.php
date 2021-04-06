@@ -47,9 +47,9 @@ $stmt->bindValue(':color_check', $color_check, PDO::PARAM_INT);
 $stmt->bindValue(':project_title', $project_title, PDO::PARAM_STR);
 $stmt->bindValue(':job_category', $job_category, PDO::PARAM_STR);
 $stmt->bindValue(':project_overview', $project_overview, PDO::PARAM_STR);
-$stmt->bindValue(':project_detail', $project_detail, PDO::PARAM_INT);
+$stmt->bindValue(':project_detail', $project_detail, PDO::PARAM_STR);
 $stmt->bindValue(':production_period', $production_period, PDO::PARAM_STR);
-$stmt->bindValue(':remote_availability', $remote_availability, PDO::PARAM_INT);
+$stmt->bindValue(':remote_availability', $remote_availability, PDO::PARAM_STR);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
@@ -61,7 +61,7 @@ if ($status == false) {
   exit();
 } else {
   // 正常にSQLが実行された場合は一覧ページファイルに移動し，一覧ページの処理を実行する
-  header("Location:ogp_check2.php?id=$id");
+  header("Location:../ogp-send.php?id=$id");
 
 }
 

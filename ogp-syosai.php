@@ -1,3 +1,63 @@
+<?
+session_start();
+error_reporting(E_ALL & ~E_NOTICE);
+include('php_act/functions.php');
+
+// $clients_id = $_SESSION["id"];
+
+// var_dump($_GET["id"]);
+// exit;
+
+// 初期画面/
+// if(!isset($_GET["id"])){
+//   $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:　,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
+// }
+
+$id = 158;
+
+// OGP編集時にID取得
+// if(isset($_GET["id"])){
+//   $id = $_GET["id"];
+// }
+
+// すでにOGPを作成しているときはデータが入っている状態
+// if(isset($_GET["id"])){
+
+$pdo = connect_to_db();
+$sql = "SELECT * FROM ogp_table2 where id = :id";
+// var_dump($sql);
+// exit;
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+$status = $stmt->execute();
+
+
+if ($status == false) {
+  $error = $stmt->errorInfo();
+  echo json_encode(["error_msg" => "{$error[2]}"]);
+  exit();
+} else {
+  $post = $stmt->fetch(PDO::FETCH_ASSOC);
+  $id = $post["id"];
+  $clients_id= $post["clients_id"];
+  $img = $post["img"];
+  $color_check = $post["color_check"];
+  $project_title = $post["project_title"];
+  $job_category = $post["job_category"];
+  $project_overview = $post["project_overview"];
+  $project_detail = $post["project_detail"];
+  $production_period = $post["production_period"];
+  $remote_availability = $post["remote_availability"];
+  }
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -22,26 +82,25 @@
 <body>
   <header>
     <div class="header">
-      <div><a href="index.html"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
+      <div><a href="index.php"><img class="home-logo" src="<?  ?>" alt="" /></a></div>
     </div>
   </header>
 
   <main>
     <div class="ogp-box">
-      <img src="img/ogp-g.png" alt="">
+      <img src="<? echo($img) ?>" alt="">
       <br>
 <div class="remote-box">
 
       <div class="tab">
-        <p>リモート可</p>
+        <p><? echo($remote_availability) ?></p>
       </div>
-      <p>　 | 　</p><p>期限：5月末を予定</p>
+      <p>　 | 　</p><p>期限：<? echo($production_period) ?></p>
 
 </div>
       <div>
-        <p class="project-text1">海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！</p>
-        <p class="project-text2">
-          海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。</p><br>
+        <p class="project-text1"><? echo($project_overview) ?></p>
+        <p class="project-text2"><? echo($project_detail) ?></p><br>
         <br>
         <div class="sdgs17-box">
           <p>このプロジェクトはSDGｓ17の目標の</p><br>
@@ -77,23 +136,22 @@
     <div class="form-box">
       <form action="" method="post" class="row">
         <label for="GET-name">お名前</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_name" />
+        <input class="form-style" id="GET-name" type="text" name="designer_name" value="テストユーザ"/>
 
         <label for="GET-name">E-mail</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_email" />
+        <input class="form-style" id="GET-name" type="text" name="designer_email" value="E-mail"/>
 
         <label for="GET-name">作品URL</label><br>
-        <input class="form-style" id="GET-name" type="text" name="portfolio" />
+        <input class="form-style" id="GET-name" type="text" name="portfolio" value="作品URL" />
 
         <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" />リモート可　
+          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
           <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
 
         <br>
 
         <div class="center">
-          <img class="bt-kuwashiku" src="img/bt-kuwashiku.png" alt=""><a href="ogp-new.html"></a>
-
+          <img class="bt-kuwashiku" src="img/bt-kuwashiku.png" alt=""><a href="ogp-new.php"></a>
         </div>
         <br>
         <br>

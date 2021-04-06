@@ -5,7 +5,8 @@ include('functions.php');
 
 
 
-
+// var_dump($_POST);
+// exit;
 
 
 
@@ -20,31 +21,12 @@ $project_detail = $_POST["project_detail"];
 $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
-// var_dump($clients_id);
-// var_dump(job_category);
-// var_dump($project_title);
-// var_dump($project_overview);
-// var_dump($project_detail);
-// var_dump($production_period);
-// var_dump($remote_availability);
-// exit;
+https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:テスト,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png
 
-
-// $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:,co_rgb:333,w_500,c_fit//v1616471824/UbpRDEkE_uqbs0d.png";
-// $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/v1616468990/sample.jpg";
-https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Noto%20Sans%20JP_50_bold:テスト,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png
-
-// $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_21_bold:';
-// $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_55_bold:';
 $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:';
-// $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Noto%20Sans%20JP_50_bold:';
 $img_in1 = $project_overview;
 $img_in2 = $job_category;
-// $img_in3 = $project_detail;
-// $img_in4 = $production_detail;
-// $v3 = ',co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png';
 $v3 = ',co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png';
-// $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2."%0A%0A".$img_in3."%0A".$v3;
 $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
 
 
@@ -85,9 +67,9 @@ $stmt->bindValue(':color_check', $color_check, PDO::PARAM_INT);
 $stmt->bindValue(':project_title', $project_title, PDO::PARAM_STR);
 $stmt->bindValue(':job_category', $job_category, PDO::PARAM_STR);
 $stmt->bindValue(':project_overview', $project_overview, PDO::PARAM_STR);
-$stmt->bindValue(':project_detail', $project_detail, PDO::PARAM_INT);
+$stmt->bindValue(':project_detail', $project_detail, PDO::PARAM_STR);
 $stmt->bindValue(':production_period', $production_period, PDO::PARAM_STR);
-$stmt->bindValue(':remote_availability', $remote_availability, PDO::PARAM_INT);
+$stmt->bindValue(':remote_availability', $remote_availability, PDO::PARAM_STR);
 $status = $stmt->execute();
 
 if ($status == false) {
@@ -125,7 +107,7 @@ if ($status == false) {
   $production_period = $posts["production_period"];
   $remote_availability = $posts["remote_availability"];
 
-  header("Location:ogp_check2.php?id=$id");
+  header("Location:../ogp-send.php?id=$id");
   exit();
 }
 

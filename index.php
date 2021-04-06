@@ -1,3 +1,50 @@
+
+<?php
+session_start();
+error_reporting(E_ALL & ~E_NOTICE);
+include('php_act/functions.php');
+
+// var_dump($_POST);
+// exit;
+
+
+if (!empty($_POST)) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $pdo = connect_to_db();
+    $sql = 'SELECT * FROM clients_table WHERE email=:email AND password=:password';
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+    $status = $stmt->execute();
+
+    if ($status == false) {
+
+        $error = $stmt->errorInfo();
+        echo json_encode(["error_msg" => "{$error[2]}"]);
+        exit();
+    } else {
+        $val = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$val) {
+            // var_dump("hoge");
+            // exit;
+            if(isset($_POST)){
+              $error = "ログインに失敗しました。";
+            }
+        } else {
+            $_SESSION = array();
+            $_SESSION["session_id"] = session_id();
+            $_SESSION["id"] = $val["id"];
+            $_SESSION["staff"] = $val["staff"];
+            $_SESSION["email"] = $val["email"];
+            header('Location:ogp-ichiran.php');
+        }
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -56,12 +103,12 @@
               <div class="form-box">
                 <form action="" method="post" class="row">
                   <label for="GET-name">E-MAIL</label><br>
-                  <input class="form-style" id="GET-name" type="text" name="name" />
+                  <input class="form-style" id="GET-name" type="text" name="email" required/>
                   <label for="GET-name">PASSWORD</label><br>
-                  <input class="form-style" id="GET-name" type="text" name="name" />
+                  <input class="form-style" id="GET-name" type="text" name="password" required/>
                   <br><br>
                   <div class="center">
-                    <button class="simple_square_btn1"><a href="ogp-new.html">送信する</a></button></div><br />
+                    <button class="simple_square_btn1">送信する</button></div><br />
                 </form><br>
 
               </div>
@@ -77,7 +124,7 @@
         <button id="openModal" class="simple_square_btn1">ログイン</button>
 
         <br />
-        <a href="shinki.html"><button class="simple_square_btn1">新規登録</button></a><br /><br />
+        <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
         <p class="pw-text">PWをお忘れの方は<a href="">こちら</a>から</p>
         <br />
 

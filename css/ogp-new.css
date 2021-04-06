@@ -21,6 +21,10 @@
   line-height: 30px;
 }
 
+.ogp-img {
+  height:100%;
+}
+
 ul {
   list-style-type: none;
 }
