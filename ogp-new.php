@@ -99,39 +99,39 @@
     <div class="form-box">
       <form action="" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト"/>
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="テストテストテストテストテストテストテス"/>
 
  <label for="GET-name">職種（最大3つ）</label><br>
-        <input type="checkbox" name="riyu" value="1"> グラフィック  　
-        <input type="checkbox" name="riyu" value="1"> WEB  　
-        <input type="checkbox" name="riyu" value="1"> UI  　
-        <input type="checkbox" name="riyu" value="1"> UX  　<br>
-        <input type="checkbox" name="riyu" value="1"> DX  　
-        <input type="checkbox" name="riyu" value="1"> DTP  　
-        <input type="checkbox" name="riyu" value="1"> プロダクト  　<br>
-        <input type="checkbox" name="riyu" value="1"> パッケージ  　
-        <input type="checkbox" name="riyu" value="1"> ファッション  　
-        <input type="checkbox" name="riyu" value="1"> 映像  　<br>  
+        <input type="checkbox" name="job_category[]" value="グラフィック"> グラフィック  　
+        <input type="checkbox" name="job_category[]" value="WEB"> WEB  　
+        <input type="checkbox" name="job_category[]" value="UI"> UI  　
+        <input type="checkbox" name="job_category[]" value="UX"> UX  　<br>
+        <input type="checkbox" name="job_category[]" value="DX"> DX  　
+        <input type="checkbox" name="job_category[]" value="DTP"> DTP  　
+        <input type="checkbox" name="job_category[]" value="プロダクト"> プロダクト  　<br>
+        <input type="checkbox" name="job_category[]" value="パッケージ"> パッケージ  　
+        <input type="checkbox" name="job_category[]" value="ファッション"> ファッション  　
+        <input type="checkbox" name="job_category[]" value="映像"> 映像  　<br>  
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"/>
+        <input class="form-style" id="GET-name" type="text" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="テストテストテストテストテストテストテステストテストテストテストテストテストテス"/>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <input class="form-syosai" id="GET-name" type="text" name="name" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"/>
+        <input class="form-syosai" id="GET-name" type="text" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="5月中旬まで"/>
 
         <label for="GET-name">制作期間</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" placeholder="例）5月中旬まで"/>
+        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="5月中旬まで"/>
 
         <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote" value="リモート可" /> リモート可　
+          <input class="form" id="GET-name" type="radio" name="remote" value="リモート可" checked /> リモート可　
           <input class="form" id="GET-name" type="radio" name="remote" value="リモート不可" /> 不可</label><br>
 
         <br>
 
         <div class="center">
-          <a href="ogp-send.html"><img class="hozon-bt" src="img/bt-save.png" alt="">
+          <a href="ogp-send.php"><img class="hozon-bt" src="img/bt-save.png" alt="">
               <input type="submit" value="" /></a></input>
           </button>
         </div>

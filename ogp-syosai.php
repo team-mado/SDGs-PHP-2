@@ -77,17 +77,17 @@
     <div class="form-box">
       <form action="" method="post" class="row">
         <label for="GET-name">お名前</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" />
+        <input class="form-style" id="GET-name" type="text" name="designer_name" />
 
         <label for="GET-name">E-mail</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" />
+        <input class="form-style" id="GET-name" type="text" name="designer_email" />
 
         <label for="GET-name">作品URL</label><br>
-        <input class="form-style" id="GET-name" type="text" name="name" />
+        <input class="form-style" id="GET-name" type="text" name="portfolio" />
 
         <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote" value="リモート可" />リモート可　
-          <input class="form" id="GET-name" type="radio" name="remote" value="リモート不可" />不可</label><br>
+          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" />リモート可　
+          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
 
         <br>
 
