@@ -5,8 +5,6 @@ include('functions.php');
 
 
 
-// var_dump($_POST);
-// exit;
 
 
 
@@ -21,6 +19,8 @@ $project_detail = $_POST["project_detail"];
 $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
+// var_dump($color_check);
+// exit;
 https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:テスト,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png
 
 $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:';

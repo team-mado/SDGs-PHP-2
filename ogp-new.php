@@ -100,56 +100,56 @@ if ($status == false) {
         <form action="php_act/ogp_act.php" method="post">
           <ul>
             <li><img src="img/1.png" alt="">
-              <div><input type="checkbox" name="color_check" value="1" checked="checked"> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="1" checked="checked"> 貧困をなくそう</div>
             </li>
             <li><img src="img/2.png" alt="">
-              <div><input type="checkbox" name="color_check" value="2"> 飢餓をゼロに</div>
+              <div><input type="checkbox" name="color_check[]" value="2"> 飢餓をゼロに</div>
             </li>
             <li><img src="img/3.png" alt="">
-              <div><input type="checkbox" name="color_check" value="3"> 全ての人に健康と福祉を</div>
+              <div><input type="checkbox" name="color_check[]" value="3"> 全ての人に健康と福祉を</div>
             </li>
             <li><img src="img/4.png" alt="">
-              <div><input type="checkbox" name="color_check" value="4"> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check[]" value="4"> 質の高い教育をみんなに</div>
             </li>
             <li><img src="img/5.png" alt="">
-              <div><input type="checkbox" name="color_check" value="5"> ジェンダー平等を実現しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="5"> ジェンダー平等を実現しよう</div>
             </li>
             <li><img src="img/6.png" alt="">
-              <div><input type="checkbox" name="color_check" value="6"> 安全な水とトイレを世界中に</div>
+              <div><input type="checkbox" name="color_check[]" value="6"> 安全な水とトイレを世界中に</div>
             </li>
             <li><img src="img/7.png" alt="">
-              <div><input type="checkbox" name="color_check" value="7"> エネルギーをみんなにそしてクリーンに</div>
+              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなにそしてクリーンに</div>
             </li>
             <li><img src="img/8.png" alt="">
-              <div><input type="checkbox" name="color_check" value="8"> 働きがいも経済成長も</div>
+              <div><input type="checkbox" name="color_check[]" value="8"> 働きがいも経済成長も</div>
             </li>
             <li><img src="img/9.png" alt="">
-              <div><input type="checkbox" name="color_check" value="9"> 産業と技術革新の基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の基盤をつくろう</div>
             </li>
 
             <li><img src="img/10.png" alt="">
-              <div><input type="checkbox" name="color_check" value="10"> 人や国の不平等をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="10"> 人や国の不平等をなくそう</div>
             </li>
             <li><img src="img/11.png" alt="">
-              <div><input type="checkbox" name="color_check" value="11"> 住み続けられる街づくりを</div>
+              <div><input type="checkbox" name="color_check[]" value="11"> 住み続けられる街づくりを</div>
             </li>
             <li><img src="img/12.png" alt="">
-              <div><input type="checkbox" name="color_check" value="12"> つくる責任つかう責任</div>
+              <div><input type="checkbox" name="color_check[]" value="12"> つくる責任つかう責任</div>
             </li>
             <li><img src="img/13.png" alt="">
-              <div><input type="checkbox" name="color_check" value="13"> 機構変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check[]" value="13"> 機構変動に具体的な対策を</div>
             </li>
             <li><img src="img/14.png" alt="">
-              <div><input type="checkbox" name="color_check" value="14"> 海の豊かさを守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="14"> 海の豊かさを守ろう</div>
             </li>
             <li><img src="img/15.png" alt="">
-              <div><input type="checkbox" name="color_check" value="15"> 陸の豊かさも守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="15"> 陸の豊かさも守ろう</div>
             </li>
             <li><img src="img/16.png" alt="">
-              <div><input type="checkbox" name="color_check" value="16"> 平和と公正を全ての人に</div>
+              <div><input type="checkbox" name="color_check[]" value="16"> 平和と公正を全ての人に</div>
             </li>
             <li><img src="img/17.png" alt="">
-              <div><input type="checkbox" name="color_check" value="17"> パートナーシップで目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで目標を達成しよう</div>
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>

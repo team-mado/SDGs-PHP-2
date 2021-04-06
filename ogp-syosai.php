@@ -151,7 +151,9 @@ if ($status == false) {
         <br>
 
         <div class="center">
-          <img class="bt-kuwashiku" src="img/bt-kuwashiku.png" alt=""><a href="ogp-new.php"></a>
+          <a href="hanasi.php">
+          <img  class="bt-kuwashiku" src="img/bt-kuwashiku.png" alt="">
+          </a>
         </div>
         <br>
         <br>
