@@ -3,17 +3,15 @@ session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
 
-$clients_id = $_SESSION["id"];
-// // var_dump($_GET["id"]);
-// // exit;
+// $clients_id = $_SESSION["id"];
 
+// var_dump($_GET["id"]);
+// exit;
 
-// 初期画面
+// 初期画面/
 if(!isset($_GET["id"])){
-  // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_25_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
-  $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_40_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png";
+  $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:　,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
 }
-
 
 
 // OGP編集時にID取得
@@ -21,13 +19,13 @@ if(isset($_GET["id"])){
   $id = $_GET["id"];
 }
 
-// // すでにOGPを作成しているときはデータが入っている状態
+// すでにOGPを作成しているときはデータが入っている状態
 if(isset($_GET["id"])){
 
 $pdo = connect_to_db();
 $sql = "SELECT * FROM ogp_table2 where id = :id";
-// // var_dump($sql);
-// // exit;
+// var_dump($sql);
+// exit;
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $status = $stmt->execute();
@@ -45,16 +43,15 @@ if ($status == false) {
   $color_check = $post["color_check"];
   $project_title = $post["project_title"];
   $job_category = $post["job_category"];
-  $project_overview = $post["project_overview "];
+  $project_overview = $post["project_overview"];
   $project_detail = $post["project_detail"];
   $production_period = $post["production_period"];
   $remote_availability = $post["remote_availability"];
-}
+
+  }
 }
 
 ?>
-
-
 
 
 
@@ -82,7 +79,7 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><a href="index.html"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
+      <div><a href="index.php"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
     </div>
   </header>
   <main>
@@ -97,70 +94,69 @@ if ($status == false) {
 <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_act.php" method="post">
+        <form action="php_act/ogp_update_act.php" method="post">
           <ul>
             <li><img src="img/1.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="1" checked="checked"> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check" value="1" checked="checked"> 貧困をなくそう</div>
             </li>
             <li><img src="img/2.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="2"> 飢餓をゼロに</div>
+              <div><input type="checkbox" name="color_check" value="2"> 飢餓をゼロに</div>
             </li>
             <li><img src="img/3.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="3"> 全ての人に健康と福祉を</div>
+              <div><input type="checkbox" name="color_check" value="3"> 全ての人に健康と福祉を</div>
             </li>
             <li><img src="img/4.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="4"> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check" value="4"> 質の高い教育をみんなに</div>
             </li>
             <li><img src="img/5.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="5"> ジェンダー平等を実現しよう</div>
+              <div><input type="checkbox" name="color_check" value="5"> ジェンダー平等を実現しよう</div>
             </li>
             <li><img src="img/6.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="6"> 安全な水とトイレを世界中に</div>
+              <div><input type="checkbox" name="color_check" value="6"> 安全な水とトイレを世界中に</div>
             </li>
             <li><img src="img/7.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなにそしてクリーンに</div>
+              <div><input type="checkbox" name="color_check" value="7"> エネルギーをみんなにそしてクリーンに</div>
             </li>
             <li><img src="img/8.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="8"> 働きがいも経済成長も</div>
+              <div><input type="checkbox" name="color_check" value="8"> 働きがいも経済成長も</div>
             </li>
             <li><img src="img/9.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check" value="9"> 産業と技術革新の基盤をつくろう</div>
             </li>
 
             <li><img src="img/10.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="10"> 人や国の不平等をなくそう</div>
+              <div><input type="checkbox" name="color_check" value="10"> 人や国の不平等をなくそう</div>
             </li>
             <li><img src="img/11.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="11"> 住み続けられる街づくりを</div>
+              <div><input type="checkbox" name="color_check" value="11"> 住み続けられる街づくりを</div>
             </li>
             <li><img src="img/12.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="12"> つくる責任つかう責任</div>
+              <div><input type="checkbox" name="color_check" value="12"> つくる責任つかう責任</div>
             </li>
             <li><img src="img/13.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="13"> 機構変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check" value="13"> 機構変動に具体的な対策を</div>
             </li>
             <li><img src="img/14.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="14"> 海の豊かさを守ろう</div>
+              <div><input type="checkbox" name="color_check" value="14"> 海の豊かさを守ろう</div>
             </li>
             <li><img src="img/15.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="15"> 陸の豊かさも守ろう</div>
+              <div><input type="checkbox" name="color_check" value="15"> 陸の豊かさも守ろう</div>
             </li>
             <li><img src="img/16.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="16"> 平和と公正を全ての人に</div>
+              <div><input type="checkbox" name="color_check" value="16"> 平和と公正を全ての人に</div>
             </li>
             <li><img src="img/17.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check" value="17"> パートナーシップで目標を達成しよう</div>
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
-        <!-- </form> -->
       </div>
     </div>
 <br>
     <div class="form-box">
       <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="海洋ゴミを洋服に変える。FASHION。"/>
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>"/>
 
  <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック  　
@@ -176,27 +172,29 @@ if ($status == false) {
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="海のゴミから布を作りあ、。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"/>
+        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>"/>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"/>
+        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>"/>
 
         <label for="GET-name">制作期間</label><br>
-        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="5月中旬まで"/>
+        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?>"/>
 
         <label for="GET-name">
           <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
           <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" /> 不可</label><br>
-        <br>
 
+        <br>
         <div class="center">
-        <button class="simple_square_btn1">
-                <!-- <a href="ogp_act.php"> -->
-                  <input type="submit" value="" />送信する</input>
-                  <!-- </a> -->
-                </button>
-        </div>
+            <a href="php_act/ogp_delite.php?id=<?= $id ?>">削除する</a>
+            <button class="simple_square_btn1">
+              <input type="submit" value="" />更新する</input>
+            <!-- <a href="ogp_check2.php" class="simple_square_btn1"> -->
+              </button>
+            </a>
+      </div>
+        </form>
         <br>
         <br>
         </input>
@@ -205,3 +203,8 @@ if ($status == false) {
 </body>
 
 </html>
+
+
+
+
+
