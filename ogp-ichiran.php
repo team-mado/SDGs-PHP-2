@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
@@ -11,6 +10,7 @@ $clients_id= $_SESSION["id"];
 $name = $_SESSION["staff"];
 
 // var_dump($clients_id);
+// var_dump($name);
 // exit;
 
 // 全件データ表示
@@ -24,6 +24,9 @@ $sql1 = "SELECT * ,COUNT(clients_id=$clients_id) AS project_counts FROM ogp_tabl
 
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);
+
+
+
 $status = $stmt->execute();
 $stmt1 = $pdo->prepare($sql1);
 $status1 = $stmt1->execute();
@@ -31,8 +34,8 @@ $status1 = $stmt1->execute();
 // データ登録処理後
 if ($status == false) {
   $error = $stmt->errorInfo();
-  echo json_encode(["error_msg" => "{$error[2]}"]);
-  exit();
+
+    echo json_encode(["error_msg" => "{$error[2]}"]);
 } else {
   $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);  
   
