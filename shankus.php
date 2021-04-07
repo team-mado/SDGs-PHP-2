@@ -10,6 +10,5 @@
 登録ありがとうございます。<div>
 ログインしてOGPを作成しましょう！<div>
 <a href="index.php">ログイン画面へ！</a>
-    
 </body>
 </html>
