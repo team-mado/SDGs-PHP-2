@@ -24,7 +24,7 @@
 
       <p class="hissu">* 必須項目
       </p>
-      <form action="ogp-new.php" method="post" class="row">
+      <form action="php_act/shinki-add.php" method="post" class="row">
         <label for="company">会社名</label><span class="hissu"> *</span><br>
         <input class="form-style" id="GET-name" type="text" name="company_name"  placeholder="例）〇〇会社" value="test"/>
 
@@ -156,7 +156,6 @@
         </label>
         </div>
         <br />
-
     </div>
     <br>
     <div class="center">

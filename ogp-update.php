@@ -43,7 +43,7 @@ if ($status == false) {
   $color_check = $post["color_check"];
   $project_title = $post["project_title"];
   $job_category = $post["job_category"];
-  $project_overview = $post["project_overview "];
+  $project_overview = $post["project_overview"];
   $project_detail = $post["project_detail"];
   $production_period = $post["production_period"];
   $remote_availability = $post["remote_availability"];
@@ -156,7 +156,7 @@ if ($status == false) {
     <div class="form-box">
       <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="テストテストテストテストテストテストテス"/>
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>"/>
 
  <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック  　
@@ -172,14 +172,14 @@ if ($status == false) {
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="テストテストテストテストテストテストテステストテストテストテストテストテストテス"/>
+        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>"/>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="5月中旬まで"/>
+        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>"/>
 
         <label for="GET-name">制作期間</label><br>
-        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="5月中旬まで"/>
+        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?>"/>
 
         <label for="GET-name">
           <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　

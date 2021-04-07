@@ -52,9 +52,9 @@ if ($status == false) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="summary_large_image" >
     <meta name="twitter:site" content="https://royal-goto-8707.lolipop.io/">
-    <meta name="twitter:image" content="https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:海洋ゴミを洋服に変える%0AFASHIONxSEAプロジェクト%0A%0Aデザイナー募集%0AUI | DTP | Package | Fashion%0A海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム!,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png" >
-    <meta name="twitter:title" content="デザイナー募集" >
-    <meta name="twitter:description" content="海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム!" >
+    <meta name="twitter:image" content="<? echo($ima)?>" >
+    <meta name="twitter:title" content="<? echo($project_title)?>" >
+    <meta name="twitter:description" content="<? echo($project_overview) ?>" >
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
@@ -90,7 +90,7 @@ if ($status == false) {
 <div class="button-box">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
 <a href="ogp-syosai.php?id=<? echo($id) ?>">test</a>
-<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/project_recruiting.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syousai?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 <br>
           <div class="center">
 <a href="ogp-ichiran.php"><img src="img/bt-ichiranhe.png" alt=""></a><input type="submit" value="" /></input>

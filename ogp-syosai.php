@@ -13,7 +13,7 @@ include('php_act/functions.php');
 //   $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:　,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
 // }
 
-$id = 158;
+$id = 172;
 
 // OGP編集時にID取得
 // if(isset($_GET["id"])){

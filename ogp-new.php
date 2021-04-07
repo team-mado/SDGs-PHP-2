@@ -160,7 +160,7 @@ if ($status == false) {
     <div class="form-box">
       <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="テストテストテストテストテストテストテス"/>
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="海洋ゴミを洋服に変える。FASHION。"/>
 
  <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック  　
@@ -176,7 +176,7 @@ if ($status == false) {
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="テストテストテストテストテストテストテステストテストテストテストテストテストテス"/>
+        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="海のゴミから布を作りあ、。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"/>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
