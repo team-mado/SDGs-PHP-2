@@ -145,7 +145,8 @@ if(isset($_GET["id"])){
 <div class="button-box">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
 <a href="ogp-syosai.php?id=<? echo($id) ?>">test</a>
-<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+<!-- <a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input> -->
+<a href="https://twitter.com/share?url=https://royal-goto-8707.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 <br>
           <div class="center">
 <a href="ogp-ichiran.php"><img src="img/bt-ichiranhe.png" alt=""></a><input type="submit" value="" /></input>
