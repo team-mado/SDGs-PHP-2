@@ -94,7 +94,7 @@ if ($status == false) {
 <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_update_act.php" method="post">
+        <form action="php_act/ogp_update_act?id=<?$id?>.php" method="post">
           <ul>
             <li><img src="img/1.png" alt="">
               <div><input type="checkbox" name="color_check" value="1" checked="checked"> 貧困をなくそう</div>
