@@ -15,7 +15,7 @@ $clients_id = $_SESSION["id"];
 // exit;
 
 $clients_id = $_SESSION["id"];
-$color_check = $_POST["color_check"];
+$color_check = implode('  ',$_POST["color_check"]);
 $project_title = $_POST["project_title"];
 // $job_category = $_POST["job_category"];
 $job_category = implode('  ',$_POST["job_category"]);
@@ -57,7 +57,7 @@ $sql = "UPDATE ogp_table2 SET clients_id=:clients_id, img=:img, color_check=:col
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':clients_id', $clients_id, PDO::PARAM_INT);
 $stmt->bindValue(':img', $img, PDO::PARAM_STR);
-$stmt->bindValue(':color_check', $color_check, PDO::PARAM_INT);
+$stmt->bindValue(':color_check', $color_check, PDO::PARAM_STR);
 $stmt->bindValue(':project_title', $project_title, PDO::PARAM_STR);
 $stmt->bindValue(':job_category', $job_category, PDO::PARAM_STR);
 $stmt->bindValue(':project_overview', $project_overview, PDO::PARAM_STR);

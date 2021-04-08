@@ -144,42 +144,51 @@
         </div>
         <br />
 
-        <div class="selectdiv">
-        <label for="GET-name">社員</label><span class="hissu"> *</span><br>
-        <select class="form-style" id="GET-name" type="text" name="number_of_employees" value="選択してください">
-        <option value="～20人">～20人</option>
-        <option value="～50人">～50人</option>
-        <option value="～100人">～100人</option>
-        <option value="～300人">～300人</option>
-        <option value="それ以上">それ以上</option>
+        
+
+    <div class="selectdiv">
+        <!-- <label for="GET-name">社員</label><span class="hissu"> *</span><br> -->
+        <label for="GET-name">社員<span class="hissu"> *</span><br>
+        <select  id="GET-name"  name="number_of_employees">
+        <option selected>選択してください</option>
+        <option class="syozai" value="～20人">～20人</option>
+        <option class="syozai" value="～50人">～50人</option>
+        <option class="syozai" value="～100人">～100人</option>
+        <option class="syozai" value="～300人">～300人</option>
+        <option class="syozai" value="それ以上">それ以上</option>
         </select>
         </label>
-        </div>
-        <br />
     </div>
-    <br>
+        <br />
+
+        <div class="selectdiv">
+                <label>
+                    <select>
+                        <option selected> 選択してください </option>
+                        <option class="syozai">Option 1</option>
+                        <option class="syozai">Option 2</option>
+                        <option class="syozai">Last long option</option>
+                    </select>
+                </label>
+              </div>
+ 
     <div class="center">
       <button href="ogp-new.php" id="openModal" class="simple_square_btn1">送信する</button>
     </div>
   </div>
-    </input>
     </form>
-
-
-
-
-
   </main>
-  <!-- ↓body閉じタグ直前でjQueryを読み込む -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- 自作js -->
-  <script type="text/javascript" src="js/pop-up.js"></script>
 </body>
 
 </html>
 
 
 
+
+  <!-- ↓body閉じタグ直前でjQueryを読み込む
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <! 自作js -->
+  <!-- <script type="text/javascript" src="js/pop-up.js"></script> --> 
 
 
 

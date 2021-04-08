@@ -42,6 +42,17 @@ if ($status == false) {
   $clients_id= $post["clients_id"];
   $img = $post["img"];
   $color_check = $post["color_check"];
+  $colors = explode(" ", $color_check);
+  $colors = array_filter($colors, 'strlen');
+// var_dump($colors);
+// exit;
+
+  // foreach($colors as $value){
+  //   if($value == 1){
+
+  //   }
+  // }
+
   $project_title = $post["project_title"];
   $job_category = $post["job_category"];
   $project_overview = $post["project_overview"];
@@ -112,15 +123,97 @@ if ($status == false) {
           <p>このプロジェクトはSDGｓ17の目標の</p><br>
           <div class="ul-box">
             <ul>
+
+            <?php foreach($colors as $value) : ?>
+
+            <? $color   = $value; ?> 
+
+            <?php if($color == 1) : ?>  
               <li><img src="img/1.png" alt="">
                 <p> 貧困をなくそう</p>
               </li>
-              <li><img src="img/1.png" alt="">
-                <p> 貧困をなくそう</p>
-              </li>
-              <li><img src="img/1.png" alt="">
-                <p> 貧困をなくそう</p>
-              </li>
+            <?php endif; ?>
+            <?php if($color == 2) : ?>  
+            <li><img src="img/2.png" alt="">
+              <p>飢餓をゼロに</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 3) : ?>  
+            <li><img src="img/3.png" alt="">
+              <p>全ての人に健康と福祉を</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 4) : ?>  
+            <li><img src="img/4.png" alt="">
+              <p>質の高い教育をみんなに</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 5) : ?>  
+            <li><img src="img/5.png" alt="">
+              <p>ジェンダー平等を実現しよう</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 6) : ?>  
+            <li><img src="img/6.png" alt="">
+              <p>安全な水とトイレを世界中に</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 7) : ?>  
+            <li><img src="img/7.png" alt="">
+              <p>エネルギーをみんなにそしてクリーンに</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 8) : ?>  
+            <li><img src="img/8.png" alt="">
+              <p>働きがいも経済成長も</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 9) : ?>  
+            <li><img src="img/9.png" alt="">
+              <p>産業と技術革新の基盤をつくろう</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 10) : ?>  
+            <li><img src="img/10.png" alt="">
+              <p>人や国の不平等をなくそう</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 11) : ?>  
+            <li><img src="img/11.png" alt="">
+              <p>住み続けられる街づくりを</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 12) : ?>  
+            <li><img src="img/12.png" alt="">
+              <p>つくる責任つかう責任</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 13) : ?>  
+            <li><img src="img/13.png" alt="">
+              <p>機構変動に具体的な対策を</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 14) : ?>  
+            <li><img src="img/14.png" alt="">
+              <p>海の豊かさを守ろう</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 15) : ?>  
+            <li><img src="img/15.png" alt="">
+              <p>陸の豊かさも守ろう</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 16) : ?>  
+            <li><img src="img/16.png" alt="">
+              <p>平和と公正を全ての人に</p>
+            </li>
+          <?php endif; ?>
+          <?php if($color == 17) : ?>  
+            <li><img src="img/17.png" alt="">
+              <p>パートナーシップで目標を達成しよう</p>
+            </li>
+          <?php endif; ?>
+            <?php endforeach; ?>
             </ul>
           </div><br>
           <p class="sdgs-text">に該当します。</p>
@@ -142,10 +235,10 @@ if ($status == false) {
     <div class="form-box">
       <form action="" method="post" class="row">
         <label for="GET-name">お名前</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_name" value="テストユーザ"/>
+        <input class="form-style" id="GET-name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
 
         <label for="GET-name">E-mail</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_email" value="E-mail"/>
+        <input class="form-style" id="GET-name" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
 
         <label for="GET-name">作品URL</label><br>
         <input class="form-style" id="GET-name" type="text" name="portfolio" value="作品URL" />

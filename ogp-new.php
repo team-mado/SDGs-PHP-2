@@ -82,7 +82,7 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><a href="index.html"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt="" /></div>
     </div>
   </header>
   <main>
