@@ -2,7 +2,7 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
-
+check_session_id();
 
 
 
@@ -22,7 +22,7 @@ $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
 
-$v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:';
+$v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_35_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
 $v3 = ',co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png';

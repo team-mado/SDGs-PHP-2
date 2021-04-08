@@ -1,5 +1,9 @@
 <?php
 
+
+include('functions.php');
+$pdo = connect_to_db();
+
 if (
     !isset($_POST['company_name']) || $_POST['company_name'] == '' ||
     !isset($_POST['staff']) || $_POST['staff'] == '' ||
@@ -23,10 +27,6 @@ $field = $_POST['field'];
 $capital = $_POST['capital'];
 $number_of_employees = $_POST['number_of_employees'];
 
-
-
-include('functions.php');
-$pdo = connect_to_db();
 
 
 

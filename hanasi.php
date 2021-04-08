@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    ご応募いただきありがとうございます！
+    担当の者から後日ご連絡いたします。
 </body>
 </html>
