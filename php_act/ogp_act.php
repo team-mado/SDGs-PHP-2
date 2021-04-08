@@ -19,37 +19,12 @@ $project_detail = $_POST["project_detail"];
 $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
-// var_dump($color_check);
-// exit;
-https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:テスト,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png
 
 $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_50_black:';
-$img_in1 = $project_overview;
+$img_in1 = $project_title;
 $img_in2 = $job_category;
 $v3 = ',co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png';
 $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
-
-
-
-// $project_overview = $_POST["project_overview"];
-// // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
-// $v1 = 'https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:';
-// $img_in = $project_overview;
-// $v3 = ',co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png';
-// $img = $v1.$img_in.$v3;
-// $detail = $_POST["detail"];
-// $production_period = $_POST["production_period"];
-// $remote_availability = $_POST["remote_availability"];
-
-
-// var_dump($_SESSION["id"]);
-// var_dump($clients_id);
-// var_dump($img);
-// var_dump($project_overview);
-// var_dump($detail);
-// var_dump($production_period);
-// var_dump($remote_availability);
-// exit;
 
 
 

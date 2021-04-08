@@ -49,12 +49,12 @@ if ($status == false) {
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="summary_large_image" >
     <meta name="twitter:site" content="https://royal-goto-8707.lolipop.io/">
-    <meta name="twitter:image" content="<? echo($ima)?>" >
-    <meta name="twitter:title" content="<? echo($project_title)?>" >
-    <meta name="twitter:description" content="<? echo($project_overview) ?>" >
+    <meta name="twitter:image" content="<? echo($img)?>" >
+    <meta name="twitter:title" content="<? echo($project_overview)?>" >
+    <meta name="twitter:description" content="<? echo($project_detail) ?>" > -->
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
@@ -90,7 +90,7 @@ if ($status == false) {
 <div class="button-box">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
 <a href="ogp-syosai.php?id=<? echo($id) ?>">test</a>
-<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syousai?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syousai.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 <br>
           <div class="center">
 <a href="ogp-ichiran.php"><img src="img/bt-ichiranhe.png" alt=""></a><input type="submit" value="" /></input>

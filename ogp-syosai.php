@@ -13,7 +13,7 @@ include('php_act/functions.php');
 //   $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:　,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
 // }
 
-$id = 172;
+$id = $_GET["id"];
 
 // OGP編集時にID取得
 // if(isset($_GET["id"])){
@@ -65,6 +65,12 @@ if ($status == false) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="https://royal-goto-8707.lolipop.io/shinki.php?<? echo($id) ?>">
+    <meta name="twitter:image" content="<? echo($img)?>" >
+    <meta name="twitter:title" content="<? echo($project_overview)?>" >
+    <meta name="twitter:description" content="<? echo($project_detail) ?>" >
   <title>DESIGN UP! SDGs</title>
 
   <!-- リセットCSS -->
