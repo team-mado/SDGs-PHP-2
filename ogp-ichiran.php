@@ -109,7 +109,7 @@ if ($status == false) {
       </div>
     </header>
     <main>
-<p><span><?= $name ?></span>  様ありがとうございます。<br>
+<p><span><?= $name ?></span> 様ありがとうございます。<br>
 現在進行中のプロジェクトは<span class="project-kensu"><?= $project_counts ?>0</span> 件です。</p>
 <br>
 
