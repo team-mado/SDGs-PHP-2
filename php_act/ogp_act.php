@@ -82,7 +82,7 @@ if ($status == false) {
   $production_period = $posts["production_period"];
   $remote_availability = $posts["remote_availability"];
 
-  header("Location:../ogp-send.php?id=$id");
+  header("Location:../ogp-send.php");
   exit();
 }
 

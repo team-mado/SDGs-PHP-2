@@ -8,6 +8,13 @@ include('php_act/functions.php');
 
 $clients_id = $_SESSION["id"];
 
+// var_dump($_GET);
+// exit;
+
+
+if(!isset($_GET["id"])){
+  // var_dump("hoge");
+  // exit;
 
 // 入れたばかりのデータを持ってくる
 $pdo = connect_to_db();
@@ -35,6 +42,54 @@ if ($status == false) {
   $remote_availability = $posts["remote_availability"];
 
 }
+
+}
+
+
+
+
+
+
+// すでにOGPを作成しているときはデータが入っている状態
+if(isset($_GET["id"])){
+  // var_dump("test");
+  // exit;
+  $id = $_GET["id"];
+
+  $pdo = connect_to_db();
+  $sql = "SELECT * FROM ogp_table2 where id = :id";
+  // var_dump($sql);
+  // exit;
+  $stmt = $pdo->prepare($sql);
+  $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+  $status = $stmt->execute();
+  
+  
+  if ($status == false) {
+    $error = $stmt->errorInfo();
+    echo json_encode(["error_msg" => "{$error[2]}"]);
+    exit();
+  } else {
+    $post = $stmt->fetch(PDO::FETCH_ASSOC);
+    $id = $post["id"];
+    $clients_id= $post["clients_id"];
+    $img = $post["img"];
+    $color_check = $post["color_check"];
+    $project_title = $post["project_title"];
+    $job_category = $post["job_category"];
+    $project_overview = $post["project_overview "];
+    $project_detail = $post["project_detail"];
+    $production_period = $post["production_period"];
+    $remote_availability = $post["remote_availability"];
+  
+    // var_dump($img);
+    // exit;
+    }
+  }
+
+
+
+
 
 
 
@@ -90,7 +145,7 @@ if ($status == false) {
 <div class="button-box">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
 <a href="ogp-syosai.php?id=<? echo($id) ?>">test</a>
-<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syousai.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+<a href="https://twitter.com/intent/tweet?text=グラフィックデザイナー募集中?url=https://royal-goto-8707.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 <br>
           <div class="center">
 <a href="ogp-ichiran.php"><img src="img/bt-ichiranhe.png" alt=""></a><input type="submit" value="" /></input>
