@@ -29,7 +29,7 @@ if (!empty($_POST)) {
             // var_dump("hoge");
             // exit;
             if(isset($_POST)){
-              $error = "ログインに失敗しました。";
+              $error = "0";
             }
         } else {
             $_SESSION = array();
@@ -121,8 +121,8 @@ if (!empty($_POST)) {
 
 
         <!-- idでモーダル実装 -->
-        <button id="openModal" class="simple_square_btn1">ログイン</button>
 
+        <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
         <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
         <p class="pw-text">PWをお忘れの方は<a href="">こちら</a>から</p>
