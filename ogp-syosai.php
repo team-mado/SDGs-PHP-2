@@ -233,7 +233,7 @@ if ($status == false) {
     <h1>デザイナー応募フォーム</h1>
 
     <div class="form-box">
-      <form action="" method="post" class="row">
+      <form action="php_act/syosai_recruiting_act.php" method="post" class="row">
         <label for="GET-name">お名前</label><br>
         <input class="form-style" id="GET-name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
 
@@ -250,9 +250,11 @@ if ($status == false) {
         <br>
 
         <div class="center">
-          <a href="hanasi.php">
+            <button>
+          <!-- <a href="hanasi.php"> -->
           <img  class="bt-kuwashiku" src="img/bt-kuwashiku.png" alt="">
-          </a>
+            </button>
+          <!-- </a> -->
         </div>
         <br>
         <br>
