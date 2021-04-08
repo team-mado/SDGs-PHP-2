@@ -94,7 +94,7 @@ if ($status == false) {
 <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_update_act?id=<?$id?>.php" method="post">
+        <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post">
           <ul>
             <li><img src="img/1.png" alt="">
               <div><input type="checkbox" name="color_check" value="1" checked="checked"> 貧困をなくそう</div>
@@ -154,7 +154,6 @@ if ($status == false) {
     </div>
 <br>
     <div class="form-box">
-      <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
         <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>"/>
 
