@@ -112,7 +112,7 @@ if ($status == false) {
       <div class="tab">
         <p><? echo($remote_availability) ?></p>
       </div>
-      <p>　 | 　</p><p>期限：<? echo($production_period) ?></p>
+      <p>　 | 　</p><p>制作期限：<? echo($production_period) ?></p>
 
 </div>
       <div>

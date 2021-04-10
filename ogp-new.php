@@ -176,13 +176,13 @@ if ($status == false) {
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="海のゴミから布を作りあ、。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"/>
+        <input class="form-style" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="海のゴミから布を作りあ、。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"/>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"/>
+        <input class="form-syosai" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"/>
 
-        <label for="GET-name">制作期間</label><br>
+        <label for="GET-name">制作期限</label><br>
         <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="5月中旬まで"/>
 
         <label for="GET-name">
