@@ -125,7 +125,7 @@ if (!empty($_POST)) {
         <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
         <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
-        <p class="pw-text">PWをお忘れの方は<a href="">こちら</a>から</p>
+        <p class="pw-text">PWをお忘れの方は<a href="mailto:design.up.sdgs@gmail.com?subject=【問合せ】パスワードの変更依頼&amp;body=">こちら</a>から</p>
         <br />
 
 

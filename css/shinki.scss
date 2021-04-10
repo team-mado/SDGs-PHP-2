@@ -18,9 +18,13 @@ h1 {
   text-align: center;
 }
 
+.hissu {
+  color: red;
+}
+
 // プルダウンのCSS
 body {
-  background: #f2f2f2;
+  background: #ffffff;
 }
 
 .selectdiv {
@@ -39,7 +43,7 @@ select::-ms-expand {
 
 .selectdiv:after {
   content: ">";
-  font: 14px "Consolas", monospace;
+  font: 16px "Consolas", monospace;
   color: #000000;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -48,9 +52,10 @@ select::-ms-expand {
   right: 11px;
   /*Adjust for position however you want*/
 
-  top: 18px;
-  padding: 0 0 2px;
-  border-bottom: 1px solid #000000;
+  // top: 18px; ここいじると▼移動する
+  padding: 0 0 12px 18px;
+  // ▼横線幅 なしに設定
+  border-bottom: 0px solid #000000;
   /*left line */
 
   position: absolute;

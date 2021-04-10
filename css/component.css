@@ -96,6 +96,11 @@ main .pw-text {
   margin-top: -10px;
 }
 
+.thanks-img {
+  width: 200px;
+  height: 300px;
+}
+
 body {
   font-family: "Noto Sans JP", 游ゴシック, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, sans-serif;
   padding-left: 20px;
