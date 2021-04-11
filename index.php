@@ -68,29 +68,20 @@ if (!empty($_POST)) {
 
 <body>
   <main>
-    <div class="gray-box">
-      <br />
-      <img class="top-logo" src="img/logo-.png" alt="" />
-    </div>
-    <br />
-
-
-
-
-
-
-
 
     <div class="button-box">
 
       <div>
-        <br>
-        <h2>
-          SDGsの取り組みをSNSから広く告知！<br />
-          プロジェクトを担当するデザイナーを<br />
-          SNSで拡散募集できる<br />
-          SDGｓプロジェクト広報支援サービス
-        </h2><br>
+          <br>
+          <h2>
+            SDGｓのプロジェクトを一気に告知！<br>
+            担当デザイナーをツイッターから大募集！
+          </h2><br>
+          <br />
+        <h1>SDGｓ × デザインのマッチングサービス</h1>
+          <img class="top-logo" src="img/home-logo.png" alt="">
+          <br>
+
 
 
         <!-- モーダルここから -->
@@ -115,22 +106,21 @@ if (!empty($_POST)) {
               <div id="closeModal" class="closeModal">
                 ×
               </div>
-            </div>
+           </div>
+          </div>
         </section>
         <!-- モーダルここまで -->
 
 
         <!-- idでモーダル実装 -->
-
+<br><br>
         <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
         <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
         <p class="pw-text">PWをお忘れの方は<a href="mailto:design.up.sdgs@gmail.com?subject=【問合せ】パスワードの変更依頼&amp;body=">こちら</a>から</p>
-        <br />
-
-
       </div>
-      <br />
+       <img class="top-img" src="img/top-img.png" alt=""><br>
+   </div>   
   </main>
 
   <!-- ↓body閉じタグ直前でjQueryを読み込む -->
