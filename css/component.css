@@ -64,36 +64,31 @@ main {
   text-align: left;
 }
 
-main .gray-box {
-  width: 100%;
-  height: 200px;
-  background-color: #d4d6d5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .gray-box .top-logo {
-  width: 300px;
-}
-
-main .button-box {
+.button-box {
   width: 100%;
   text-align: center;
 }
 
-main .button-box bottom {
+.button-box bottom {
   margin: 0 auto;
 }
 
-main .pw-text {
+.button-box .top-logo {
+  margin-top: 8px;
+  width: 370px;
+}
+
+.button-box .top-img {
+  width: 380px;
+}
+
+.pw-text {
   margin-top: -10px;
+}
+
+.thanks-img {
+  width: 200px;
+  height: 300px;
 }
 
 body {
@@ -106,7 +101,7 @@ body {
 
 h2 {
   font-size: 16px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: bold;
   letter-spacing: 0.01em;
 }
@@ -114,33 +109,36 @@ h2 {
 h1 {
   font-size: 19px;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
-header {
+.header {
   width: 100%;
   height: 80px;
-  text-align: left;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-header .home-logo {
+.header .home-logo {
   width: 243px;
-  position: absolute;
   bottom: 10px;
+}
+
+.header .logout-bt {
+  width: 65px;
 }
 
 a {
   text-decoration: none;
-}
-
-.button-box {
-  width: 100%;
-}
-
-.button-box img {
-  height: 40px;
-  margin: 5px;
 }
 
 .all-logo {
@@ -165,6 +163,24 @@ a {
 .form-box .form-style {
   width: 100%;
   height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #6e6e6e;
+  border-radius: 3px;
+}
+
+.form-box .form-style-textbox40 {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #6e6e6e;
+  border-radius: 3px;
+}
+
+.form-box .form-style-textbox230 {
+  width: 100%;
+  height: 100px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #6e6e6e;

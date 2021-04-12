@@ -7,30 +7,29 @@ main {
   margin: 0 auto;
   max-width: 600px;
   text-align: left;
+}
 
-  .gray-box {
-    width: 100%;
-    height: 200px;
-    background-color: #d4d6d5;
-    // ロゴ上下中央
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .top-logo {
-      width: 300px;
-    }
+.button-box {
+  width: 100%;
+  text-align: center;
+  bottom {
+    margin: 0 auto;
   }
+  .top-logo {
+    margin-top: 8px;
+    width: 370px;
+  }
+  .top-img {
+    width: 380px;
+  }
+}
+.pw-text {
+  margin-top: -10px;
+}
 
-  .button-box {
-    width: 100%;
-    text-align: center;
-    bottom {
-      margin: 0 auto;
-    }
-  }
-  .pw-text {
-    margin-top: -10px;
-  }
+.thanks-img {
+  width: 200px;
+  height: 300px;
 }
 
 //   @media only screen and (min-width: 600px) {

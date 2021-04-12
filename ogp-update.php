@@ -79,7 +79,8 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><a href="index.php"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
     </div>
   </header>
   <main>
@@ -155,7 +156,7 @@ if ($status == false) {
 <br>
     <div class="form-box">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>"/>
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
 
  <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック  　
@@ -171,11 +172,11 @@ if ($status == false) {
         <br>
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <input class="form-style" id="GET-name" type="text" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>"/>
+        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>"></textarea>
         
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <input class="form-syosai" id="GET-name" type="text" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>"/>
+        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>"></textarea>
 
         <label for="GET-name">制作期間</label><br>
         <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?>"/>
@@ -186,17 +187,15 @@ if ($status == false) {
 
         <br>
         <div class="center">
-            <a href="php_act/ogp_delite.php?id=<?= $id ?>">削除する</a>
-            <button class="simple_square_btn1">
-              <input type="submit" value="" />更新する</input>
+            <img class="button-up" src="img/bt-hensyu.png" alt="">
+            <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
             <!-- <a href="ogp_check2.php" class="simple_square_btn1"> -->
-              </button>
-            </a>
-      </div>
-        </form>
+            <!-- </a> -->
+      </div> 
         <br>
         <br>
         </input>
+
       </form>
   </main>
 </body>

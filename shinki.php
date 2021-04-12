@@ -24,6 +24,7 @@
 
       <p class="hissu">* 必須項目
       </p>
+     
       <form action="php_act/shinki-add.php" method="post" class="row">
         <label for="company">会社名</label><span class="hissu"> *</span><br>
         <input class="form-style" id="GET-name" type="text" name="company_name"  placeholder="例）〇〇会社" value="test"/>
@@ -148,7 +149,7 @@
 
     <div class="selectdiv">
         <!-- <label for="GET-name">社員</label><span class="hissu"> *</span><br> -->
-        <label for="GET-name">社員<span class="hissu"> *</span><br>
+        <label for="GET-name">社員</label><span class="hissu"> *</span><br>
         <select  id="GET-name"  name="number_of_employees">
         <option selected>選択してください</option>
         <option class="syozai" value="～20人">～20人</option>
@@ -158,25 +159,16 @@
         <option class="syozai" value="それ以上">それ以上</option>
         </select>
         </label>
-    </div>
-        <br />
+     
 
-        <div class="selectdiv">
-                <label>
-                    <select>
-                        <option selected> 選択してください </option>
-                        <option class="syozai">Option 1</option>
-                        <option class="syozai">Option 2</option>
-                        <option class="syozai">Last long option</option>
-                    </select>
-                </label>
-              </div>
+<br>
  
     <div class="center">
       <button href="ogp-new.php" id="openModal" class="simple_square_btn1">送信する</button>
     </div>
-  </div>
-    </form>
+    </div>
+    </form>    
+    </div>  
   </main>
 </body>
 

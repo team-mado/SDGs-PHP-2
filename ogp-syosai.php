@@ -99,7 +99,8 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><a href="index.php"><img class="home-logo" src="<?  ?>" alt="" /></a></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
     </div>
   </header>
 
@@ -112,7 +113,7 @@ if ($status == false) {
       <div class="tab">
         <p><? echo($remote_availability) ?></p>
       </div>
-      <p>　 | 　</p><p>期限：<? echo($production_period) ?></p>
+      <p>　 | 　</p><p>制作期限：<? echo($production_period) ?></p>
 
 </div>
       <div>
