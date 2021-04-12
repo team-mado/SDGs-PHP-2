@@ -104,9 +104,10 @@ if ($status == false) {
   </head>
   <body>
     <header>
-      <div class="header">
-        <div><img class="home-logo" src="img/home-logo.png" alt="" /></div>
-      </div>
+    <div class="header">
+      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
+    </div>
     </header>
     <main>
 <p><span><?= $name ?></span> 様ありがとうございます。<br>

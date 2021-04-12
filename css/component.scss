@@ -25,17 +25,23 @@ h2 {
 h1 {
   font-size: 19px;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
-header {
+
+.header {
   width: 100%;
   height: 80px;
-  text-align: left;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
   .home-logo {
     width: 243px;
-    position: absolute;
     bottom: 10px;
+  }
+  .logout-bt {
+    width: 65px;
   }
 }
 
@@ -71,7 +77,25 @@ a {
     border: 1px solid #6e6e6e;
     border-radius: 3px;
   }
-  hunj .form-syosai {
+  .form-style-textbox40 {
+    //字数多いformのスタイル
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6e6e6e;
+    border-radius: 3px;
+  }
+  .form-style-textbox230 {
+    //字数多いformのスタイル
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6e6e6e;
+    border-radius: 3px;
+  }
+  .form-syosai {
     //formの飾り
     width: 100%;
     height: 80px;
