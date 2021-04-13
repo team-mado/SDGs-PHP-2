@@ -2,6 +2,7 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
+check_session_id();
 
 // $clients_id = $_SESSION["id"];
 
@@ -79,8 +80,8 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
-      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt="" ><a href="ogp-ichiran.php"></a></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href="php_act/logout.php"></a></div>
     </div>
   </header>
   <main>

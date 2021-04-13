@@ -2,6 +2,7 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
+check_session_id();
 
 // var_dump($_SESSION);
 // exit;

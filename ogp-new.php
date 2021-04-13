@@ -2,6 +2,7 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
+check_session_id();
 
 $clients_id = $_SESSION["id"];
 // // var_dump($_GET["id"]);
@@ -82,7 +83,7 @@ if (isset($_GET["id"])) {
 <body>
   <header>
     <div class="header">
-      <div><img class="home-logo" src="img/home-logo.png" alt=""></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt=""><a href="ogp-ichiran.php"></a></div>
       <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href="php_act/logout.php"></a></div>
     </div>
   </header>
@@ -161,7 +162,7 @@ if (isset($_GET["id"])) {
     <div class="form-box">
       <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="海洋ゴミを洋服に変える。FASHION。">
+        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" >
 
         <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック 　
