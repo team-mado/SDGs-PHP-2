@@ -14,6 +14,27 @@ function connect_to_db()
     exit();
   }
 }
+aaa
+
+// function connect_to_db()
+// {
+
+//   $dbn = 'mysql:dbname=2ea21218e812791e2b0a1c9f33e9d898;charset=utf8;port=3306;host=mysql-2.mc.lolipop.lan';
+//   $user = '2ea21218e812791e2b0a1c9f33e9d898';
+//   $pwd = 'ROOTroot0627';
+
+//   try {
+//     return new PDO($dbn, $user, $pwd);
+//   } catch (PDOException $e) {
+//     echo json_encode(["db error" => "{$e->getMessage()}"]);
+//     exit();
+//   }
+// }
+
+
+
+
+
 
 // function connect_to_db()
 // {
