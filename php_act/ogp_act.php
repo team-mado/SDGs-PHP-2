@@ -6,7 +6,8 @@ check_session_id();
 
 
 
-
+// var_dump("test");
+// exit;
 
 
 $clients_id = $_SESSION["id"];
