@@ -80,7 +80,7 @@ if ($status == false) {
   <body>
     <header>
     <div class="header">
-      <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt="" ></a></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
       <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
     </div>
     </header>

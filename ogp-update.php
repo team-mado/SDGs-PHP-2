@@ -81,7 +81,7 @@ if ($status == false) {
   <header>
     <div class="header">
       <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt="" ></a></div>
-      <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
     </div>
   </header>
   <main>
@@ -188,7 +188,8 @@ if ($status == false) {
 
         <br>
         <div class="center">
-            <a href="php_act/ogp_update_act.php?id=<?= $id ?>"><img class="button-up" src="img/bt-hensyu.png" alt=""></a>
+        <button><img class="button-up" src="img/bt-hensyu.png" alt=""></button>
+            <!-- <a href="php_act/ogp_update_act.php?id=<?= $id ?>"></a> -->
             <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
             <!-- <a href="ogp_check2.php" class="simple_square_btn1"> -->
             <!-- </a> -->

@@ -11,10 +11,12 @@ $id = $_GET["id"];
 $clients_id = $_SESSION["id"];
 
 
-// var_dump($id);
+// var_dump($color_check);
+// var_dump($job_category);
 // exit;
 
-$clients_id = $_SESSION["id"];
+
+// $clients_id = $_SESSION["id"];
 $color_check = implode('  ',$_POST["color_check"]);
 $project_title = $_POST["project_title"];
 // $job_category = $_POST["job_category"];
