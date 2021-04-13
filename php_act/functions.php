@@ -1,4 +1,4 @@
-<?php
+<php
 
 function connect_to_db()
 {
@@ -36,20 +36,20 @@ function connect_to_db()
 
 
 
-// function connect_to_db()
-// {
+function connect_to_db()
+ {
 
-//   $dbn = 'mysql:dbname=86f5966d11215db41d6d33f7107303b7;charset=utf8;port=3306;host=mysql-2.mc.lolipop.lan';
-//   $user = '86f5966d11215db41d6d33f7107303b7';
-//   $pwd = 'ROOTroot0627';
+   $dbn = 'mysql:dbname=86f5966d11215db41d6d33f7107303b7;charset=utf8;port=3306;host=mysql-2.mc.lolipop.lan';
+   $user = '86f5966d11215db41d6d33f7107303b7';
+   $pwd = 'ROOTroot0627';
 
-//   try {
-//     return new PDO($dbn, $user, $pwd);
-//   } catch (PDOException $e) {
-//     echo json_encode(["db error" => "{$e->getMessage()}"]);
-//     exit();
-//   }
-// }
+   try {
+     return new PDO($dbn, $user, $pwd);
+   } catch (PDOException $e) {
+     echo json_encode(["db error" => "{$e->getMessage()}"]);
+     exit();
+   }
+ }
 
 
 
