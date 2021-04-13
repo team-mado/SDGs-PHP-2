@@ -83,7 +83,7 @@ if ($status == false) {
   <header>
     <div class="header">
       <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
-      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href="php_act/logout.php"></a></div>
     </div>
   </header>
   <main>

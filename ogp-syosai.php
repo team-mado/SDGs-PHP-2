@@ -100,7 +100,7 @@ if ($status == false) {
   <header>
     <div class="header">
       <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
-      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div>
+      <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href=""></a></div>
     </div>
   </header>
 
