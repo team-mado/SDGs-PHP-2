@@ -1,6 +1,6 @@
 <?php
 
-
+error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
 $pdo = connect_to_db();
 

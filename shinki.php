@@ -27,30 +27,30 @@
      
       <form action="php_act/shinki-add.php" method="post" class="row">
         <label for="company">会社名</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-name" type="text" name="company_name"  placeholder="例）〇〇会社" value=""/>
+        <input class="form-style" id="GET-name" type="text" name="company_name"  placeholder="例）〇〇会社" value="" required/>
 
         <br />
 
         <label for="GET-name">メールアドレス（半角英数のみ）</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-name" type="text" name="email" placeholder="例）sample@example.com" value=""/>
+        <input class="form-style" id="GET-name" type="text" name="email" placeholder="例）sample@example.com" value="" required/>
 
         <br />
 
 
         <label for="GET-name">パスワード</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-name" type="text" name="password" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value=""/>
+        <input class="form-style" id="GET-name" type="text" name="password" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value="" required/>
 
         <br />
 
 
         <label for="GET-name">担当者名</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-name" type="text" name="staff" placeholder="例）山田太郎" value=""/>
+        <input class="form-style" id="GET-name" type="text" name="staff" placeholder="例）山田太郎" value=""required/>
 
         <br />
 
         <div class="selectdiv">
         <label for="GET-name">所在地（都道府県のみ）</label><span class="hissu">  *</span><br>
-        <select class="form-style" id="GET-name" type="text" name="location" value="">
+        <select class="form-style" id="GET-name" type="text" name="location" value="" required>
         <option selected> 選択してください </option>
          <option value="東京">東京</option>
         <option class="syozai" value="北海道">北海道</option>
@@ -106,14 +106,14 @@
         <br />
 
         <label for="GET-name">事業内容</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-name" type="text" name="businesscontent" placeholder="例）出版・メディア広告・総合プロデュース" value=""/>
+        <input class="form-style" id="GET-name" type="text" name="businesscontent" placeholder="例）出版・メディア広告・総合プロデュース" value="" required/>
 
         <br />
 
 
         <div class="selectdiv">
         <label for="GET-name">分野</label><span class="hissu">  *</span><br>
-        <select class="form-style" id="GET-name" type="text" name="field" value="">
+        <select class="form-style" id="GET-name" type="text" name="field" value="" required>
         <option selected> 選択してください </option>
         <option value="製造業">製造業</option>
         <option value="電気・ガス業">電気・ガス業</option>
@@ -131,7 +131,7 @@
 
         <div class="selectdiv">
         <label for="GET-name">資本金</label><span class="hissu"> *</span><br>
-        <select class="form-style" id="GET-name" type="text" name="capital" value="">
+        <select class="form-style" id="GET-name" type="text" name="capital" value="" required>
         <option selected> 選択してください </option>
         <option value="~100万円">~100万円</option>
         <option value="~500万円">~500万円</option>
@@ -150,7 +150,7 @@
     <div class="selectdiv">
         <!-- <label for="GET-name">社員</label><span class="hissu"> *</span><br> -->
         <label for="GET-name">社員</label><span class="hissu"> *</span><br>
-        <select  id="GET-name"  name="number_of_employees">
+        <select  id="GET-name"  name="number_of_employees" required>
         <option selected>選択してください</option>
         <option class="syozai" value="～20人">～20人</option>
         <option class="syozai" value="～50人">～50人</option>

@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
 // check_session_id();
 $pdo = connect_to_db();
