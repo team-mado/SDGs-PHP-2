@@ -104,12 +104,6 @@ if(isset($_GET["id"])){
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:card" content="summary_large_image" >
-    <meta name="twitter:site" content="https://royal-goto-8707.lolipop.io/">
-    <meta name="twitter:image" content="<? echo($img)?>" >
-    <meta name="twitter:title" content="<? echo($project_overview)?>" >
-    <meta name="twitter:description" content="<? echo($project_detail) ?>" > -->
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->

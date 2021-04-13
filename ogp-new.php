@@ -9,7 +9,7 @@ $clients_id = $_SESSION["id"];
 
 
 // 初期画面
-if(!isset($_GET["id"])){
+if (!isset($_GET["id"])) {
   // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_25_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
   $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_35_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png";
 }
@@ -17,39 +17,39 @@ if(!isset($_GET["id"])){
 
 
 // OGP編集時にID取得
-if(isset($_GET["id"])){
+if (isset($_GET["id"])) {
   $id = $_GET["id"];
 }
 
 // // すでにOGPを作成しているときはデータが入っている状態
-if(isset($_GET["id"])){
+if (isset($_GET["id"])) {
 
-$pdo = connect_to_db();
-$sql = "SELECT * FROM ogp_table2 where id = :id";
-// // var_dump($sql);
-// // exit;
-$stmt = $pdo->prepare($sql);
-$stmt->bindValue(':id', $id, PDO::PARAM_INT);
-$status = $stmt->execute();
+  $pdo = connect_to_db();
+  $sql = "SELECT * FROM ogp_table2 where id = :id";
+  // // var_dump($sql);
+  // // exit;
+  $stmt = $pdo->prepare($sql);
+  $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+  $status = $stmt->execute();
 
 
-if ($status == false) {
-  $error = $stmt->errorInfo();
-  echo json_encode(["error_msg" => "{$error[2]}"]);
-  exit();
-} else {
-  $post = $stmt->fetch(PDO::FETCH_ASSOC);
-  $id = $post["id"];
-  $clients_id= $post["clients_id"];
-  $img = $post["img"];
-  $color_check = $post["color_check"];
-  $project_title = $post["project_title"];
-  $job_category = $post["job_category"];
-  $project_overview = $post["project_overview "];
-  $project_detail = $post["project_detail"];
-  $production_period = $post["production_period"];
-  $remote_availability = $post["remote_availability"];
-}
+  if ($status == false) {
+    $error = $stmt->errorInfo();
+    echo json_encode(["error_msg" => "{$error[2]}"]);
+    exit();
+  } else {
+    $post = $stmt->fetch(PDO::FETCH_ASSOC);
+    $id = $post["id"];
+    $clients_id = $post["clients_id"];
+    $img = $post["img"];
+    $color_check = $post["color_check"];
+    $project_title = $post["project_title"];
+    $job_category = $post["job_category"];
+    $project_overview = $post["project_overview "];
+    $project_detail = $post["project_detail"];
+    $production_period = $post["production_period"];
+    $remote_availability = $post["remote_availability"];
+  }
 }
 
 ?>
@@ -82,20 +82,20 @@ if ($status == false) {
 <body>
   <header>
     <div class="header">
-      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
+      <div><img class="home-logo" src="img/home-logo.png" alt=""></div>
       <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href="php_act/logout.php"></a></div>
     </div>
   </header>
   <main>
     <div class="gray-box">
-    <img class="ogp-img" src="<? echo($img) ?>" alt="">
+      <img class="ogp-img" src="<? echo($img) ?>" alt="">
       <!-- <p>
         下記のフォームを全て入力いただくと<br />
         こちらの枠内に自動でバナーが生成されます
       </p> -->
     </div>
-    <p>SDGｓ17の目標の中から、該当する項目を選んでください  ※複数選択可</p>
-<br>
+    <p>SDGｓ17の目標の中から、該当する項目を選んでください ※複数選択可</p>
+    <br>
     <div class="checkbox-center">
       <div>
         <form action="php_act/ogp_act.php" method="post">
@@ -154,38 +154,38 @@ if ($status == false) {
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
-        <!-- </form> -->
+          <!-- </form> -->
       </div>
     </div>
-<br>
+    <br>
     <div class="form-box">
       <form action="php_act/ogp_act.php" method="post" class="row">
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
         <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="海洋ゴミを洋服に変える。FASHION。">
 
- <label for="GET-name">職種（最大3つ）</label><br>
-        <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック  　
-        <input type="checkbox" name="job_category[]" value="WEB" checked> WEB  　
-        <input type="checkbox" name="job_category[]" value="UI"> UI  　
-        <input type="checkbox" name="job_category[]" value="UX" checked> UX  　<br>
-        <input type="checkbox" name="job_category[]" value="DX"> DX  　
-        <input type="checkbox" name="job_category[]" value="DTP"> DTP  　
-        <input type="checkbox" name="job_category[]" value="プロダクト"> プロダクト  　<br>
-        <input type="checkbox" name="job_category[]" value="パッケージ"> パッケージ  　
-        <input type="checkbox" name="job_category[]" value="ファッション"> ファッション  　
-        <input type="checkbox" name="job_category[]" value="映像"> 映像  　<br>  
+        <label for="GET-name">職種（最大3つ）</label><br>
+        <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック 　
+        <input type="checkbox" name="job_category[]" value="WEB" checked> WEB 　
+        <input type="checkbox" name="job_category[]" value="UI"> UI 　
+        <input type="checkbox" name="job_category[]" value="UX" checked> UX 　<br>
+        <input type="checkbox" name="job_category[]" value="DX"> DX 　
+        <input type="checkbox" name="job_category[]" value="DTP"> DTP 　
+        <input type="checkbox" name="job_category[]" value="プロダクト"> プロダクト 　<br>
+        <input type="checkbox" name="job_category[]" value="パッケージ"> パッケージ 　
+        <input type="checkbox" name="job_category[]" value="ファッション"> ファッション 　
+        <input type="checkbox" name="job_category[]" value="映像"> 映像 　<br>
         <br>
 
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="海のゴミから布を作りあ、。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"></textarea>
-        
+        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"></textarea>
+
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"></textarea>
+        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"></textarea>
 
         <label for="GET-name">制作期限</label><br>
-        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" value="5月中旬まで"/>
+        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" />
 
         <label for="GET-name">
           <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
@@ -193,16 +193,16 @@ if ($status == false) {
         <br>
 
         <div class="center">
-        <button class="simple_square_btn1">
-                <!-- <a href="ogp_act.php"> -->
-                  <input type="submit" value="" />送信する</input>
-                  <!-- </a> -->
-                </button>
+          <button class="simple_square_btn1">
+            <!-- <a href="ogp_act.php"> -->
+            <input type="submit" value="" />送信する</input>
+            <!-- </a> -->
+          </button>
         </div>
         <br>
         <br>
         </input>
-       
+
       </form>
   </main>
 </body>
