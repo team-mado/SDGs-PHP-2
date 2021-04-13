@@ -124,7 +124,7 @@ if(isset($_GET["id"])){
   <body>
     <header>
       <div class="header">
-        <div><img class="home-logo" src="img/home-logo.png" alt="" /><a href="ogp-ichiran.php"></a></div>
+        <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
       </div>
     </header>
     <main>

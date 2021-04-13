@@ -43,35 +43,9 @@ if ($status == false) {
 } else {
   $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);  
   
-  // var_dump($project_counts);
-  // exit;
-//   var_dump($posts);
-//   exit;
 }
 
-// $pdo1 = connect_to_db();
 
-// $sql1 = "SELECT * ,COUNT(clients_id=:clients_id) AS project_counts FROM ogp_table2 where clients_id =:clients_id";
-
-// $stmt1 = $pdo1->prepare($sql1);
-// $stmt1->bindValue(':clients_id',$clients_id, PDO::PARAM_INT);
-// $status1 = $stmt1->execute();
-
-
-// var_dump($status1);
-// exit;
-
-
-// if ($status1 == false) {
-//   // var_dump("hoge");
-//   // exit;
-//   $error = $stmt->errorInfo();
-//   echo json_encode(["error_msg" => "{$error[2]}"]);
-//   exit();
-// } else {
-//   $posts1 = $stmt1->fetch(PDO::FETCH_ASSOC);
-//   $project_counts = $posts1["project_counts"];
-// }
 
 
 ?>
@@ -106,8 +80,8 @@ if ($status == false) {
   <body>
     <header>
     <div class="header">
-      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
-      <div><img class="logout-bt" src="img/logout-bt.png" alt=""><a href="php_act/logout.php"></a></div>
+      <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt="" ></a></div>
+      <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
     </div>
     </header>
     <main>
