@@ -14,7 +14,7 @@ function connect_to_db()
     exit();
   }
 }
-aaa
+
 
 // function connect_to_db()
 // {
