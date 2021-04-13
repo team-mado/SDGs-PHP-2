@@ -191,7 +191,7 @@ if ($status == false) {
           <?php endif; ?>
           <?php if($color == 13) : ?>  
             <li><img src="img/13.png" alt="">
-              <p>機構変動に具体的な対策を</p>
+              <p>気候変動に具体的な対策を</p>
             </li>
           <?php endif; ?>
           <?php if($color == 14) : ?>  
