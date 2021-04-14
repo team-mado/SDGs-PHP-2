@@ -93,9 +93,9 @@ if (!empty($_POST)) {
               <div class="form-box">
                 <form action="" method="post" class="row">
                   <label for="GET-name">E-MAIL</label><br>
-                  <input class="form-style" id="GET-name" type="text" name="email" required/>
+                  <input class="form-style" id="GET-name" type="text" name="email" value="test@gmail.com" required/>
                   <label for="GET-name">PASSWORD</label><br>
-                  <input class="form-style" id="GET-name" type="password" name="password" required/>
+                  <input class="form-style" id="GET-name" type="password" name="password" value="test" required/>
                   <br><br>
                   <div class="center">
                     <button class="simple_square_btn1">送信する</button></div><br />

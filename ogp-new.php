@@ -111,7 +111,7 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="3"> 全ての人に健康と福祉を</div>
             </li>
             <li><img src="img/4.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="4"> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check[]" value="4" checked="checked"> 質の高い教育をみんなに</div>
             </li>
             <li><img src="img/5.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="5"> ジェンダー平等を実現しよう</div>
@@ -162,7 +162,7 @@ if (isset($_GET["id"])) {
     <div class="form-box">
       <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
         <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" >
+        <input class="form-style" id="GET-name" maxlentgth="5" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" >
 
         <label for="GET-name">職種（最大3つ）</label><br>
         <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック 　
@@ -179,11 +179,11 @@ if (isset($_GET["id"])) {
 
 
         <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"></textarea>
+        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" ></textarea>
 
 
         <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"></textarea>
+        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" ></textarea>
 
         <label for="GET-name">制作期限</label><br>
         <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" />
