@@ -20,7 +20,7 @@ $name = $_SESSION["staff"];
 // ---------
 $pdo = connect_to_db();
 $sql = "SELECT * FROM ogp_table2 where clients_id =:clients_id";
-$sql1 = "SELECT * ,COUNT(clients_id=$clients_id) AS project_counts FROM ogp_table2 where clients_id =$clients_id";
+
 
 // var_dump($sql);
 // exit;
@@ -48,9 +48,9 @@ if ($status == false) {
 
 
 $pdo1 = connect_to_db();
-$sql1 = "SELECT * ,COUNT(clients_id=:clients_id) AS project_counts FROM ogp_table2 where clients_id =:clients_id";
+$sql1 = "SELECT * ,COUNT(clients_id=$clients_id) AS project_counts FROM ogp_table2 where clients_id =$clients_id";
 $stmt1 = $pdo1->prepare($sql1);
-$stmt1->bindValue(':clients_id',$clients_id, PDO::PARAM_INT);
+// $stmt1->bindValue(':clients_id',$clients_id, PDO::PARAM_INT);
 $status1 = $stmt1->execute();
 
 // var_dump($status1);

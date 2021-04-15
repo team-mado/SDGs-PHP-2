@@ -139,7 +139,7 @@ if(isset($_GET["id"])){
   <br>
 <div class="button-box">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
-<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 <br>
 </div>
           <div class="center">
