@@ -139,7 +139,7 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="12"> つくる責任つかう責任</div>
             </li>
             <li><img src="img/13.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="13"> 機構変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check[]" value="13"> 気候変動に具体的な対策を</div>
             </li>
             <li><img src="img/14.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="14"> 海の豊かさを守ろう</div>

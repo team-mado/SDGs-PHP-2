@@ -188,9 +188,11 @@ if ($status == false) {
 
         <br>
         <div class="center">
-        <button><img class="button-up" src="img/bt-hensyu.png" alt=""></button>
+        <button>
+         <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>  
+        <img class="button-up" src="img/bt-hensyu-b.png" alt=""></button>
             <!-- <a href="php_act/ogp_update_act.php?id=<?= $id ?>"></a> -->
-            <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
+           
             <!-- <a href="ogp_check2.php" class="simple_square_btn1"> -->
             <!-- </a> -->
       </div> 

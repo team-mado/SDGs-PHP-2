@@ -77,7 +77,7 @@ if (!empty($_POST)) {
             担当デザイナーをツイッターから大募集！
           </h2><br>
           <br />
-        <h1>SDGｓ × デザインのマッチングサービス</h1>
+        <h1>SDGｓ×デザインのマッチングサービス</h1>
           <img class="top-logo" src="img/home-logo.png" alt="">
           <br>
 

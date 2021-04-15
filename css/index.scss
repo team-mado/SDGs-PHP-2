@@ -5,8 +5,8 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 600px;
-  text-align: left;
+  max-width: 100%;
+  // text-align: left;
 }
 
 .button-box {
@@ -17,10 +17,10 @@ main {
   }
   .top-logo {
     margin-top: 8px;
-    width: 370px;
+    width: 300px;
   }
   .top-img {
-    width: 380px;
+    width: 90%;
   }
 }
 .pw-text {

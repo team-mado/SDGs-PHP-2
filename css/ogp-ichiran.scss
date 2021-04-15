@@ -14,3 +14,16 @@ p {
     font-weight: bold;
   }
 }
+
+.all-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  .ogp-ichiran-img {
+    width: 85%;
+  }
+  .button-box {
+    .bt-new {
+      height: 44px;
+    }
+  }
+}

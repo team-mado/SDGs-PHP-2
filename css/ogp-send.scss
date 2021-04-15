@@ -2,9 +2,32 @@
   width: 100%;
 }
 
-p {
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 25px;
+.remote-box {
+  width: 370px;
+  p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  .project-text1 {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .project-text2 {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  .bt-tweet {
+    width: 200px;
+  }
+
+  .bt {
+    width: 130px;
+  }
 }

@@ -60,7 +60,7 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 100%;
   text-align: left;
 }
 
@@ -75,7 +75,7 @@ main {
 
 .button-box .top-logo {
   margin-top: 8px;
-  width: 370px;
+  width: 100%;
 }
 
 .button-box .top-img {
@@ -91,8 +91,12 @@ main {
   height: 300px;
 }
 
+@media screen and (min-width: 767px) {
+  /*ウィンドウ幅が767px以上の場合に適用*/
+}
+
 body {
-  font-family: "Noto Sans JP", 游ゴシック, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, sans-serif;
+  font-family: "Noto Sans JP", 游ゴシック, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
   -webkit-appearance: none;

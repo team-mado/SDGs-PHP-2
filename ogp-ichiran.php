@@ -85,6 +85,8 @@ if ($status == false) {
     </div>
     </header>
     <main>
+
+      <div class="all-wrapper"></div>
 <p><span><?= $name ?></span> 様ありがとうございます。<br>
 現在進行中のプロジェクトは<span class="project-kensu"><?= $project_counts ?>0</span> 件です。</p>
 <br>
@@ -104,8 +106,7 @@ $id = $post["id"];
 
 <br>
 <div class="button-box">
-<a href="ogp-new.php">新規作成</a>
-<a href="php_act/logout.php">ログアウト</a>
+<a href="ogp-new.php"><img class="bt-new" src="img/bt-new.png" alt=""></a>
 <br>
       </div>
       <br>
