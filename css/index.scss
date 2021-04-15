@@ -12,17 +12,21 @@ main {
 .button-box {
   width: 100%;
   text-align: center;
-  bottom {
-    margin: 0 auto;
-  }
-  .top-logo {
-    margin-top: 8px;
-    width: 300px;
-  }
-  .top-img {
-    width: 90%;
+  .bt-new {
+    height: 44px;
   }
 }
+bottom {
+  margin: 0 auto;
+}
+.top-logo {
+  margin-top: 8px;
+  width: 300px;
+}
+.top-img {
+  width: 90%;
+}
+
 .pw-text {
   margin-top: -10px;
 }

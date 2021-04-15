@@ -13,16 +13,20 @@ main {
   text-align: center;
 }
 
-.button-box bottom {
+.button-box .bt-new {
+  height: 44px;
+}
+
+bottom {
   margin: 0 auto;
 }
 
-.button-box .top-logo {
+.top-logo {
   margin-top: 8px;
   width: 300px;
 }
 
-.button-box .top-img {
+.top-img {
   width: 90%;
 }
 

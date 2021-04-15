@@ -61,12 +61,15 @@ body {
 main {
   margin: 0 auto;
   max-width: 100%;
-  text-align: left;
 }
 
 .button-box {
   width: 100%;
   text-align: center;
+}
+
+.button-box .bt-new {
+  height: 44px;
 }
 
 .button-box bottom {
@@ -75,11 +78,11 @@ main {
 
 .button-box .top-logo {
   margin-top: 8px;
-  width: 100%;
+  width: 300px;
 }
 
 .button-box .top-img {
-  width: 380px;
+  width: 90%;
 }
 
 .pw-text {

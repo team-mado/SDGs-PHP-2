@@ -2,36 +2,38 @@
   width: 100%;
 }
 
-.remote-box {
-  width: 370px;
+.all-text-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.remote-box p {
+.all-text-wrapper p {
   text-align: left;
   font-size: 15px;
   font-weight: bold;
   line-height: 25px;
 }
 
-.remote-box .project-text1 {
+.all-text-wrapper .project-text1 {
   margin-top: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 28px;
 }
 
-.remote-box .project-text2 {
+.all-text-wrapper .project-text2 {
   margin-top: 12px;
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
 }
 
-.remote-box .bt-tweet {
+.all-text-wrapper .bt-tweet {
   width: 200px;
 }
 
-.remote-box .bt {
+.all-text-wrapper .bt {
   width: 130px;
 }
 /*# sourceMappingURL=ogp-send.css.map */
