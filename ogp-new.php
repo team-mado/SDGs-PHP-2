@@ -77,7 +77,7 @@ if (isset($_GET["id"])) {
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
-  <link rel="stylesheet" href="css/ogp-new.css" />
+  <link rel="stylesheet" href="css/ogp-new.css" />  
 </head>
 
 <body>
@@ -161,20 +161,20 @@ if (isset($_GET["id"])) {
     <br>
     <div class="form-box">
       <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
-        <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
+      <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
         <input class="form-style" id="GET-name" maxlentgth="5" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" >
 
         <label for="GET-name">職種（最大3つ）</label><br>
-        <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック 　
-        <input type="checkbox" name="job_category[]" value="WEB" checked> WEB 　
-        <input type="checkbox" name="job_category[]" value="UI"> UI 　
-        <input type="checkbox" name="job_category[]" value="UX" checked> UX 　<br>
-        <input type="checkbox" name="job_category[]" value="DX"> DX 　
-        <input type="checkbox" name="job_category[]" value="DTP"> DTP 　
-        <input type="checkbox" name="job_category[]" value="プロダクト"> プロダクト 　<br>
-        <input type="checkbox" name="job_category[]" value="パッケージ"> パッケージ 　
-        <input type="checkbox" name="job_category[]" value="ファッション"> ファッション 　
-        <input type="checkbox" name="job_category[]" value="映像"> 映像 　<br>
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB" > WEB 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI" > UI 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX" > UX 　<br>
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" > DX 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP" > DTP 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　<br>
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ" > パッケージ 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション" > ファッション 　
+        <input type="checkbox" onclick="Climit()" name="job_category[]" value="映像"> 映像 　<br>
         <br>
 
 
@@ -207,5 +207,31 @@ if (isset($_GET["id"])) {
       </form>
   </main>
 </body>
+
+<script>
+var limit =3; //チェックできる数
+Flag = new Array(); //チェックの有無を格納する配列
+
+function Climit(){
+  var v=0; //チェックの合計
+  var Myname = document.getElementsByName("job_category[]");// 指定したnameの要素をすべて取得
+for (i=0; i<Myname.length; i++){
+    Flag[i]=i; // 配列　Flagを初期化
+if(Myname[i].checked){Flag[i]="chk"; // チェックが入っていれば文字列 "chk" を代入
+v++;}　//チェックの合計数を 1 増やします
+   }
+
+if(v>=limit){ //チェックの合計数が制限数になれば
+for (i=0; i<Myname.length; i++){
+if(Flag[i]=="chk"){Myname[i].disabled =false;}
+else{Myname[i].disabled = true;}
+ }
+}
+else{for (i=0; i<Myname.length; i++)
+Myname[i].disabled =false;}
+　　}
+// console.log("hoge");
+// exit;
+</script>
 
 </html>
