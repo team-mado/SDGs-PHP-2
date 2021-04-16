@@ -325,14 +325,14 @@ if (isset($_GET["id"])) {
       <br>
 
       <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>"></textarea>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>" required></textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>"></textarea>
+      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>" required></textarea>
 
       <label for="GET-production_period">制作期間</label><br>
-      <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?>" />
+      <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?> " required />
 
       <label for="GET-name">
         <? if($remote_availability == "リモート可"  ) :?>
@@ -358,6 +358,31 @@ if (isset($_GET["id"])) {
       </form>
   </main>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("SDGs目標は1つ以上選択してください");
+        }
+      });
+    });
+
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("職種は1つ以上選択してくださいい");
+        }
+      });
+    });
+  </script>
+
+
+
 <script>
   var limit = 3; //チェックできる数
   Flag = new Array(); //チェックの有無を格納する配列

@@ -55,10 +55,6 @@ if (isset($_GET["id"])) {
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -78,28 +74,7 @@ if (isset($_GET["id"])) {
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
   <link rel="stylesheet" href="css/ogp-new.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>
-    $(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("SDGs目標は1つ以上選択してください");
-        }
-      });
-    });
-
-    $(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("職種は1つ以上選択してくださいい");
-        }
-      });
-    });
-  </script>
+ 
 
 </head>
 
@@ -188,7 +163,7 @@ if (isset($_GET["id"])) {
       <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" required>
 
       <label for="">職種（最大3つ）</label><br>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" checked> グラフィック 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　<br>
@@ -230,6 +205,31 @@ if (isset($_GET["id"])) {
       </form>
   </main>
 </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("SDGs目標は1つ以上選択してください");
+        }
+      });
+    });
+
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("職種は1つ以上選択してくださいい");
+        }
+      });
+    });
+  </script>
+
+
 
 <script>
   var limit = 3; //チェックできる数
