@@ -142,7 +142,7 @@ if (isset($_GET["id"])) {
     <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post">
+        <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" id="form">
           <ul>
             <li><img src="img/1.png" alt="">
               <? if($color1 == "1" ||  $color2 == "1"  ||  $color3 == "1"  ||  $color4 == "1"  ||  $color5 == "1"  ||  $color6 == "1"  ||  $color7 == "1"  ||  $color8 == "1"  ||  $color9 == "1"  ||  $color10 == "1"  ||  $color11 == "1"  ||  $color12 == "1"  ||  $color13 == "1"  ||  $color14 == "1"  ||  $color15 == "1"  ||  $color16 == "1"  ||  $color17 == "1") :?>
@@ -326,14 +326,15 @@ if (isset($_GET["id"])) {
       <br>
 
       <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" value="<? echo($project_overview)?>" required></textarea>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"  required><? echo($project_overview)?></textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" value="<? echo($project_detail) ?>" required></textarea>
+      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"  required><? echo($project_detail) ?></textarea>
 
       <label for="GET-production_period">制作期間</label><br>
-      <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?> " required />
+      <input class="form-style" id="GET-production_period" type="date" name="production_period" value="<? echo($production_period) ?>" required>
+      <!-- <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" value="<? echo($production_period) ?> " required /> -->
 
       <label for="GET-name">
         <? if($remote_availability == "リモート可"  ) :?>
@@ -358,8 +359,10 @@ if (isset($_GET["id"])) {
       </form>
   </main>
 </body>
-  <script>
-    $(function() {
+
+
+<script>
+$(function() {
       $("#form").on('submit', function(e) {
         var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
         if (flg) {
@@ -374,7 +377,7 @@ if (isset($_GET["id"])) {
         var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
         if (flg) {
           e.preventDefault();
-          alert("職種は1つ以上選択してくださいい");
+          alert("職種は1つ以上選択してください");
         }
       });
     });
@@ -443,6 +446,5 @@ if (isset($_GET["id"])) {
     }
   }
 </script>
-
 
 </html>

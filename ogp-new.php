@@ -75,8 +75,6 @@ if (isset($_GET["id"])) {
   <link rel="stylesheet" href="css/component.css" />
   <link rel="stylesheet" href="css/ogp-new.css" />
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
- 
-
 </head>
 
 <body>
@@ -185,7 +183,8 @@ if (isset($_GET["id"])) {
       <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" required></textarea>
 
       <label for="GET-production_period">制作期限</label><br>
-      <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" required />
+      <input class="form-style" id="GET-production_period" type="date" name="production_period" required>
+      <!-- <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" required /> -->
 
       <label for="GET-remote_availability">
         <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
@@ -207,8 +206,10 @@ if (isset($_GET["id"])) {
   </main>
 </body>
 
-  <script>
-    $(function() {
+  
+
+<script>
+$(function() {
       $("#form").on('submit', function(e) {
         var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
         if (flg) {
@@ -218,22 +219,55 @@ if (isset($_GET["id"])) {
       });
     });
 
+
+  </script>
+
+<script>
     $(function() {
       $("#form").on('submit', function(e) {
         var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
         if (flg) {
           e.preventDefault();
-          alert("職種は1つ以上選択してくださいい");
+          alert("職種は1つ以上選択してください");
         }
       });
     });
-  </script>
-
-
+    </script>
 
 <script>
   var limit = 3; //チェックできる数
   Flag = new Array(); //チェックの有無を格納する配列
+
+  // チェックボックス初回判定
+  // --------------------
+  var v = 0; //チェックの合計
+  var Myname = document.getElementsByName("job_category[]"); // 指定したnameの要素をすべて取得
+  for (i = 0; i < Myname.length; i++) {
+    Flag[i] = i; // 配列　Flagを初期化
+    if (Myname[i].checked) {
+      Flag[i] = "chk"; // チェックが入っていれば文字列 "chk" を代入
+      v++;
+    } //チェックの合計数を 1 増やします
+  }
+
+  if (v >= limit) { //チェックの合計数が制限数になれば
+    for (i = 0; i < Myname.length; i++) {
+      if (Flag[i] == "chk") {
+        Myname[i].disabled = false;
+      } else {
+        Myname[i].disabled = true;
+      }
+    }
+  } else {
+    for (i = 0; i < Myname.length; i++)
+      Myname[i].disabled = false;
+  }
+  // --------------------
+
+
+
+
+
   // クリックするたびに非表示判定
   // --------------------
   function Climit() {
