@@ -359,7 +359,6 @@ if (isset($_GET["id"])) {
       </form>
   </main>
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     $(function() {
       $("#form").on('submit', function(e) {
