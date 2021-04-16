@@ -120,6 +120,7 @@ if (isset($_GET["id"])) {
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
   <link rel="stylesheet" href="css/ogp-new.css" />
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>

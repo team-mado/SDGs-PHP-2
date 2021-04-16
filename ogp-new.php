@@ -74,6 +74,7 @@ if (isset($_GET["id"])) {
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
   <link rel="stylesheet" href="css/ogp-new.css" />
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
  
 
 </head>
@@ -206,7 +207,6 @@ if (isset($_GET["id"])) {
   </main>
 </body>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     $(function() {
       $("#form").on('submit', function(e) {
