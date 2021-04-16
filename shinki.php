@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DESIGN UP! SDGs</title>
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="css/ress.min.css" />
   <!-- Googleフォント -->
   <!-- Fon Awesome読込み -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />

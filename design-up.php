@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/thanks-designup.css" />
   <link rel="stylesheet" href="css/component.css" />
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="css/ress.min.css" />
   <!-- Googleフォント -->
   <!-- Fon Awesome読込み -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />

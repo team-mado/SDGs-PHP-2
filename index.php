@@ -56,7 +56,7 @@ if (!empty($_POST)) {
   <link rel="stylesheet" type="text/css" href="css/index.css" />
   <link rel="stylesheet" href="css/component.css" />
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="css/ress.min.css" />
   <!-- モーダル用CSS -->
   <!-- <link rel="stylesheet" href="css/modal.css" /> -->
   <!-- Googleフォント -->

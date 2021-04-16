@@ -108,7 +108,7 @@ if(isset($_GET["id"])){
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/ress.min.css" />
 
     <!-- Googleフォント -->
 

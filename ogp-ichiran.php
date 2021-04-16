@@ -81,15 +81,12 @@ if ($status1 == false) {
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/ress.min.css" />
 
     <!-- Googleフォント -->
 
     <!-- Fon Awesome読込み -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- オリジナルcomponent.CSS -->
     <link rel="stylesheet" href="css/component.css" />
     <link rel="stylesheet" href="css/ogp-ichiran.css" />
