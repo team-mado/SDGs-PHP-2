@@ -104,7 +104,7 @@ if(isset($_GET["id"])){
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/ress.min.css" />
 
     <!-- Googleフォント -->
 
@@ -190,12 +190,18 @@ if(isset($_GET["id"])){
 <p>プロジェクトを作成しました！<br>
   作ったプロジェクトはtwitterで広めましょう！</p>
   <br>
-<div>
-<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+    
+//<div>
+//<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+
+<div class="button-box">
+<a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
+<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+
 <br>
+</div>
           <div class="center">
 <a href="ogp-update.php?id=<? echo($id) ?>"><img class="bt" src="img/bt-hensyu.png" alt=""></a>
-      </div>
       </div>
       <br>
 <br>

@@ -55,10 +55,6 @@ if (isset($_GET["id"])) {
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -69,7 +65,7 @@ if (isset($_GET["id"])) {
   <title>DESIGN UP! SDGs</title>
 
   <!-- リセットCSS -->
-  <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" />
+  <link href="css/ress.min.css" rel="stylesheet" />
 
   <!-- Googleフォント -->
 
@@ -78,6 +74,9 @@ if (isset($_GET["id"])) {
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
   <link rel="stylesheet" href="css/ogp-new.css" />
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+ 
+
 </head>
 
 <body>
@@ -99,10 +98,10 @@ if (isset($_GET["id"])) {
     <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_act.php" method="post">
+        <form action="php_act/ogp_act.php" method="post" id="form">
           <ul>
             <li><img src="img/1.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="1" checked="checked"> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="1"> 貧困をなくそう</div>
             </li>
             <li><img src="img/2.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="2"> 飢餓をゼロに</div>
@@ -161,51 +160,108 @@ if (isset($_GET["id"])) {
     <br>
     <div class="form-box">
       <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
-        <label for="GET-name">プロジェクトタイトル（最大20文字）</label><br>
-        <input class="form-style" id="GET-name" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" >
+      <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
+      <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" required>
 
-        <label for="GET-name">職種（最大3つ）</label><br>
-        <input type="checkbox" name="job_category[]" value="グラフィック" checked> グラフィック 　
-        <input type="checkbox" name="job_category[]" value="WEB" checked> WEB 　
-        <input type="checkbox" name="job_category[]" value="UI"> UI 　
-        <input type="checkbox" name="job_category[]" value="UX" checked> UX 　<br>
-        <input type="checkbox" name="job_category[]" value="DX"> DX 　
-        <input type="checkbox" name="job_category[]" value="DTP"> DTP 　
-        <input type="checkbox" name="job_category[]" value="プロダクト"> プロダクト 　<br>
-        <input type="checkbox" name="job_category[]" value="パッケージ"> パッケージ 　
-        <input type="checkbox" name="job_category[]" value="ファッション"> ファッション 　
-        <input type="checkbox" name="job_category[]" value="映像"> 映像 　<br>
-        <br>
-
-
-        <label for="GET-name">プロジェクトの概要（最大40文字）</label><br>
-        <textarea class="form-style-textbox40" id="GET-name" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"></textarea>
+      <label for="">職種（最大3つ）</label><br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション"> ファッション 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="映像"> 映像 　<br>
+      <br>
 
 
-        <label for="GET-name">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-        <textarea class="form-style-textbox230" id="GET-name" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"></textarea>
+      <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required></textarea>
 
-        <label for="GET-name">制作期限</label><br>
-        <input class="form-style" id="GET-name" type="text" name="production_period" placeholder="例）5月中旬まで" />
 
-        <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" /> 不可</label><br>
-        <br>
+      <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
+      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" required></textarea>
 
-        <div class="center">
-          <button class="simple_square_btn1">
-            <!-- <a href="ogp_act.php"> -->
-            <input type="submit" value="" />送信する</input>
-            <!-- </a> -->
-          </button>
-        </div>
-        <br>
-        <br>
-        </input>
+      <label for="GET-production_period">制作期限</label><br>
+      <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" required />
+
+      <label for="GET-remote_availability">
+        <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
+        <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" /> 不可</label><br>
+      <br>
+
+      <div class="center">
+        <button class="simple_square_btn1">
+          <!-- <a href="ogp_act.php"> -->
+          <input type="submit" value="" />送信する</input>
+          <!-- </a> -->
+        </button>
+      </div>
+      <br>
+      <br>
+      </input>
 
       </form>
   </main>
 </body>
+
+  <script>
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("SDGs目標は1つ以上選択してください");
+        }
+      });
+    });
+
+    $(function() {
+      $("#form").on('submit', function(e) {
+        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
+        if (flg) {
+          e.preventDefault();
+          alert("職種は1つ以上選択してくださいい");
+        }
+      });
+    });
+  </script>
+
+
+
+<script>
+  var limit = 3; //チェックできる数
+  Flag = new Array(); //チェックの有無を格納する配列
+  // クリックするたびに非表示判定
+  // --------------------
+  function Climit() {
+    var v = 0; //チェックの合計
+    var Myname = document.getElementsByName("job_category[]"); // 指定したnameの要素をすべて取得
+    for (i = 0; i < Myname.length; i++) {
+      Flag[i] = i; // 配列　Flagを初期化
+      if (Myname[i].checked) {
+        Flag[i] = "chk"; // チェックが入っていれば文字列 "chk" を代入
+        v++;
+      } //チェックの合計数を 1 増やします
+    }
+
+    if (v >= limit) { //チェックの合計数が制限数になれば
+      for (i = 0; i < Myname.length; i++) {
+        if (Flag[i] == "chk") {
+          Myname[i].disabled = false;
+        } else {
+          Myname[i].disabled = true;
+        }
+      }
+    } else {
+      for (i = 0; i < Myname.length; i++)
+        Myname[i].disabled = false;
+    }
+  }
+</script>
+
+
 
 </html>

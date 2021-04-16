@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-// include('functions.php');
+include('functions.php');
 
 
 // var_dump($_POST);
@@ -42,7 +42,7 @@ $remote_availability = $_POST['remote_availability'];
 // exit;
 
 
-include('functions.php');
+// include('functions.php');
 $pdo = connect_to_db();
 
 
@@ -62,7 +62,7 @@ if ($status == false) {
     echo json_encode(["error_msg" => "{$error[2]}"]);
     exit();
 } else {
-    header("Location:../hanasi.php");
+    header("Location:../thanks.php");
     exit();
 }
 

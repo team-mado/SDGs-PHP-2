@@ -79,14 +79,14 @@ if ($status == false) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="twitter:card" content="summary_large_image" >
-    <meta name="twitter:site" content="https://royal-goto-8707.lolipop.io/ogp-syosai.php?<? echo($id) ?>">
+    <meta name="twitter:site" content="https://lively-miyakonojo-7603.lolipop.io/ogp-syosai.php?<? echo($id) ?>">
     <meta name="twitter:image" content="<? echo($img)?>" >
     <meta name="twitter:title" content="<? echo($project_overview)?>" >
     <meta name="twitter:description" content="<? echo($project_detail) ?>" >
   <title>DESIGN UP! SDGs</title>
 
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="css/ress.min.css" />
 
   <!-- Googleフォント -->
 
@@ -235,19 +235,18 @@ if ($status == false) {
 
     <div class="form-box">
       <form action="php_act/syosai_recruiting_act.php" method="post" class="row">
-        <label for="GET-name">お名前</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
+        <label for="GET-designer_name">お名前</label><br>
+        <input class="form-style" id="GET-designer_name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
 
-        <label for="GET-name">E-mail</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
+        <label for="GET-designer_email">E-mail</label><br>
+        <input class="form-style" id="GET-designer_email" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
 
-        <label for="GET-name">作品URL</label><br>
-        <input class="form-style" id="GET-name" type="text" name="portfolio" value="作品URL" />
+        <label for="GET-portfolio">作品URL</label><br>
+        <input class="form-style" id="GET-portfolio" type="text" name="portfolio" value="作品URL" />
 
-        <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
-
+        <label for="GET-remote_availability">
+          <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
+          <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
         <br>
 
         <div class="center">

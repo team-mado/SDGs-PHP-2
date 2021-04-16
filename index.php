@@ -56,7 +56,7 @@ if (!empty($_POST)) {
   <link rel="stylesheet" type="text/css" href="css/index.css" />
   <link rel="stylesheet" href="css/component.css" />
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="css/ress.min.css" />
   <!-- モーダル用CSS -->
   <!-- <link rel="stylesheet" href="css/modal.css" /> -->
   <!-- Googleフォント -->
@@ -92,10 +92,10 @@ if (!empty($_POST)) {
               <h1>LOGIN</h1><br>
               <div class="form-box">
                 <form action="" method="post" class="row">
-                  <label for="GET-name">E-MAIL</label><br>
-                  <input class="form-style" id="GET-name" type="text" name="email" required/>
-                  <label for="GET-name">PASSWORD</label><br>
-                  <input class="form-style" id="GET-name" type="password" name="password" required/>
+                  <label for="GET-email">E-MAIL</label><br>
+                  <input class="form-style" id="GET-email" type="text" name="email" value="test@gmail.com" required/>
+                  <label for="GET-password">PASSWORD</label><br>
+                  <input class="form-style" id="GET-password" type="password" name="password" value="test" required/>
                   <br><br>
                   <div class="center">
                     <button class="simple_square_btn1">送信する</button></div><br />
@@ -127,5 +127,7 @@ if (!empty($_POST)) {
   <!-- 自作js -->
   <script type="text/javascript" src="js/pop-up.js"></script>
 </body>
+
+
 
 </html>
