@@ -235,19 +235,18 @@ if ($status == false) {
 
     <div class="form-box">
       <form action="php_act/syosai_recruiting_act.php" method="post" class="row">
-        <label for="GET-name">お名前</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
+        <label for="GET-designer_name">お名前</label><br>
+        <input class="form-style" id="GET-designer_name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
 
-        <label for="GET-name">E-mail</label><br>
-        <input class="form-style" id="GET-name" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
+        <label for="GET-designer_email">E-mail</label><br>
+        <input class="form-style" id="GET-designer_email" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
 
-        <label for="GET-name">作品URL</label><br>
-        <input class="form-style" id="GET-name" type="text" name="portfolio" value="作品URL" />
+        <label for="GET-portfolio">作品URL</label><br>
+        <input class="form-style" id="GET-portfolio" type="text" name="portfolio" value="作品URL" />
 
-        <label for="GET-name">
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
-          <input class="form" id="GET-name" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
-
+        <label for="GET-remote_availability">
+          <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
+          <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
         <br>
 
         <div class="center">
