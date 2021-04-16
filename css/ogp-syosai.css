@@ -48,6 +48,15 @@
 
 .ogp-box div {
   width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ogp-box div p {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .ogp-box div .project-text1 {
