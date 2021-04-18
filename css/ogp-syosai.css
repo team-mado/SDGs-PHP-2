@@ -10,10 +10,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
 }
 
 .ogp-box img {
-  width: 385px;
+  width: 100%;
 }
 
 .ogp-box .remote-box {
@@ -47,7 +48,7 @@
 }
 
 .ogp-box div {
-  width: 370px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,7 +92,7 @@ h1 {
 }
 
 .sdgs17-box {
-  width: 370px;
+  width: 330px;
   padding: 20px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;

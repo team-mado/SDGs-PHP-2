@@ -1,9 +1,20 @@
-.ogp-img {
-  width: 100%;
+figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure .ogp-img {
+  width: 600px;
 }
 
 .all-text-wrapper {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,11 +40,23 @@
   line-height: 22px;
 }
 
+.all-text-wrapper .sdgs-text {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.all-text-wrapper .send-text {
+  text-align: center;
+}
+
 .all-text-wrapper .bt-tweet {
   width: 200px;
 }
 
-.all-text-wrapper .bt {
+.all-text-wrapper .bt-mini {
   width: 130px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=ogp-send.css.map */

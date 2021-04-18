@@ -111,102 +111,102 @@ if(isset($_GET["id"])){
     <!-- Fon Awesome読込み -->
     <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- オリジナルcomponent.CSS -->
     <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/ogp-send.css" />
      <link rel="stylesheet" href="css/ogp-syosai.css" />
-    <link rel="stylesheet" href="css/ogp-send.css" />
+
 
   </head>
 
 
   <body>
-    <header>
-      <div class="header">
-        <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt="" /></a></div>
-      </div>
-    </header>
-
-        <main>
+        
+            <div class="header">
+              <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt=""></a></div>
+              <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
+            </div> 
+        
+    <main>
           
+
+
+
           <br>
-<div class="all-text-wrapper">
-            <div class="ogp-box">
-             <img class="ogp-img" src="<?= $img ?>" alt="">
-            </div>
-            <br>
+                 <figure>      
+                  <img class="ogp-img" src="<?= $img ?>" alt="">
+                 </figure>
+          <br>
                     <!-- <hr color="#C4C4C4" width="100%" size="1"> -->
-             <br>
+          <br>
 
                 <!-- ここからmaruweb2のhtml詳細ページの記述 -->
 
              <div class="remote-box">
-
-              <div class="tab">
-              <p>リモート可</p>
+                  <div class="tab">
+                  <p>リモート可</p>
+                  </div>
+                  <p>　 | 　</p><p>期限：5月末を予定</p>
+  
+              </div> 
+    <div class="all-text-wrapper">
+                           
+                <p class="project-text1">海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！</p>
+                <p class="project-text2">
+                  海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。</p><br>
+              <br>
+              <div class="sdgs17-box">
+                <p>このプロジェクトはSDGｓ17の目標の</p><br>
+                <div class="ul-box">
+                  <ul>
+                    <li><img src="img/1.png" alt="">
+                      <p> 貧困をなくそう</p>
+                    </li>
+                    <li><img src="img/1.png" alt="">
+                      <p> 貧困をなくそう</p>
+                    </li>
+                    <li><img src="img/1.png" alt="">
+                      <p> 貧困をなくそう</p>
+                    </li>
+                  </ul>
+                </div><br>
+                <p class="sdgs-text">に該当します。</p>
               </div>
-              <p>　 | 　</p><p>期限：5月末を予定</p>
+              <br>
 
-            </div>
-      
-        <p class="project-text1">海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！</p>
-        <p class="project-text2">
-          海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。</p><br>
-        <br>
-        <div class="sdgs17-box">
-          <p>このプロジェクトはSDGｓ17の目標の</p><br>
-          <div class="ul-box">
-            <ul>
-              <li><img src="img/1.png" alt="">
-                <p> 貧困をなくそう</p>
-              </li>
-              <li><img src="img/1.png" alt="">
-                <p> 貧困をなくそう</p>
-              </li>
-              <li><img src="img/1.png" alt="">
-                <p> 貧困をなくそう</p>
-              </li>
-            </ul>
-          </div><br>
-          <p class="sdgs-text">に該当します。</p>
-        </div>
-        <br>
-
-      </div>
-      <div>
-
-      </div>
-    </div>
-
-    <br>
-
-    <!-- ここまでmaruweb2詳細ページの記述 -->
-
-
-
-
-
-<p>プロジェクトを作成しました！<br>
-  作ったプロジェクトはtwitterで広めましょう！</p>
-  <br>
+        
     
-//<div>
-//<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
 
-<div class="button-box">
-<a href="ogp-update.php?id=<? echo($id) ?>"><img src="img/bt-hensyu.png" alt=""></a>
-<a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io/ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+            <br>
 
-<br>
-</div>
-          <div class="center">
-<a href="ogp-update.php?id=<? echo($id) ?>"><img class="bt" src="img/bt-hensyu.png" alt=""></a>
-      </div>
-      <br>
-<br>
-      </input>
-        </form>
+          <!-- ここまでmaruweb2詳細ページの記述 -->
+
+
+
+
+
+              <p class="send-text">プロジェクトを作成しました！<br>
+                作ったプロジェクトはtwitterで広めましょう！</p>
+                <br>
+                  
+              <div>
+               <a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+
+                  <div class="button-box">
+                  <a href="ogp-ichiran.php"><img class="bt-mini" src="img/bt-ichiran.png" alt=""></a>
+                  <a href="ogp-update.php?id=<? echo($id) ?>"><img class="bt-mini" src="img/bt-hensyu.png" alt=""></a>
+                  <br>
+                  </div>
+
+                  <br>
+                  <br>
+                    </input>
+                      </form>
+              </div>  
+      </div>      
     </main>
+
+
   </body>
 </html>

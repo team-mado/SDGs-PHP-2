@@ -1,11 +1,21 @@
-.ogp-img {
-  width: 100%;
+figure {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  // 天地中央揃え
+  .ogp-img {
+    width: 600px;
+  }
 }
 
 .all-text-wrapper {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+
   p {
     text-align: left;
     font-size: 15px;
@@ -25,11 +35,23 @@
     line-height: 22px;
   }
 
+  .sdgs-text {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  .send-text {
+    text-align: center;
+  }
+
   .bt-tweet {
     width: 200px;
   }
 
-  .bt {
+  .bt-mini {
     width: 130px;
+    padding-top: 10px;
   }
 }
