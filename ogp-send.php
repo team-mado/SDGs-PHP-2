@@ -101,6 +101,7 @@ if(isset($_GET["id"])){
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DESIGN UP! SDGs</title>
 
     <!-- リセットCSS -->
@@ -122,7 +123,9 @@ if(isset($_GET["id"])){
 
 
   <body>
-        
+
+ <div class="all-wrapper">
+
             <div class="header">
               <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt=""></a></div>
               <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
@@ -131,15 +134,11 @@ if(isset($_GET["id"])){
     <main>
           
 
-
-
           <br>
                  <figure>      
                   <img class="ogp-img" src="<?= $img ?>" alt="">
                  </figure>
-          <br>
                     <!-- <hr color="#C4C4C4" width="100%" size="1"> -->
-          <br>
 
                 <!-- ここからmaruweb2のhtml詳細ページの記述 -->
 
@@ -154,8 +153,8 @@ if(isset($_GET["id"])){
                            
                 <p class="project-text1">海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！</p>
                 <p class="project-text2">
-                  海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。</p><br>
-              <br>
+                  海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。</p>
+                  <br>
               <div class="sdgs17-box">
                 <p>このプロジェクトはSDGｓ17の目標の</p><br>
                 <div class="ul-box">
@@ -173,7 +172,6 @@ if(isset($_GET["id"])){
                 </div><br>
                 <p class="sdgs-text">に該当します。</p>
               </div>
-              <br>
 
         
     
@@ -192,7 +190,7 @@ if(isset($_GET["id"])){
                   
               <div>
                <a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
-
+</div> 
                   <div class="button-box">
                   <a href="ogp-ichiran.php"><img class="bt-mini" src="img/bt-ichiran.png" alt=""></a>
                   <a href="ogp-update.php?id=<? echo($id) ?>"><img class="bt-mini" src="img/bt-hensyu.png" alt=""></a>
@@ -203,10 +201,10 @@ if(isset($_GET["id"])){
                   <br>
                     </input>
                       </form>
-              </div>  
+               
       </div>      
     </main>
 
-
+</div>
   </body>
 </html>

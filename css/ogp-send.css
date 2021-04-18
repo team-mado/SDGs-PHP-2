@@ -1,3 +1,9 @@
+.all-wrapper {
+  margin: 0px auto;
+  text-align: left;
+  overflow: hidden;
+}
+
 figure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,7 +16,38 @@ figure {
 }
 
 figure .ogp-img {
-  width: 600px;
+  max-width: 100%;
+}
+
+.remote-box {
+  margin-top: 15px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remote-box .tab {
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.remote-box .tab p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .all-text-wrapper {
@@ -51,12 +88,17 @@ figure .ogp-img {
   text-align: center;
 }
 
-.all-text-wrapper .bt-tweet {
-  width: 200px;
+.all-text-wrapper div {
+  text-align: center;
+}
+
+.all-text-wrapper div .bt-tweet {
+  width: 180px;
 }
 
 .all-text-wrapper .bt-mini {
   width: 130px;
   padding-top: 10px;
+  padding: 5px;
 }
 /*# sourceMappingURL=ogp-send.css.map */

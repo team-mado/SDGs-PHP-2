@@ -1,3 +1,9 @@
+.all-wrapper {
+  margin: 0px auto;
+  text-align: left;
+  overflow: hidden;
+}
+
 figure {
   display: flex;
   justify-content: space-around;
@@ -7,7 +13,29 @@ figure {
 
   // 天地中央揃え
   .ogp-img {
-    width: 600px;
+    max-width: 100%;
+  }
+}
+
+.remote-box {
+  margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  .tab {
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    font-size: 12px;
+    width: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -46,12 +74,16 @@ figure {
     text-align: center;
   }
 
-  .bt-tweet {
-    width: 200px;
+  div {
+    text-align: center;
+    .bt-tweet {
+      width: 180px;
+    }
   }
 
   .bt-mini {
     width: 130px;
     padding-top: 10px;
+    padding: 5px;
   }
 }
