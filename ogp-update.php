@@ -107,7 +107,7 @@ if (isset($_GET["id"])) {
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>DESIGN UP! SDGs</title>
 
   <!-- リセットCSS -->
@@ -131,10 +131,12 @@ if (isset($_GET["id"])) {
     </div>
   </header>
   <main>
-    <div class="gray-box">
-      <div class="ogp-box">
-        <img class="ogp-img" src="<? echo($img) ?>" alt="">
-      </div>
+    <!-- <div class="gray-box">
+      <div class="ogp-box"> -->
+        <figure>
+          <img class="ogp-img" src="<? echo($img) ?>" alt="">
+        </figure>
+      <!-- </div> -->
       <!-- <p>
         下記のフォームを全て入力いただくと<br />
         こちらの枠内に自動でバナーが生成されます
@@ -348,12 +350,9 @@ if (isset($_GET["id"])) {
       <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" checked /> 不可</label><br>
       <? endif;?>
       <br>
-      <div class="center">
-        <button><img class="button-up" src="img/bt-hensyu.png" alt=""></button>
-        <!-- <a href="php_act/ogp_update_act.php?id=<?= $id ?>"></a> -->
-        <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
-        <!-- <a href="ogp_check2.php" class="simple_square_btn1"> -->
-        <!-- </a> -->
+      <div class="update-bt-box">
+          <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
+          <a href="ogp-ichiran.php"><img class="button-up" src="img/bt-save.png" alt=""></a>
       </div>
       <br>
       <br>
