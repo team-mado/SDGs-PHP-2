@@ -12,7 +12,7 @@ $clients_id = $_SESSION["id"];
 // 初期画面
 if (!isset($_GET["id"])) {
   // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_25_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
-  $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_35_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png";
+  // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_35_bold:下記のフォームを全て入力いただくと%0Aこちらの枠内にバナーが生成されます,co_rgb:fff,w_750,c_fit/v1617152888/banar1_zf56ul.png";
 }
 
 
@@ -222,10 +222,8 @@ $(function() {
         }
       });
     });
-
-
   </script>
-
+<!-- 
 <script>
     $(function() {
       $("#form").on('submit', function(e) {
@@ -236,7 +234,7 @@ $(function() {
         }
       });
     });
-    </script>
+    </script> -->
 
 <script>
   var limit = 3; //チェックできる数

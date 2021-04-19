@@ -45,14 +45,11 @@ if ($status == false) {
   $color_check = $post["color_check"];
   $colors = explode(" ", $color_check);
   $colors = array_filter($colors, 'strlen');
-// var_dump($colors);
-// exit;
 
-  // foreach($colors as $value){
-  //   if($value == 1){
 
-  //   }
-  // }
+
+
+  
 
   $project_title = $post["project_title"];
   $job_category = $post["job_category"];

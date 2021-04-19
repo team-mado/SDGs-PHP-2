@@ -371,7 +371,9 @@ $(function() {
         }
       });
     });
+</script>
 
+<!-- <script>
     $(function() {
       $("#form").on('submit', function(e) {
         var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
@@ -381,7 +383,7 @@ $(function() {
         }
       });
     });
-  </script>
+  </script> -->
 
 
 
