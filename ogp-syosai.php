@@ -98,11 +98,11 @@ if ($status == false) {
 </head>
 
 <body>
-  <header>
+
     <div class="header">
       <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt=""></a></div>
     </div>
-  </header>
+ 
 
   <main>
     <div class="ogp-box">
@@ -229,7 +229,7 @@ if ($status == false) {
 
     <br>
    
-    <p class="mini-text">ご興味がある方は、こちらからご応募ください</p><br>
+    <p class="mini-text">ご興味がある方はこちらからご応募ください</p><br>
     <br>
     <h1>デザイナー応募フォーム</h1>
 

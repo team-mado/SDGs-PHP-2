@@ -74,10 +74,12 @@ if (!empty($_POST)) {
           <br>
           <h2>
             SDGｓのプロジェクトを一気に告知！<br>
-            担当デザイナーをツイッターから大募集！
+            担当デザイナーを<br>
+            ツイッターから大募集！
           </h2><br>
           <br />
-        <h1>SDGｓ×デザインのマッチングサービス</h1>
+        <h1>SDGｓ×デザインの<br>
+          マッチングサービス</h1>
           <img class="top-logo" src="img/home-logo.png" alt="">
           <br>
 
@@ -98,7 +100,7 @@ if (!empty($_POST)) {
                   <input class="form-style" id="GET-password" type="password" name="password" value="test" required/>
                   <br><br>
                   <div class="center">
-                    <button class="simple_square_btn1">送信する</button></div><br />
+                    <button class="simple_square_btn2">送信する</button></div><br />
                 </form><br>
 
               </div>

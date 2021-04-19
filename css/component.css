@@ -1,36 +1,38 @@
 @charset "UTF-8";
-/* キャッチが横から登場 */
-.Headline {
-  -webkit-animation: SlideIn 1.6s infinite;
-          animation: SlideIn 1.6s infinite;
+main {
+  margin: 0 auto;
+  width: 100%;
 }
 
-@-webkit-keyframes SlideIn {
-  0% {
-    opacity: 0;
-    /*初期状態では透明に*/
-    -webkit-transform: translateX(64px);
-            transform: translateX(64px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.button-box {
+  width: 100%;
+  text-align: center;
 }
 
-@keyframes SlideIn {
-  0% {
-    opacity: 0;
-    /*初期状態では透明に*/
-    -webkit-transform: translateX(64px);
-            transform: translateX(64px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.button-box .bt-new {
+  height: 44px;
+}
+
+bottom {
+  margin: 0 auto;
+}
+
+.top-logo {
+  margin-top: 8px;
+  width: 90%;
+}
+
+.top-img {
+  width: 90%;
+}
+
+.pw-text {
+  margin-top: -10px;
+}
+
+.thanks-img {
+  width: 200px;
+  height: 300px;
 }
 
 .simple_square_btn1 {
@@ -53,49 +55,24 @@
   border-radius: 30px;
 }
 
-body {
-  width: 100%;
-  text-align: center;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.button-box {
-  width: 100%;
-  text-align: center;
-}
-
-.button-box .bt-new {
+.simple_square_btn2 {
+  width: 80%;
   height: 44px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #31b2d5;
+  border-radius: 30px;
 }
 
-.button-box bottom {
-  margin: 0 auto;
-}
-
-.button-box .top-logo {
-  margin-top: 8px;
-  width: 300px;
-}
-
-.button-box .top-img {
-  width: 90%;
-}
-
-.pw-text {
-  margin-top: -10px;
-}
-
-.thanks-img {
-  width: 200px;
-  height: 300px;
-}
-
-@media screen and (min-width: 767px) {
-  /*ウィンドウ幅が767px以上の場合に適用*/
+.simple_square_btn2:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 30px;
 }
 
 body {
@@ -104,11 +81,13 @@ body {
   padding-right: 20px;
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
   font-weight: bold;
   letter-spacing: 0.01em;
 }
@@ -116,6 +95,7 @@ h2 {
 h1 {
   font-size: 19px;
   font-weight: bold;
+  line-height: 28px;
   letter-spacing: 0.02em;
 }
 
@@ -158,11 +138,11 @@ a {
 }
 
 .form-box {
-  max-width: 600px;
+  max-width: 100%;
   /* なぜか横幅と下2行を入れないとならず */
   margin: 0 auto;
   text-align: left;
-  width: 80%;
+  width: 90%;
   font-size: 12px;
   font-weight: bold;
 }
@@ -187,7 +167,7 @@ a {
 
 .form-box .form-style-textbox230 {
   width: 100%;
-  height: 100px;
+  height: 220px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #6e6e6e;
@@ -233,7 +213,7 @@ a {
           transform: translate(-50%, -50%);
   width: 70%;
   max-width: 500px;
-  padding: 10px 30px;
+  padding: 10px 25px;
   background-color: #fff;
 }
 

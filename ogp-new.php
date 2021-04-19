@@ -85,14 +85,15 @@ if (isset($_GET["id"])) {
     </div>
   </header>
   <main>
-    <div class="gray-box">
-      <img class="ogp-img" src="<? echo($img) ?>" alt="">
+    <figure>
+      <img class="ogp-img" src="img/banar-ogp-new.png" alt="">
+      </figure>
       <!-- <p>
         下記のフォームを全て入力いただくと<br />
         こちらの枠内に自動でバナーが生成されます
       </p> -->
     </div>
-    <p>SDGｓ17の目標の中から、該当する項目を選んでください ※複数選択可</p>
+    <p class="sdgs-text">SDGｓ17の目標の中から、該当する項目を選んでください ※複数選択可</p>
     <br>
     <div class="checkbox-center">
       <div>
@@ -117,13 +118,15 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="6"> 安全な水とトイレを世界中に</div>
             </li>
             <li><img src="img/7.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなにそしてクリーンに</div>
+              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなに<br>
+              そしてクリーンに</div>
             </li>
             <li><img src="img/8.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="8"> 働きがいも経済成長も</div>
             </li>
             <li><img src="img/9.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の<br>
+              基盤をつくろう</div>
             </li>
 
             <li><img src="img/10.png" alt="">
@@ -148,7 +151,8 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="16"> 平和と公正を全ての人に</div>
             </li>
             <li><img src="img/17.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで<br>
+              目標を達成しよう</div>
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
@@ -159,7 +163,7 @@ if (isset($_GET["id"])) {
     <div class="form-box">
       <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
       <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
-      <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" required>
+      <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
 
       <label for="">職種（最大3つ）</label><br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
@@ -176,7 +180,7 @@ if (isset($_GET["id"])) {
 
 
       <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required></textarea>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り洋服へ。魔法のようなプロジェクトを創り出すデザイン集団求ム！" required></textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>

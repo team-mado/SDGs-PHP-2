@@ -1,11 +1,49 @@
-.ogp-img {
-  width: 100%;
+.all-wrapper {
+  margin: 0px auto;
+  text-align: left;
+  overflow: hidden;
+}
+
+figure {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  // 天地中央揃え
+  .ogp-img {
+    max-width: 100%;
+  }
+}
+
+.remote-box {
+  margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  .tab {
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    font-size: 12px;
+    width: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
 }
 
 .all-text-wrapper {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+
   p {
     text-align: left;
     font-size: 15px;
@@ -25,11 +63,27 @@
     line-height: 22px;
   }
 
-  .bt-tweet {
-    width: 200px;
+  .sdgs-text {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
   }
 
-  .bt {
+  .send-text {
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+    .bt-tweet {
+      width: 180px;
+    }
+  }
+
+  .bt-mini {
     width: 130px;
+    padding-top: 10px;
+    padding: 5px;
   }
 }

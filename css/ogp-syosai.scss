@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
   img {
-    width: 385px;
+    width: 100%;
   }
   .remote-box {
     font-size: 12px;
@@ -28,9 +29,10 @@
   }
 
   div {
-    width: 370px;
-      margin-left: auto;
-  margin-right: auto;
+    max-width: 100%;
+    // width: 370px;
+    margin-left: auto;
+    margin-right: auto;
     p {
       text-align: left;
       font-size: 15px;
@@ -70,9 +72,10 @@ h1 {
 }
 
 .sdgs17-box {
-  width: 370px;
+  width: 80%;
+  // width: 370px;
   padding: 20px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid hsl(0, 0%, 77%);
   border-radius: 10px;
   margin: auto;
 
