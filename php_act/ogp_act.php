@@ -17,7 +17,7 @@ $color_check = implode('  ',$_POST["color_check"]);
 // exit;
 $project_title = $_POST["project_title"];
 // $job_category = $_POST["job_category"];
-$job_category = implode(' || ',$_POST["job_category"]);
+$job_category = implode(' | ',$_POST["job_category"]);
 $project_overview = $_POST["project_overview"];
 $project_detail = $_POST["project_detail"];
 $production_period = $_POST["production_period"];

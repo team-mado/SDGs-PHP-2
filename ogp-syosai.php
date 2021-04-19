@@ -49,7 +49,7 @@ if ($status == false) {
 
 
 
-  
+
 
   $project_title = $post["project_title"];
   $job_category = $post["job_category"];
@@ -236,10 +236,10 @@ if ($status == false) {
         <input class="form-style" id="GET-designer_name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ"/>
 
         <label for="GET-designer_email">E-mail</label><br>
-        <input class="form-style" id="GET-designer_email" type="text" name="designer_email" placeholder="例）sample@example.com" value="E-mail"/>
+        <input class="form-style" id="GET-designer_email" type="text" name="designer_email" placeholder="例）sample@example.com" value="sample@example.com"/>
 
         <label for="GET-portfolio">作品URL</label><br>
-        <input class="form-style" id="GET-portfolio" type="text" name="portfolio" value="作品URL" />
+        <input class="form-style" id="GET-portfolio" type="text" name="portfolio" placeholder="例）https://lively-miyakonojo-7603.lolipop.io/ogp-send.php" value="作品URL" />
 
         <label for="GET-remote_availability">
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked/>リモート可　
