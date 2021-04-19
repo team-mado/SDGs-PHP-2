@@ -11,6 +11,9 @@ figure {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -85,7 +88,10 @@ figure .ogp-img {
 }
 
 .all-text-wrapper .send-text {
+  font-size: 14px;
+  font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .all-text-wrapper div {

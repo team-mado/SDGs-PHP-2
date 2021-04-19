@@ -5,6 +5,9 @@ figure {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -77,5 +80,13 @@ button {
 
 .sdgs-text {
   text-align: left;
+}
+
+.update-bt-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 5px;
 }
 /*# sourceMappingURL=ogp-new.css.map */
