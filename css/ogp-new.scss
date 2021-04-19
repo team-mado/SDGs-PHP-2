@@ -11,9 +11,13 @@ figure {
   margin: 0;
 
   // 天地中央揃え
+  .ogp-box {
+    width:100%;
+    height:100px
+  }
+
   .ogp-img {
     width: 100%;
-    // height: 315px;
   }
   .sdgs-text {
     margin-top: 6px;

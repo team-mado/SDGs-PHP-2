@@ -132,7 +132,9 @@ if (isset($_GET["id"])) {
   </header>
   <main>
     <div class="gray-box">
-      <img class="ogp-img" src="<? echo($img) ?>" alt="">
+      <div class="ogp-box">
+        <img class="ogp-img" src="<? echo($img) ?>" alt="">
+      </div>
       <!-- <p>
         下記のフォームを全て入力いただくと<br />
         こちらの枠内に自動でバナーが生成されます
