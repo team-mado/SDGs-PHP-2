@@ -81,7 +81,6 @@ if (isset($_GET["id"])) {
 }
 
 
-
 ?>
 
 
@@ -263,7 +262,7 @@ if (isset($_GET["id"])) {
         <br>
 
         <div>
-          <a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
+          <a href="https://twitter.com/share?url=https://lively-miyakonojo-7603.lolipop.io//ogp-syosai.php?id=<? echo($id) ?>?=<? echo(mt_rand(1,99999)) ?>&text=デザイナー募集中"><img class="bt-tweet" src="img/bt-tweet.png" alt=""></a><input type="submit" value="" /></input>
         <br></div>
         <div class="button-box">
           <a href="ogp-ichiran.php"><img class="bt-mini" src="img/bt-ichiran.png" alt=""></a>

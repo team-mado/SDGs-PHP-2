@@ -204,19 +204,14 @@ if ($status == false) {
           <p class="sdgs-text">に該当します。</p>
         </div>
         <br>
-
       </div>
       <div>
-
       </div>
     </div>
-
     <br>
-
     <p class="mini-text">ご興味がある方はこちらからご応募ください</p><br>
     <br>
     <h1>デザイナー応募フォーム</h1>
-
     <div class="form-box">
       <form action="php_act/syosai_recruiting_act.php" method="post" class="row">
         <label for="GET-designer_name">お名前</label><br>
@@ -232,7 +227,6 @@ if ($status == false) {
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked />リモート可　
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
         <br>
-
         <div class="center">
           <button>
             <!-- <a href="hanasi.php"> -->
@@ -245,7 +239,6 @@ if ($status == false) {
         </input>
       </form>
     </div>
-
   </main>
 </body>
 
