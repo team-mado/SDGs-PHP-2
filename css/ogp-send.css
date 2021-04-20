@@ -61,9 +61,8 @@ figure .ogp-img {
 
 .all-text-wrapper p {
   text-align: left;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
-  line-height: 25px;
 }
 
 .all-text-wrapper .project-text1 {
@@ -91,7 +90,7 @@ figure .ogp-img {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 1px;
+  line-height: 20px;
 }
 
 .all-text-wrapper div {
@@ -99,12 +98,13 @@ figure .ogp-img {
 }
 
 .all-text-wrapper div .bt-tweet {
-  width: 180px;
+  padding-bottom: 5px;
+  height: 53px;
 }
 
 .all-text-wrapper .bt-mini {
   width: 130px;
   padding-top: 10px;
-  padding: 5px;
+  padding: 8px;
 }
 /*# sourceMappingURL=ogp-send.css.map */

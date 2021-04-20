@@ -133,12 +133,12 @@
         <label for="GET-capital">資本金</label><span class="hissu"> *</span><br>
         <select class="form-style" id="GET-capital" type="text" name="capital" value="" required>
         <option value=""> 選択してください </option>
-        <option value="~100万円" selected>~100万円</option>
-        <option value="~500万円">~500万円</option>
-        <option value="～1000万円">~1000万円</option>
-        <option value="～5000万円">~5000万円</option>
-        <option value="～1億円">~1億円</option>
-        <option value="～3億円">~3億円</option>
+        <option value="~100万円" selected>～100万円</option>
+        <option value="~500万円">～500万円</option>
+        <option value="～1000万円">～1000万円</option>
+        <option value="～5000万円">～5000万円</option>
+        <option value="～1億円">～1億円</option>
+        <option value="～3億円">～3億円</option>
         <option value="それ以上">それ以上</option>
         </select>
         </label>

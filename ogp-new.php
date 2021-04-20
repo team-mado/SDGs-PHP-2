@@ -100,59 +100,58 @@ if (isset($_GET["id"])) {
         <form action="php_act/ogp_act.php" method="post" id="form">
           <ul>
             <li><img src="img/1.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="1"> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="1"> <span>貧困をなくそう</span></div>
             </li>
             <li><img src="img/2.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="2"> 飢餓をゼロに</div>
+              <div><input type="checkbox" name="color_check[]" value="2"> <span>飢餓をゼロに</span></div>
             </li>
             <li><img src="img/3.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="3"> 全ての人に健康と福祉を</div>
+              <div><input type="checkbox" name="color_check[]" value="3"> <span>全ての人に健康と福祉を</span></div>
             </li>
             <li><img src="img/4.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="4"> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check[]" value="4"> <span>質の高い教育をみんなに</span></div>
             </li>
             <li><img src="img/5.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="5"> ジェンダー平等を実現しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="5"> <span>ジェンダー平等を実現しよう</span></div>
             </li>
             <li><img src="img/6.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="6"> 安全な水とトイレを世界中に</div>
+              <div><input type="checkbox" name="color_check[]" value="6"> <span>安全な水とトイレを世界中に</span></div>
             </li>
             <li><img src="img/7.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなに<br>
-              そしてクリーンに</div>
+              <div><input type="checkbox" name="color_check[]" value="7"> <span>エネルギーをみんなにそしてクリーンに</span><br>
+              </div>
             </li>
             <li><img src="img/8.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="8"> 働きがいも経済成長も</div>
+              <div><input type="checkbox" name="color_check[]" value="8"> <span>働きがいも経済成長も</span></div>
             </li>
             <li><img src="img/9.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の<br>
-              基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check[]" value="9"> <span>産業と技術革新の基盤をつくろう</span><br>
+              </div>
             </li>
 
             <li><img src="img/10.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="10"> 人や国の不平等をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="10"> <span>人や国の不平等をなくそう</span></div>
             </li>
             <li><img src="img/11.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="11"> 住み続けられる街づくりを</div>
+              <div><input type="checkbox" name="color_check[]" value="11"> <span>住み続けられる街づくりを</span></div>
             </li>
             <li><img src="img/12.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="12"> つくる責任つかう責任</div>
+              <div><input type="checkbox" name="color_check[]" value="12"> <span>つくる責任つかう責任</span></div>
             </li>
             <li><img src="img/13.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="13"> 気候変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check[]" value="13"> <span>気候変動に具体的な対策を</span></div>
             </li>
             <li><img src="img/14.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="14"> 海の豊かさを守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="14"> <span>海の豊かさを守ろう</span></div>
             </li>
             <li><img src="img/15.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="15"> 陸の豊かさも守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="15"> <span>陸の豊かさも守ろう</span></div>
             </li>
             <li><img src="img/16.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="16"> 平和と公正を全ての人に</div>
+              <div><input type="checkbox" name="color_check[]" value="16"> <span>平和と公正を全ての人に</span></div>
             </li>
             <li><img src="img/17.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで<br>
-              目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="17"> <span>パートナーシップで目標を達成しよう</span></div>
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
@@ -168,12 +167,12 @@ if (isset($_GET["id"])) {
       <label for="">職種（最大3つ）</label><br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX 　
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　<br>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　<br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション"> ファッション 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="映像"> 映像 　<br>
       <br>

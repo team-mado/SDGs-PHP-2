@@ -14,7 +14,7 @@
       border: 1px solid #c4c4c4;
       border-radius: 2px;
       font-size: 12px;
-      width: 70px;
+      width: 100px;
 
       display: flex;
       flex-direction: column;
@@ -35,9 +35,9 @@
     margin-right: auto;
     p {
       text-align: left;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: bold;
-      line-height: 25px;
+      line-height: 16px;
     }
     .project-text1 {
       margin-top: 12px;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .sdgs17-box {
-  width: 80%;
+  width: 90%;
   // width: 370px;
   padding: 15px;
   border: 1px solid hsl(0, 0%, 77%);
@@ -80,12 +80,12 @@ h1 {
   margin: auto;
 
   p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: left;
   }
   .sdgs-text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: right;
   }
@@ -93,9 +93,9 @@ h1 {
     ul {
       list-style-type: none;
       margin: auto;
-      width: 60%;
+      width: 70%;
       li {
-        width: 330px;
+        width: 100%;
         display: flex;
         align-items: center;
         line-height: 30px;

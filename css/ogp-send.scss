@@ -48,9 +48,8 @@ figure {
 
   p {
     text-align: left;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
-    line-height: 25px;
   }
   .project-text1 {
     margin-top: 12px;
@@ -76,19 +75,20 @@ figure {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 1px;
+    line-height: 20px;
   }
 
   div {
     text-align: center;
     .bt-tweet {
-      width: 180px;
+      padding-bottom: 5px;
+      height: 53px;
     }
   }
 
   .bt-mini {
     width: 130px;
     padding-top: 10px;
-    padding: 5px;
+    padding: 8px;
   }
 }
