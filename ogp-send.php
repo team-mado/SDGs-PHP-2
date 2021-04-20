@@ -140,7 +140,7 @@ if (isset($_GET["id"])) {
           </p>
         </div>
         <p>　 | 　</p>
-        <p>
+        <p>制作期限：
           <? echo($production_period) ?>
         </p>
 
