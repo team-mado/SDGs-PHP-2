@@ -4,25 +4,17 @@ error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
 check_session_id();
 
-// var_dump($_POST);
-// exit;
-
 $clients_id = $_SESSION["id"];
 
-// var_dump($_GET);
-// exit;
+
 
 
 if (!isset($_GET["id"])) {
-  // var_dump("hoge");
-  // exit;
 
   // 入れたばかりのデータを持ってくる
   $pdo = connect_to_db();
-  // $sql = "SELECT * FROM ogp_table where id ";
   $sql = "SELECT * FROM ogp_table2 WHERE id = (SELECT MAX(id) FROM ogp_table2); ";
   $stmt = $pdo->prepare($sql);
-  // $stmt->bindValue(':id', $id, PDO::PARAM_INT);
   $status = $stmt->execute();
 
   if ($status == false) {
@@ -37,7 +29,6 @@ if (!isset($_GET["id"])) {
     $color_check = $posts["color_check"];
     $colors = explode(" ", $color_check);
     $colors = array_filter($colors, 'strlen');
-
 
     $project_title = $posts["project_title"];
     $job_category = $posts["job_category"];
@@ -55,14 +46,11 @@ if (!isset($_GET["id"])) {
 
 // すでにOGPを作成しているときはデータが入っている状態
 if (isset($_GET["id"])) {
-  // var_dump("test");
-  // exit;
+
   $id = $_GET["id"];
 
   $pdo = connect_to_db();
   $sql = "SELECT * FROM ogp_table2 where id = :id";
-  // var_dump($sql);
-  // exit;
   $stmt = $pdo->prepare($sql);
   $stmt->bindValue(':id', $id, PDO::PARAM_INT);
   $status = $stmt->execute();
@@ -89,8 +77,6 @@ if (isset($_GET["id"])) {
     $production_period = $post["production_period"];
     $remote_availability = $post["remote_availability"];
 
-    // var_dump($img);
-    // exit;
   }
 }
 
@@ -143,7 +129,6 @@ if (isset($_GET["id"])) {
       <figure>
         <img class="ogp-img" src="<?= $img ?>" alt="">
       </figure>
-      <!-- <hr color="#C4C4C4" width="100%" size="1"> -->
 
       <!-- ここからmaruweb2のhtml詳細ページの記述 -->
 
@@ -158,19 +143,18 @@ if (isset($_GET["id"])) {
         <p>
           <? echo($production_period) ?>
         </p>
-        <!-- <p>　 | 　</p><p>期限：5月末を予定</p> -->
+
 
       </div>
       <div class="all-text-wrapper">
 
-        <!-- <p class="project-text1">海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！</p> -->
         <p class="project-text1">
           <? echo($project_overview) ?>
         </p>
         <p class="project-text2">
           <? echo($project_detail) ?>
         </p>
-        <!-- 海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGsの取り組みを一緒に広げましょう。 -->
+
 
         <br>
         <div class="sdgs17-box">

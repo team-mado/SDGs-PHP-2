@@ -128,7 +128,6 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="9"> <span>産業と技術革新の基盤をつくろう</span><br>
               </div>
             </li>
-
             <li><img src="img/10.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="10"> <span>人や国の不平等をなくそう</span></div>
             </li>
@@ -210,6 +209,36 @@ if (isset($_GET["id"])) {
 </body>
 
   
+<script>
+$(function () {
+    $('#GET-project_overview')
+        // cancelEnterとついたクラスにkeydownイベントを付与
+        .on('keydown', function (e) {
+            // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+            if (e.key == 'Enter') {
+                // 何もせずに処理を終える
+                return false;
+            }
+        })
+});
+</script>
+
+
+<script>
+$(function () {
+    $('#GET-project_detail')
+        // cancelEnterとついたクラスにkeydownイベントを付与
+        .on('keydown', function (e) {
+            // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+            if (e.key == 'Enter') {
+                // 何もせずに処理を終える
+                return false;
+            }
+        })
+});
+</script>
+
+
 
 <script>
 $(function() {
@@ -234,6 +263,8 @@ $(function() {
       });
     });
     </script> -->
+
+
 
 <script>
   var limit = 3; //チェックできる数

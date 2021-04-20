@@ -4,17 +4,11 @@ error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
 check_session_id();
 
-// var_dump($_SESSION);
-// exit;
+
 
 $clients_id= $_SESSION["id"];
 $name = $_SESSION["staff"];
 
-// var_dump($clients_id);
-// var_dump($name);
-// exit;
-// echo (gettype($clients_id));
-// exit;
 
 // 全件データ表示
 // ---------
@@ -22,18 +16,11 @@ $pdo = connect_to_db();
 $sql = "SELECT * FROM ogp_table2 where clients_id =:clients_id";
 
 
-// var_dump($sql);
-// exit;
-
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':clients_id', $clients_id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
-// var_dump($sql1);
-// var_dump($status);
-// var_dump($status1);
-// exit;
 
 // データ登録処理後
 if ($status == false) {
@@ -42,7 +29,6 @@ if ($status == false) {
     echo json_encode(["error_msg" => "{$error[2]}"]);
 } else {
   $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);  
-  
 }
 
 
@@ -53,8 +39,6 @@ $stmt1 = $pdo1->prepare($sql1);
 $stmt1->bindValue(':clients_id',$clients_id, PDO::PARAM_INT);
 $status1 = $stmt1->execute();
 
-// var_dump($status1);
-// exit;
 
 if ($status1 == false) {
   $error = $stmt->errorInfo();

@@ -3,8 +3,7 @@ session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 include('php_act/functions.php');
 
-// var_dump($_POST);
-// exit;
+
 
 
 if (!empty($_POST)) {
@@ -25,8 +24,7 @@ if (!empty($_POST)) {
     } else {
         $val = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$val) {
-            // var_dump("hoge");
-            // exit;
+
             if(isset($_POST)){
               $error = "0";
             }

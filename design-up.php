@@ -31,7 +31,7 @@
 <p>
 ご応募ありがとうございました<br>
 担当者からのご連絡をお待ちください</p><br>
-<!-- <a href="index.php"><img class="button" src="img/top-modoru-bt.png" alt=""></a> -->
+
 
 
 </body>

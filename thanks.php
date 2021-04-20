@@ -20,20 +20,20 @@
 <body>
   <header>
     <div class="header">
-      <div><img class="home-logo" src="img/home-logo.png" alt="" ></div>
-      <!-- <div><img class="logout-bt" src="img/logout-bt.png" alt=""></div> -->
+      <div><img class="home-logo" src="img/home-logo.png" alt=""></div>
     </div>
   </header>
-<br>
-<span>THANKS !</span>
-<br>
-<img class="thanks-img" src="img/thanks-img.png" alt=""><br>
-<br>
-<p>
-登録ありがとうございます。<br>
-ログインしてOGPを作成しましょう！</p><br>
-<a href="index.php"><img class="button" src="img/top-modoru-bt.png" alt=""></a>
+  <br>
+  <span>THANKS !</span>
+  <br>
+  <img class="thanks-img" src="img/thanks-img.png" alt=""><br>
+  <br>
+  <p>
+    登録ありがとうございます。<br>
+    ログインしてOGPを作成しましょう！</p><br>
+  <a href="index.php"><img class="button" src="img/top-modoru-bt.png" alt=""></a>
 
 
 </body>
+
 </html>

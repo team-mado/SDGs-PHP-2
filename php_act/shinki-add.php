@@ -16,7 +16,6 @@ if (
 };
 
 // 受け取ったデータを変数に入れる
-
 $company_name = $_POST['company_name'];
 $staff = $_POST['staff'];
 $email = $_POST['email'];

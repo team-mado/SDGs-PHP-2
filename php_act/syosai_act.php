@@ -1,8 +1,6 @@
 <?php
-
 error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
-// check_session_id();
 $pdo = connect_to_db();
 
 if (
@@ -17,7 +15,6 @@ if (
 };
 
 // 受け取ったデータを変数に入れる
-
 $company_name = $_POST['company_name'];
 $staff = $_POST['staff'];
 $email = $_POST['email'];

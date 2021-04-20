@@ -32,9 +32,12 @@ p {
   line-height: 20px;
 }
 
+
+
 ul {
   list-style-type: none;
 }
+
 
 ul li {
   display: -webkit-box;
@@ -43,7 +46,12 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
+
+
+
+
 
 ul li img {
   width: 20px;
@@ -51,10 +59,53 @@ ul li img {
   margin-right: 10px;
 }
 
+
+
+
 ul li span {
   font-size: 12px;
   font-weight: bold;
+  line-height: 1.5em;
+} 
+
+
+
+
+/* .li-css {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
 }
+
+
+
+.img-css{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.span-css{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5em;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 button {
   margin: 0 auto;
@@ -95,5 +146,9 @@ button {
 
 .sdgs-text {
   text-align: left;
+}
+
+.inline{
+  display:inline;
 }
 /*# sourceMappingURL=ogp-update.css.map */

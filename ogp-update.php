@@ -131,16 +131,11 @@ if (isset($_GET["id"])) {
     </div>
   </header>
   <main>
-    <!-- <div class="gray-box">
-      <div class="ogp-box"> -->
-        <figure>
-          <img class="ogp-img" src="<? echo($img) ?>" alt="">
-        </figure>
-      <!-- </div> -->
-      <!-- <p>
-        下記のフォームを全て入力いただくと<br />
-        こちらの枠内に自動でバナーが生成されます
-      </p> -->
+
+    <figure>
+      <img class="ogp-img" src="<? echo($img) ?>" alt="">
+    </figure>
+
     </div>
     <p>SDGｓ17の目標の中から、該当する項目を選んでください ※複数選択可</p>
     <br>
@@ -278,29 +273,29 @@ if (isset($_GET["id"])) {
 
       <label for="">職種（最大3つ）</label><br>
       <? if($work0 == "グラフィック" || $work1 == "グラフィック"  || $work2 == "グラフィック") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" checked> グラフィック
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" checked> グラフィック 　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック"> グラフィック
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック"> グラフィック 　
       <? endif;?>
       <? if($work0 == "WEB" || $work1 == "WEB"  || $work2 == "WEB") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB" checked> WEB
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB" checked> WEB 　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
       <? endif;?>
       <? if($work0 == "UI" || $work1 == "UI"  || $work2 == "UI") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI" checked> UI　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI" checked> UI 　<br>
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　<br>
       <? endif;?>
       <? if($work0 == "UX" || $work1 == "UX"  || $work2 == "UX") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX" checked> UX 
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX" checked> UX 　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　
       <? endif;?>
       <? if($work0 == "DX" || $work1 == "DX"  || $work2 == "DX") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" checked> DX 
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" checked> DX 　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX 　
       <? endif;?>
       <? if($work0 == "DTP" || $work1 == "DTP"  || $work2 == "DTP") :?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP" checked> DTP 　<br>
@@ -308,9 +303,9 @@ if (isset($_GET["id"])) {
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　<br>
       <? endif;?>
       <? if($work0 == "プロダクト" || $work1 == "プロダクト"  || $work2 == "プロダクト") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト" checked> プロダクト
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト" checked> プロダクト 　　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　　
       <? endif;?>
       <? if($work0 == "パッケージ" || $work1 == "パッケージ"  || $work2 == "パッケージ") :?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ" checked> パッケージ 　<br>
@@ -320,7 +315,7 @@ if (isset($_GET["id"])) {
       <? if($work0 == "ファッション" || $work1 == "ファッション"  || $work2 == "ファッション") :?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション" checked> ファッション 　
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション"> ファッション
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション"> ファッション 　
       <? endif;?>
       <? if($work0 == "映像" || $work1 == "映像"  || $work2 == "映像") :?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="映像" checked> 映像 　<br>
@@ -330,11 +325,11 @@ if (isset($_GET["id"])) {
       <br>
 
       <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！"  required><? echo($project_overview)?></textarea>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required><? echo($project_overview)?></textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。"  required><? echo($project_detail) ?></textarea>
+      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" required><? echo($project_detail) ?></textarea>
 
       <label for="GET-production_period">制作期間</label><br>
       <input class="form-style" id="GET-production_period" type="date" name="production_period" value="<? echo($production_period) ?>" required>
@@ -351,8 +346,11 @@ if (isset($_GET["id"])) {
       <? endif;?>
       <br>
       <div class="update-bt-box">
-          <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
-          <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a>
+        <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
+        <button class="inline">
+          <img class="button-up" src="img/bt-save.png" alt="">
+        </button>
+        <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>
       <br>
       <br>
@@ -361,31 +359,48 @@ if (isset($_GET["id"])) {
   </main>
 </body>
 
-
 <script>
-$(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("SDGs目標は1つ以上選択してください");
+  $(function() {
+    $('#GET-project_overview')
+      // cancelEnterとついたクラスにkeydownイベントを付与
+      .on('keydown', function(e) {
+        // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+        if (e.key == 'Enter') {
+          // 何もせずに処理を終える
+          return false;
         }
-      });
-    });
+      })
+  });
 </script>
 
-<!-- <script>
-    $(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("職種は1つ以上選択してください");
-        }
-      });
-    });
-  </script> -->
 
+<script>
+  $(function() {
+    $('#GET-project_detail')
+      // cancelEnterとついたクラスにkeydownイベントを付与
+      .on('keydown', function(e) {
+        // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+        if (e.key == 'Enter') {
+          // 何もせずに処理を終える
+          return false;
+        }
+      })
+  });
+</script>
+
+
+
+<script>
+  $(function() {
+    $("#form").on('submit', function(e) {
+      var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
+      if (flg) {
+        e.preventDefault();
+        alert("SDGs目標は1つ以上選択してください");
+      }
+    });
+  });
+</script>
 
 
 <script>
@@ -417,10 +432,6 @@ $(function() {
       Myname[i].disabled = false;
   }
   // --------------------
-
-
-
-
 
   // クリックするたびに非表示判定
   // --------------------
