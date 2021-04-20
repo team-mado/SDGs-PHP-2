@@ -81,8 +81,6 @@ if (!empty($_POST)) {
           <img class="top-logo" src="img/home-logo.png" alt="">
           <br>
 
-
-
         <!-- モーダルここから -->
         <section id="modalArea" class="modalArea">
           <div id="modalBg" class="modalBg"></div>

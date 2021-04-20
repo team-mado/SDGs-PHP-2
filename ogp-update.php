@@ -141,8 +141,8 @@ if (isset($_GET["id"])) {
     <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" id="form">
-          <ul>
+        <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" class="form">
+          <ul class="check_answer">
             <li><img src="img/1.png" alt="">
               <? if($color1 == "1" ||  $color2 == "1"  ||  $color3 == "1"  ||  $color4 == "1"  ||  $color5 == "1"  ||  $color6 == "1"  ||  $color7 == "1"  ||  $color8 == "1"  ||  $color9 == "1"  ||  $color10 == "1"  ||  $color11 == "1"  ||  $color12 == "1"  ||  $color13 == "1"  ||  $color14 == "1"  ||  $color15 == "1"  ||  $color16 == "1"  ||  $color17 == "1") :?>
               <div><input type="checkbox" name="color_check[]" value="1" checked> <span>貧困をなくそう</span></div>
@@ -264,9 +264,11 @@ if (isset($_GET["id"])) {
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
+        <!-- </form> -->
       </div>
     </div>
     <br>
+    <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" class="form">
     <div class="form-box">
       <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
       <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
@@ -352,6 +354,7 @@ if (isset($_GET["id"])) {
         </button>
         <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>
+    </div>
       <br>
       <br>
       </input>
@@ -392,15 +395,28 @@ if (isset($_GET["id"])) {
 
 <script>
   $(function() {
-    $("#form").on('submit', function(e) {
-      var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
+    $(".form").on('submit', function(e) {
+      var flg = $(".check_answer").find('input[name="color_check[]"]:checked').length == 0;
+      console.log(flg);
       if (flg) {
         e.preventDefault();
         alert("SDGs目標は1つ以上選択してください");
       }
     });
   });
-</script>
+
+  $(function() {
+    $(".form").on('submit', function(e) {
+      var flg1 = $(".form-box").find('input[name="job_category[]"]:checked').length == 0;
+      console.log(flg1);
+      if (flg1) {
+        e.preventDefault();
+        alert("職種は1つ以上選択してください");
+      }
+    });
+  });
+// </script>
+
 
 
 <script>

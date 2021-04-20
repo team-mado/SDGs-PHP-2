@@ -77,6 +77,7 @@ if (isset($_GET["id"])) {
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
 
+
 <body>
   <header>
     <div class="header">
@@ -87,8 +88,8 @@ if (isset($_GET["id"])) {
   <main>
     <figure>
       <img class="ogp-img" src="img/banar-ogp-new.png" alt="">
-      </figure>
-      <!-- <p>
+    </figure>
+    <!-- <p>
         下記のフォームを全て入力いただくと<br />
         こちらの枠内に自動でバナーが生成されます
       </p> -->
@@ -97,8 +98,8 @@ if (isset($_GET["id"])) {
     <br>
     <div class="checkbox-center">
       <div>
-        <form action="php_act/ogp_act.php" method="post" id="form">
-          <ul>
+        <form action="php_act/ogp_act.php" method="post" class="form">
+          <ul class="check_answer">
             <li><img src="img/1.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="1"> <span>貧困をなくそう</span></div>
             </li>
@@ -152,19 +153,16 @@ if (isset($_GET["id"])) {
             <li><img src="img/17.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="17"> <span>パートナーシップで目標を達成しよう</span></div>
             </li>
-            <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
           </ul>
-          <!-- </form> -->
       </div>
     </div>
     <br>
+    <form action="php_act/ogp_act.php" method="post" class="form">
     <div class="form-box">
-      <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
       <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
-      <input class="form-style" id="GET-project_title" type="text"   maxlength="20" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
-
+      <input class="form-style" id="GET-project_title" type="text" maxlength="20" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
       <label for="">職種（最大3つ）</label><br>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック"> グラフィック 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　<br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　
@@ -192,7 +190,6 @@ if (isset($_GET["id"])) {
         <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked /> リモート可　
         <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" /> 不可</label><br>
       <br>
-
       <div class="center">
         <button class="simple_square_btn1">
           <!-- <a href="ogp_act.php"> -->
@@ -203,66 +200,69 @@ if (isset($_GET["id"])) {
       <br>
       <br>
       </input>
-
-      </form>
+    </form>
   </main>
 </body>
 
-  
+
 <script>
-$(function () {
+  $(function() {
     $('#GET-project_overview')
-        // cancelEnterとついたクラスにkeydownイベントを付与
-        .on('keydown', function (e) {
-            // e.key == 'Enter'でエンターキーが押された場合の条件を設定
-            if (e.key == 'Enter') {
-                // 何もせずに処理を終える
-                return false;
-            }
-        })
-});
+      // cancelEnterとついたクラスにkeydownイベントを付与
+      .on('keydown', function(e) {
+        // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+        if (e.key == 'Enter') {
+          // 何もせずに処理を終える
+          return false;
+        }
+      })
+  });
 </script>
 
 
 <script>
-$(function () {
+  $(function() {
     $('#GET-project_detail')
-        // cancelEnterとついたクラスにkeydownイベントを付与
-        .on('keydown', function (e) {
-            // e.key == 'Enter'でエンターキーが押された場合の条件を設定
-            if (e.key == 'Enter') {
-                // 何もせずに処理を終える
-                return false;
-            }
-        })
-});
+      // cancelEnterとついたクラスにkeydownイベントを付与
+      .on('keydown', function(e) {
+        // e.key == 'Enter'でエンターキーが押された場合の条件を設定
+        if (e.key == 'Enter') {
+          // 何もせずに処理を終える
+          return false;
+        }
+      })
+  });
 </script>
 
 
 
 <script>
-$(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="color_check[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("SDGs目標は1つ以上選択してください");
-        }
-      });
+  $(function() {
+    $(".form").on('submit', function(e) {
+      var flg = $(".check_answer").find('input[name="color_check[]"]:checked').length == 0;
+      console.log(flg);
+      if (flg) {
+        e.preventDefault();
+        alert("SDGs目標は1つ以上選択してください");
+      }
     });
-  </script>
-<!-- 
-<script>
-    $(function() {
-      $("#form").on('submit', function(e) {
-        var flg = $(this).find('input[name="job_category[]"]:checked').length == 0;
-        if (flg) {
-          e.preventDefault();
-          alert("職種は1つ以上選択してください");
-        }
-      });
+  });
+
+
+  $(function() {
+    $(".form").on('submit', function(e) {
+      var flg1 = $(".form-box").find('input[name="job_category[]"]:checked').length == 0;
+      console.log(flg1);
+      if (flg1) {
+        e.preventDefault();
+        alert("職種は1つ以上選択してください");
+      }
     });
-    </script> -->
+  });
+// </script>
+
+
+
 
 
 
