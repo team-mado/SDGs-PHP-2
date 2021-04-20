@@ -21,7 +21,7 @@ $remote_availability = $_POST["remote_availability"];
 $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_60_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
-$v3 = ',co_rgb:fff,w_750,c_fit/v1618795101/banar1_mnwvwv.png';
+$v3 = ',co_rgb:fff,w_1250,c_fit/v1618795101/banar1_mnwvwv.png';
 $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
 
 

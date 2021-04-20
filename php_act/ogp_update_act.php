@@ -20,7 +20,7 @@ $clients_id = $_SESSION["id"];
 $color_check = implode('  ',$_POST["color_check"]);
 $project_title = $_POST["project_title"];
 // $job_category = $_POST["job_category"];
-$job_category = implode(' || ',$_POST["job_category"]);
+$job_category = implode(' | ',$_POST["job_category"]);
 $project_overview = $_POST["project_overview"];
 $project_detail = $_POST["project_detail"];
 $production_period = $_POST["production_period"];
@@ -46,7 +46,7 @@ $remote_availability = $_POST["remote_availability"];
 $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_60_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
-$v3 = ',co_rgb:fff,w_750,c_fit/v1618795101/banar1_mnwvwv.png';
+$v3 = ',co_rgb:fff,w_1250,c_fit/v1618795101/banar1_mnwvwv.png';
 $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
 
 
