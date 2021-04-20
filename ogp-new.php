@@ -161,7 +161,7 @@ if (isset($_GET["id"])) {
     <div class="form-box">
       <!-- <form action="php_act/ogp_act.php" method="post" class="row"> -->
       <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
-      <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
+      <input class="form-style" id="GET-project_title" type="text"   maxlength="20" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
 
       <label for="">職種（最大3つ）</label><br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" > グラフィック 　
@@ -177,7 +177,7 @@ if (isset($_GET["id"])) {
       <br>
 
 
-      <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
+      <label for="GET-project_overview">プロジェクトの概要（最大40文字※改行不可）</label><br>
       <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り洋服へ。魔法のようなプロジェクトを創り出すデザイン集団求ム！" required></textarea>
 
 

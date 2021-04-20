@@ -324,7 +324,7 @@ if (isset($_GET["id"])) {
       <? endif;?>
       <br>
 
-      <label for="GET-project_overview">プロジェクトの概要（最大40文字）</label><br>
+      <label for="GET-project_overview">プロジェクトの概要（最大40文字※改行不可）</label><br>
       <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required><? echo($project_overview)?></textarea>
 
 
