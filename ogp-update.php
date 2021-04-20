@@ -84,7 +84,7 @@ if (isset($_GET["id"])) {
     $color17  = preg_replace("/( | )/", "", $color17);
 
 
-    $work_arry = explode("||", $job_category);
+    $work_arry = explode("|", $job_category);
     $work0 = $work_arry[0];
     $work1 = $work_arry[1];
     $work2 = $work_arry[2];
@@ -448,6 +448,7 @@ if (isset($_GET["id"])) {
       Myname[i].disabled = false;
   }
   // --------------------
+
 
   // クリックするたびに非表示判定
   // --------------------
