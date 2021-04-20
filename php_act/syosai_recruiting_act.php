@@ -29,7 +29,7 @@ if ($status == false) {
     echo json_encode(["error_msg" => "{$error[2]}"]);
     exit();
 } else {
-    header("Location:../thanks.php");
+    header("Location:../design-up.php");
     exit();
 }
 
