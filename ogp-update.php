@@ -119,7 +119,7 @@ if (isset($_GET["id"])) {
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
   <!-- オリジナルcomponent.CSS -->
   <link rel="stylesheet" href="css/component.css" />
-  <link rel="stylesheet" href="css/ogp-new.css" />
+  <link rel="stylesheet" href="css/ogp-update.css" />
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -150,121 +150,121 @@ if (isset($_GET["id"])) {
           <ul>
             <li><img src="img/1.png" alt="">
               <? if($color1 == "1" ||  $color2 == "1"  ||  $color3 == "1"  ||  $color4 == "1"  ||  $color5 == "1"  ||  $color6 == "1"  ||  $color7 == "1"  ||  $color8 == "1"  ||  $color9 == "1"  ||  $color10 == "1"  ||  $color11 == "1"  ||  $color12 == "1"  ||  $color13 == "1"  ||  $color14 == "1"  ||  $color15 == "1"  ||  $color16 == "1"  ||  $color17 == "1") :?>
-              <div><input type="checkbox" name="color_check[]" value="1" checked> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="1" checked> <span>貧困をなくそう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="1"> 貧困をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="1"> <span>貧困をなくそう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/2.png" alt="">
               <? if($color1 == "2" ||  $color2 == "2"  ||  $color3 == "2"  ||  $color4 == "2"  ||  $color5 == "2"  ||  $color6 == "2"  ||  $color7 == "2"  ||  $color8 == "2"  ||  $color9 == "2"  ||  $color10 == "2"  ||  $color11 == "2"  ||  $color12 == "2"  ||  $color13 == "2"  ||  $color14 == "2"  ||  $color15 == "2"  ||  $color16 == "2"  ||  $color17 == "2") :?>
-              <div><input type="checkbox" name="color_check[]" value="2" checked> 飢餓をゼロに</div>
+              <div><input type="checkbox" name="color_check[]" value="2" checked> <span>飢餓をゼロに</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="2"> 飢餓をゼロに</div>
+              <div><input type="checkbox" name="color_check[]" value="2"> <span>飢餓をゼロに</span></div>
               <? endif;?>
             </li>
             <li><img src="img/3.png" alt="">
               <? if($color1 == "3" ||  $color2 == "3"  ||  $color3 == "3"  ||  $color4 == "3"  ||  $color5 == "3"  ||  $color6 == "3"  ||  $color7 == "3"  ||  $color8 == "3"  ||  $color9 == "3"  ||  $color10 == "3"  ||  $color11 == "3"  ||  $color12 == "3"  ||  $color13 == "3"  ||  $color14 == "3"  ||  $color15 == "3"  ||  $color16 == "3"  ||  $color17 == "3") :?>
-              <div><input type="checkbox" name="color_check[]" value="3" checked> 全ての人に健康と福祉を</div>
+              <div><input type="checkbox" name="color_check[]" value="3" checked> <span>全ての人に健康と福祉を</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="3"> 全ての人に健康と福祉を</div>
+              <div><input type="checkbox" name="color_check[]" value="3"> <span>全ての人に健康と福祉を</span></div>
               <? endif;?>
             </li>
             <li><img src="img/4.png" alt="">
               <? if($color1 == "4" ||  $color2 == "4"  ||  $color3 == "4"  ||  $color4 == "4"  ||  $color5 == "4"  ||  $color6 == "4"  ||  $color7 == "4"  ||  $color8 == "4"  ||  $color9 == "4"  ||  $color10 == "4"  ||  $color11 == "4"  ||  $color12 == "4"  ||  $color13 == "4"  ||  $color14 == "4"  ||  $color15 == "4"  ||  $color16 == "4"  ||  $color17 == "4") :?>
-              <div><input type="checkbox" name="color_check[]" value="4" checked> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check[]" value="4" checked> <span>質の高い教育をみんなに</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="4"> 質の高い教育をみんなに</div>
+              <div><input type="checkbox" name="color_check[]" value="4"> <span>質の高い教育をみんなに</span></div>
               <? endif;?>
             </li>
             <li><img src="img/5.png" alt="">
               <? if($color1 == "5" ||  $color2 == "5"  ||  $color3 == "5"  ||  $color4 == "5"  ||  $color5 == "5"  ||  $color6 == "5"  ||  $color7 == "5"  ||  $color8 == "5"  ||  $color9 == "5"  ||  $color10 == "5"  ||  $color11 == "5"  ||  $color12 == "5"  ||  $color13 == "5"  ||  $color14 == "5"  ||  $color15 == "5"  ||  $color16 == "5"  ||  $color17 == "5") :?>
-              <div><input type="checkbox" name="color_check[]" value="5" checked> ジェンダー平等を実現しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="5" checked> <span>ジェンダー平等を実現しよう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="5"> ジェンダー平等を実現しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="5"> <span>ジェンダー平等を実現しよう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/6.png" alt="">
               <? if($color1 == "6" ||  $color2 == "6"  ||  $color3 == "6"  ||  $color4 == "6"  ||  $color5 == "6"  ||  $color6 == "6"  ||  $color7 == "6"  ||  $color8 == "6"  ||  $color9 == "6"  ||  $color10 == "6"  ||  $color11 == "6"  ||  $color12 == "6"  ||  $color13 == "6"  ||  $color14 == "6"  ||  $color15 == "6"  ||  $color16 == "6"  ||  $color17 == "6") :?>
-              <div><input type="checkbox" name="color_check[]" value="6" checked> 安全な水とトイレを世界中に</div>
+              <div><input type="checkbox" name="color_check[]" value="6" checked> <span>安全な水とトイレを世界中に</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="6"> 安全な水とトイレを世界中に</div>
+              <div><input type="checkbox" name="color_check[]" value="6"> <span>安全な水とトイレを世界中に</span></div>
               <? endif;?>
             </li>
             <li><img src="img/7.png" alt="">
               <? if($color1 == "7" ||  $color2 == "7"  ||  $color3 == "7"  ||  $color4 == "7"  ||  $color5 == "7"  ||  $color6 == "7"  ||  $color7 == "7"  ||  $color8 == "7"  ||  $color9 == "7"  ||  $color10 == "7"  ||  $color11 == "7"  ||  $color12 == "7"  ||  $color13 == "7"  ||  $color14 == "7"  ||  $color15 == "7"  ||  $color16 == "7"  ||  $color17 == "7") :?>
-              <div><input type="checkbox" name="color_check[]" value="7" checked> エネルギーをみんなにそしてクリーンに</div>
+              <div><input type="checkbox" name="color_check[]" value="7" checked> <span>エネルギーをみんなにそしてクリーンに</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="7"> エネルギーをみんなにそしてクリーンに</div>
+              <div><input type="checkbox" name="color_check[]" value="7"> <span>エネルギーをみんなにそしてクリーンに</span></div>
               <? endif;?>
             </li>
             <li><img src="img/8.png" alt="">
               <? if($color1 == "8" ||  $color2 == "8"  ||  $color3 == "8"  ||  $color4 == "8"  ||  $color5 == "8"  ||  $color6 == "8"  ||  $color7 == "8"  ||  $color8 == "8"  ||  $color9 == "8"  ||  $color10 == "8"  ||  $color11 == "8"  ||  $color12 == "8"  ||  $color13 == "8"  ||  $color14 == "8"  ||  $color15 == "8"  ||  $color16 == "8"  ||  $color17 == "8") :?>
-              <div><input type="checkbox" name="color_check[]" value="8" checked> 働きがいも経済成長も</div>
+              <div><input type="checkbox" name="color_check[]" value="8" checked> <span>働きがいも経済成長も</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="8"> 働きがいも経済成長も</div>
+              <div><input type="checkbox" name="color_check[]" value="8"> <span>働きがいも経済成長も</span></div>
               <? endif;?>
             </li>
             <li><img src="img/9.png" alt="">
               <? if($color1 == "9" ||  $color2 == "9"  ||  $color3 == "9"  ||  $color4 == "9"  ||  $color5 == "9"  ||  $color6 == "9"  ||  $color7 == "9"  ||  $color8 == "9"  ||  $color9 == "9"  ||  $color10 == "9"  ||  $color11 == "9"  ||  $color12 == "9"  ||  $color13 == "9"  ||  $color14 == "9"  ||  $color15 == "9"  ||  $color16 == "9"  ||  $color17 == "9") :?>
-              <div><input type="checkbox" name="color_check[]" value="9" checked> 産業と技術革新の基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check[]" value="9" checked> <span>産業と技術革新の基盤をつくろう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="9"> 産業と技術革新の基盤をつくろう</div>
+              <div><input type="checkbox" name="color_check[]" value="9"> <span>産業と技術革新の基盤をつくろう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/10.png" alt="">
               <? if($color1 == "10" ||  $color2 == "10"  ||  $color3 == "10"  ||  $color4 == "10"  ||  $color5 == "10"  ||  $color6 == "10"  ||  $color7 == "10"  ||  $color8 == "10"  ||  $color9 == "10"  ||  $color10 == "10"  ||  $color11 == "10"  ||  $color12 == "10"  ||  $color13 == "10"  ||  $color14 == "10"  ||  $color15 == "10"  ||  $color16 == "10"  ||  $color17 == "10") :?>
-              <div><input type="checkbox" name="color_check[]" value="10" checked> 人や国の不平等をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="10" checked> <span>人や国の不平等をなくそう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="10"> 人や国の不平等をなくそう</div>
+              <div><input type="checkbox" name="color_check[]" value="10"> <span>人や国の不平等をなくそう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/11.png" alt="">
               <? if($color1 == "11" ||  $color2 == "11"  ||  $color3 == "11"  ||  $color4 == "11"  ||  $color5 == "11"  ||  $color6 == "11"  ||  $color7 == "11"  ||  $color8 == "11"  ||  $color9 == "11"  ||  $color10 == "11"  ||  $color11 == "11"  ||  $color12 == "11"  ||  $color13 == "11"  ||  $color14 == "11"  ||  $color15 == "11"  ||  $color16 == "11"  ||  $color17 == "11") :?>
-              <div><input type="checkbox" name="color_check[]" value="11" checked> 住み続けられる街づくりを</div>
+              <div><input type="checkbox" name="color_check[]" value="11" checked> <span>住み続けられる街づくりを</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="11"> 住み続けられる街づくりを</div>
+              <div><input type="checkbox" name="color_check[]" value="11"> <span>住み続けられる街づくりを</span></div>
               <? endif;?>
             </li>
             <li><img src="img/12.png" alt="">
               <? if($color1 == "12" ||  $color2 == "12"  ||  $color3 == "12"  ||  $color4 == "12"  ||  $color5 == "12"  ||  $color6 == "12"  ||  $color7 == "12"  ||  $color8 == "12"  ||  $color9 == "12"  ||  $color10 == "12"  ||  $color11 == "12"  ||  $color12 == "12"  ||  $color13 == "12"  ||  $color14 == "12"  ||  $color15 == "12"  ||  $color16 == "12"  ||  $color17 == "12") :?>
-              <div><input type="checkbox" name="color_check[]" value="12" checked> つくる責任つかう責任</div>
+              <div><input type="checkbox" name="color_check[]" value="12" checked> <span>つくる責任つかう責任</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="12"> つくる責任つかう責任</div>
+              <div><input type="checkbox" name="color_check[]" value="12"> <span>つくる責任つかう責任</span></div>
               <? endif;?>
             </li>
             <li><img src="img/13.png" alt="">
               <? if($color1 == "13" ||  $color2 == "13"  ||  $color3 == "13"  ||  $color4 == "13"  ||  $color5 == "13"  ||  $color6 == "13"  ||  $color7 == "13"  ||  $color8 == "13"  ||  $color9 == "13"  ||  $color10 == "13"  ||  $color11 == "13"  ||  $color12 == "13"  ||  $color13 == "13"  ||  $color14 == "13"  ||  $color15 == "13"  ||  $color16 == "13"  ||  $color17 == "13") :?>
-              <div><input type="checkbox" name="color_check[]" value="13" checked> 気候変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check[]" value="13" checked> <span>気候変動に具体的な対策を</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="13"> 気候変動に具体的な対策を</div>
+              <div><input type="checkbox" name="color_check[]" value="13"> <span>気候変動に具体的な対策を</span></div>
               <? endif;?>
             </li>
             <li><img src="img/14.png" alt="">
               <? if($color1 == "14" ||  $color2 == "14"  ||  $color3 == "14"  ||  $color4 == "14"  ||  $color5 == "14"  ||  $color6 == "14"  ||  $color7 == "14"  ||  $color8 == "14"  ||  $color9 == "14"  ||  $color10 == "14"  ||  $color11 == "14"  ||  $color12 == "14"  ||  $color13 == "14"  ||  $color14 == "14"  ||  $color15 == "14"  ||  $color16 == "14"  ||  $color17 == "14") :?>
-              <div><input type="checkbox" name="color_check[]" value="14" checked> 海の豊かさを守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="14" checked> <span>海の豊かさを守ろう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="14"> 海の豊かさを守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="14"> <span>海の豊かさを守ろう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/15.png" alt="">
               <? if($color1 == "15" ||  $color2 == "15"  ||  $color3 == "15"  ||  $color4 == "15"  ||  $color5 == "15"  ||  $color6 == "15"  ||  $color7 == "15"  ||  $color8 == "15"  ||  $color9 == "15"  ||  $color10 == "15"  ||  $color11 == "15"  ||  $color12 == "15"  ||  $color13 == "15"  ||  $color14 == "15"  ||  $color15 == "15"  ||  $color16 == "15"  ||  $color17 == "15") :?>
-              <div><input type="checkbox" name="color_check[]" value="15" checked> 陸の豊かさも守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="15" checked> <span>陸の豊かさも守ろう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="15"> 陸の豊かさも守ろう</div>
+              <div><input type="checkbox" name="color_check[]" value="15"> <span>陸の豊かさも守ろう</span></div>
               <? endif;?>
             </li>
             <li><img src="img/16.png" alt="">
               <? if($color1 == "16" ||  $color2 == "16"  ||  $color3 == "16"  ||  $color4 == "16"  ||  $color5 == "16"  ||  $color6 == "16"  ||  $color7 == "16"  ||  $color8 == "16"  ||  $color9 == "16"  ||  $color10 == "16"  ||  $color11 == "16"  ||  $color12 == "16"  ||  $color13 == "16"  ||  $color14 == "16"  ||  $color15 == "16"  ||  $color16 == "16"  ||  $color17 == "16") :?>
-              <div><input type="checkbox" name="color_check[]" value="16" checked> 平和と公正を全ての人に</div>
+              <div><input type="checkbox" name="color_check[]" value="16" checked> <span>平和と公正を全ての人に</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="16"> 平和と公正を全ての人に</div>
+              <div><input type="checkbox" name="color_check[]" value="16"> <span>平和と公正を全ての人に</span></div>
               <? endif;?>
             </li>
             <li><img src="img/17.png" alt="">
               <? if($color1 == "17" ||  $color2 == "17"  ||  $color3 == "17"  ||  $color4 == "17"  ||  $color5 == "17"  ||  $color6 == "17"  ||  $color7 == "17"  ||  $color8 == "17"  ||  $color9 == "17"  ||  $color10 == "17"  ||  $color11 == "17"  ||  $color12 == "17"  ||  $color13 == "17"  ||  $color14 == "17"  ||  $color15 == "17"  ||  $color16 == "17"  ||  $color17 == "17") :?>
-              <div><input type="checkbox" name="color_check[]" value="17" checked> パートナーシップで目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="17" checked> <span>パートナーシップで目標を達成しよう</span></div>
               <? else:?>
-              <div><input type="checkbox" name="color_check[]" value="17"> パートナーシップで目標を達成しよう</div>
+              <div><input type="checkbox" name="color_check[]" value="17"> <span>パートナーシップで目標を達成しよう</span></div>
               <? endif;?>
             </li>
             <!-- <li><img src="img/18.png" alt=""><div><input type="checkbox" name="riyu" value="1" checked="checked"> 貧困をなくそう</div></li> -->
@@ -288,34 +288,34 @@ if (isset($_GET["id"])) {
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB
       <? endif;?>
       <? if($work0 == "UI" || $work1 == "UI"  || $work2 == "UI") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI" checked> UI
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI" checked> UI　<br>
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI　<br>
       <? endif;?>
       <? if($work0 == "UX" || $work1 == "UX"  || $work2 == "UX") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX" checked> UX <br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX" checked> UX 
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX <br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX
       <? endif;?>
       <? if($work0 == "DX" || $work1 == "DX"  || $work2 == "DX") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" checked> DX
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" checked> DX 
       <? else:?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX
       <? endif;?>
       <? if($work0 == "DTP" || $work1 == "DTP"  || $work2 == "DTP") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP" checked> DTP
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP" checked> DTP 　<br>
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　<br>
       <? endif;?>
       <? if($work0 == "プロダクト" || $work1 == "プロダクト"  || $work2 == "プロダクト") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト" checked> プロダクト 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト" checked> プロダクト
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　<br>
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト
       <? endif;?>
       <? if($work0 == "パッケージ" || $work1 == "パッケージ"  || $work2 == "パッケージ") :?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ" checked> パッケージ 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ" checked> パッケージ 　<br>
       <? else:?>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　<br>
       <? endif;?>
       <? if($work0 == "ファッション" || $work1 == "ファッション"  || $work2 == "ファッション") :?>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション" checked> ファッション 　
@@ -352,7 +352,7 @@ if (isset($_GET["id"])) {
       <br>
       <div class="update-bt-box">
           <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
-          <a href="ogp-ichiran.php"><img class="button-up" src="img/bt-save.png" alt=""></a>
+          <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a>
       </div>
       <br>
       <br>

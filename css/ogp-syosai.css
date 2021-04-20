@@ -28,7 +28,7 @@
   border: 1px solid #c4c4c4;
   border-radius: 2px;
   font-size: 12px;
-  width: 70px;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,9 +55,9 @@
 
 .ogp-box div p {
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 16px;
 }
 
 .ogp-box div .project-text1 {
@@ -92,7 +92,7 @@ h1 {
 }
 
 .sdgs17-box {
-  width: 80%;
+  width: 90%;
   padding: 15px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
@@ -100,13 +100,13 @@ h1 {
 }
 
 .sdgs17-box p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-align: left;
 }
 
 .sdgs17-box .sdgs-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-align: right;
 }
@@ -114,11 +114,11 @@ h1 {
 .sdgs17-box .ul-box ul {
   list-style-type: none;
   margin: auto;
-  width: 60%;
+  width: 70%;
 }
 
 .sdgs17-box .ul-box ul li {
-  width: 330px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
