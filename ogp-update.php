@@ -355,8 +355,8 @@ if (isset($_GET["id"])) {
         <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>
     </div>
-      <br>
-      <br>
+    <br>
+    <br>
       </input>
       </form>
   </main>

@@ -32,13 +32,13 @@
         <br />
 
         <label for="GET-email">メールアドレス（半角英数のみ）</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-email" type="text" name="email" placeholder="例）sample@example.com" value="test@gmail.com" required />
+        <input class="form-style" id="GET-email" type="email" name="email" placeholder="例）sample@example.com" value="test@gmail.com" required />
 
         <br />
 
 
         <label for="GET-password">パスワード</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-password" type="text" name="password" minlength="8" maxlength="20" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value="test" required />
+        <input class="form-style" id="GET-password" type="password" name="password" minlength="8" maxlength="20" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value="test" required />
 
         <br />
 
