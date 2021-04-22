@@ -270,8 +270,8 @@ if (isset($_GET["id"])) {
     <br>
     <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" class="form">
     <div class="form-box">
-      <label for="GET-project_title">プロジェクトタイトル（最大20文字）</label><br>
-      <input class="form-style" id="GET-project_title" maxlentgth="20" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
+      <label for="GET-project_title">プロジェクトタイトル（最大25文字）</label><br>
+      <input class="form-style" id="GET-project_title" maxlentgth="25" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
 
       <label for="">職種（最大3つ）</label><br>
       <? if($work0 == "グラフィック" || $work1 == "グラフィック"  || $work2 == "グラフィック") :?>
@@ -326,8 +326,8 @@ if (isset($_GET["id"])) {
       <? endif;?>
       <br>
 
-      <label for="GET-project_overview">プロジェクトの概要（最大40文字※改行不可）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="40" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required><? echo($project_overview)?></textarea>
+      <label for="GET-project_overview">プロジェクトの概要（最大35文字※改行不可）</label><br>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="35" name="project_overview" placeholder="例）海のゴミから布を作り、洋服へ。魔法のようなプロジェクトを創り出すデザイン集団、求ム！" required><? echo($project_overview)?></textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
@@ -349,9 +349,8 @@ if (isset($_GET["id"])) {
       <br>
       <div class="update-bt-box">
               <button class="inline">
-          <img class="button-up" src="img/bt-save.png" alt="">
+        <a href="php_act/ogp_update_act.php?id=<? $id ?>"><img class="button-up" src="img/bt-save.png" alt=""></a>
         <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
-
         </button>
         <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>

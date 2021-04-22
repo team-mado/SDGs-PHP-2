@@ -13,7 +13,7 @@ $name = $_SESSION["staff"];
 // 全件データ表示
 // ---------
 $pdo = connect_to_db();
-$sql = "SELECT * FROM ogp_table2  where clients_id =:clients_id"  ;
+$sql = "SELECT * FROM ogp_table2  where clients_id =:clients_id ORDER BY id DESC " ;
 
 
 // SQL準備&実行
