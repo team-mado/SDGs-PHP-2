@@ -25,9 +25,9 @@ if (!empty($_POST)) {
         $val = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$val) {
 
-            if(isset($_POST)){
-              $error = "0";
-            }
+          $error = "0";
+  
+
         } else {
             $_SESSION = array();
             $_SESSION["session_id"] = session_id();
@@ -114,6 +114,9 @@ if (!empty($_POST)) {
         <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
         <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
+        <?php if(isset($error)) : ?>
+          <p id="error">ログインに失敗しました</p>
+        <?php endif; ?>
         <!-- <p class="pw-text">PWをお忘れの方は<a href="mailto:design.up.sdgs@gmail.com?subject=【問合せ】パスワードの問い合わせ依頼依頼&amp;body=そのまま送信してください">こちら</a>から</p> -->
       </div>
        <img class="top-img" src="img/top-img.png" alt=""><br>
