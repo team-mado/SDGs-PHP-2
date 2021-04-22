@@ -348,10 +348,10 @@ if (isset($_GET["id"])) {
       <? endif;?>
       <br>
       <div class="update-bt-box">
-              <button class="inline">
+        <button class="inline">
         <a href="php_act/ogp_update_act.php?id=<? $id ?>"><img class="button-up" src="img/bt-save.png" alt=""></a>
-        <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
         </button>
+        <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
         <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>
     </div>
