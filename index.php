@@ -91,9 +91,9 @@ if (!empty($_POST)) {
               <div class="form-box">
                 <form action="" method="post" class="row">
                   <label for="GET-email">E-MAIL</label><br>
-                  <input class="form-style" id="GET-email" type="text" name="email" value="test@gmail.com" required/>
+                  <input class="form-style" id="GET-email" type="text" name="email" value="test1@gmail.com" required/>
                   <label for="GET-password">PASSWORD</label><br>
-                  <input class="form-style" id="GET-password" type="password" name="password" value="test" required/>
+                  <input class="form-style" id="GET-password" type="password" name="password" value="testtest" required/>
                   <br><br>
                   <div class="center">
                     <button class="simple_square_btn2">送信する</button></div><br />
@@ -132,3 +132,4 @@ if (!empty($_POST)) {
 
 
 </html>
+

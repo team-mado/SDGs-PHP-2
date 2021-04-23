@@ -107,7 +107,7 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="2"> <span>飢餓をゼロに</span></div>
             </li>
             <li><img src="img/3.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="3"> <span>全ての人に健康と福祉を</span></div>
+              <div><input type="checkbox" name="color_check[]" value="3" checked> <span>全ての人に健康と福祉を</span></div>
             </li>
             <li><img src="img/4.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="4"> <span>質の高い教育をみんなに</span></div>
@@ -119,30 +119,30 @@ if (isset($_GET["id"])) {
               <div><input type="checkbox" name="color_check[]" value="6"> <span>安全な水とトイレを世界中に</span></div>
             </li>
             <li><img src="img/7.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="7"> <span>エネルギーをみんなにそしてクリーンに</span><br>
+              <div><input type="checkbox" name="color_check[]" value="7" checked> <span>エネルギーをみんなにそしてクリーンに</span><br>
               </div>
             </li>
             <li><img src="img/8.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="8"> <span>働きがいも経済成長も</span></div>
             </li>
             <li><img src="img/9.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="9"> <span>産業と技術革新の基盤をつくろう</span><br>
+              <div><input type="checkbox" name="color_check[]" value="9" checked> <span>産業と技術革新の基盤をつくろう</span><br>
               </div>
             </li>
             <li><img src="img/10.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="10"> <span>人や国の不平等をなくそう</span></div>
+              <div><input type="checkbox" name="color_check[]" value="10" > <span>人や国の不平等をなくそう</span></div>
             </li>
             <li><img src="img/11.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="11"> <span>住み続けられる街づくりを</span></div>
             </li>
             <li><img src="img/12.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="12"> <span>つくる責任つかう責任</span></div>
+              <div><input type="checkbox" name="color_check[]" value="12" checked> <span>つくる責任つかう責任</span></div>
             </li>
             <li><img src="img/13.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="13"> <span>気候変動に具体的な対策を</span></div>
+              <div><input type="checkbox" name="color_check[]" value="13" checked> <span>気候変動に具体的な対策を</span></div>
             </li>
             <li><img src="img/14.png" alt="">
-              <div><input type="checkbox" name="color_check[]" value="14"> <span>海の豊かさを守ろう</span></div>
+              <div><input type="checkbox" name="color_check[]" value="14" checked> <span>海の豊かさを守ろう</span></div>
             </li>
             <li><img src="img/15.png" alt="">
               <div><input type="checkbox" name="color_check[]" value="15"> <span>陸の豊かさも守ろう</span></div>
@@ -160,30 +160,30 @@ if (isset($_GET["id"])) {
     <form action="php_act/ogp_act.php" method="post" class="form">
     <div class="form-box">
       <label for="GET-project_title">プロジェクトタイトル（最大25文字）</label><br>
-      <input class="form-style" id="GET-project_title" type="text" maxlength="25" name="project_title" placeholder="例）海を服に Fashion×Sea Next" required>
+      <input class="form-style" id="GET-project_title" type="text" maxlength="25" name="project_title" placeholder="例）海を服に Fashion×Sea Next" value="海を服に Fashion×Sea Next"  required>
       <label for="">職種（最大3つ）</label><br>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック"> グラフィック 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="グラフィック" checked> グラフィック 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="WEB"> WEB 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UI"> UI 　<br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="UX"> UX 　
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX"> DX 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="DX" checked> DX 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="DTP"> DTP 　<br>
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="プロダクト"> プロダクト 　　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="パッケージ"> パッケージ 　<br>
-      <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション"> ファッション 　
+      <input type="checkbox" onclick="Climit()" name="job_category[]" value="ファッション" checked> ファッション 　
       <input type="checkbox" onclick="Climit()" name="job_category[]" value="映像"> 映像 　<br>
       <br>
 
 
       <label for="GET-project_overview">プロジェクトの概要（最大35文字※改行不可）</label><br>
-      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="35" name="project_overview" placeholder="例）海のゴミから布を作り洋服へ。魔法のようなプロジェクトを創り出すデザイン集団求ム！" required></textarea>
+      <textarea class="form-style-textbox40" id="GET-project_overview" type="text" wrap="soft" maxlength="35" name="project_overview" placeholder="例）海のゴミから布を作り洋服へ。魔法のようなプロジェクトを創り出すデザイン集団求ム！" >海のゴミから布を作り洋服へ。魔法のようなプロジェクトを創り出すデザイン集団求ム！</textarea>
 
 
       <label for="GET-project_detail">プロジェクトの詳細（最大230文字※改行不可）</label><br>
-      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" required></textarea>
+      <textarea class="form-style-textbox230" id="GET-project_detail" type="text" wrap="soft" maxlength="230" name="project_detail" placeholder="例）海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。" >海洋ゴミを洋服に変える、魔法のようなプロジェクト。アプリのUIデザイン、パンフ作成、商品用パッケージや、洋服のデザインを行うデザイナーを募集しています。今、話題のSDGｓの取り組みを一緒に広げましょう。</textarea>
 
       <label for="GET-production_period">制作期限</label><br>
-      <input class="form-style" id="GET-production_period" type="date" name="production_period" required>
+      <input class="form-style" id="GET-production_period" type="date" name="production_period" value="2021-04-30" >
       <!-- <input class="form-style" id="GET-production_period" type="text" name="production_period" placeholder="例）5月中旬まで" required /> -->
 
       <label for="GET-remote_availability">

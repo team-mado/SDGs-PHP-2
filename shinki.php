@@ -27,24 +27,23 @@
 
       <form action="php_act/shinki-add.php" method="post" class="row">
         <label for="GET-company">会社名</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-company" type="text" name="company_name" placeholder="例）〇〇会社" value="高戸株式会社" required />
+        <input class="form-style" id="GET-company" type="text" name="company_name" placeholder="例）〇〇会社" value="デジタルハリウッド株式会社" required />
 
         <br />
 
         <label for="GET-email">メールアドレス（半角英数のみ）</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-email" type="email" name="email" placeholder="例）sample@example.com" value="test@gmail.com" required />
+        <input class="form-style" id="GET-email" type="email" name="email" placeholder="例）sample@example.com" value="test3@gmail.com" required />
 
         <br />
 
 
         <label for="GET-password">パスワード</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-password" type="password" name="password" minlength="8" maxlength="20" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value="test" required />
-
+        <input class="form-style" id="GET-password" type="password" name="password" minlength="8" maxlength="20" placeholder="パスワードは半角英数字8文字以上、20文字以内で入力してください" value="testtest" required />
         <br />
 
 
         <label for="GET-staff">担当者名</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-staff" type="text" name="staff" placeholder="例）山田太郎" value="高戸尚晃" required />
+        <input class="form-style" id="GET-staff" type="text" name="staff" placeholder="例）山田太郎" value="後藤成希" required />
 
         <br />
 
@@ -106,7 +105,7 @@
         <br />
 
         <label for="GET-businesscontent">事業内容</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-businesscontent" type="text" name="businesscontent" placeholder="例）出版・メディア広告・総合プロデュース" value="出版" required />
+        <input class="form-style" id="GET-businesscontent" type="text" name="businesscontent" placeholder="例）出版・メディア広告・総合プロデュース" value="教育事業" required />
 
         <br />
 
@@ -115,13 +114,13 @@
           <label for="GET-field">分野</label><span class="hissu"> *</span><br>
           <select class="form-style" id="GET-field" type="text" name="field" value="" required>
             <option value=""> 選択してください </option>
-            <option value="製造業" selected>製造業</option>
+            <option value="製造業" >製造業</option>
             <option value="電気・ガス業">電気・ガス業</option>
             <option value="運輸・情報通信業">運輸・情報通信業</option>
             <option value="商業">商業</option>
             <option value="金融・保険業">金融・保険業</option>
             <option value="不動産業">不動産業</option>
-            <option value="サービス業">サービス業</option>
+            <option value="サービス業" selected>サービス業</option>
             <option value="水産・農林業">水産・農林業</option>
             <option value="鉱業">鉱業</option>
             <option value="建設業">建設業</option>
@@ -133,13 +132,13 @@
           <label for="GET-capital">資本金</label><span class="hissu"> *</span><br>
           <select class="form-style" id="GET-capital" type="text" name="capital" value="" required>
             <option value=""> 選択してください </option>
-            <option value="~100万円" selected>～100万円</option>
+            <option value="~100万円">～100万円</option>
             <option value="~500万円">～500万円</option>
             <option value="～1000万円">～1000万円</option>
             <option value="～5000万円">～5000万円</option>
             <option value="～1億円">～1億円</option>
             <option value="～3億円">～3億円</option>
-            <option value="それ以上">それ以上</option>
+            <option value="それ以上" selected>それ以上</option>
           </select>
           </label>
         </div>
@@ -151,10 +150,10 @@
           <label for="GET-number_of_employees">社員</label><span class="hissu"> *</span><br>
           <select id="GET-number_of_employees" name="number_of_employees" required>
             <option value="">選択してください</option>
-            <option class="syozai" value="～20人" selected>～20人</option>
+            <option class="syozai" value="～20人">～20人</option>
             <option class="syozai" value="～50人">～50人</option>
             <option class="syozai" value="～100人">～100人</option>
-            <option class="syozai" value="～300人">～300人</option>
+            <option class="syozai" value="～300人" selected>～300人</option>
             <option class="syozai" value="それ以上">それ以上</option>
           </select>
           </label>

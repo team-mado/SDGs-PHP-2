@@ -218,13 +218,13 @@ if ($status == false) {
 
       <form action="php_act/syosai_recruiting_act.php" method="post" class="row">
         <label for="GET-designer_name">お名前</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-designer_name" type="text" name="designer_name" placeholder="例）山田太郎 " value="テストユーザ" required />
+        <input class="form-style" id="GET-designer_name" type="text" name="designer_name" placeholder="例）山田太郎 " value="test太郎" required />
 
         <label for="GET-designer_email">E-mail</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-designer_email" type="email" name="designer_email" placeholder="例）sample@example.com" value="sample@example.com" required />
+        <input class="form-style" id="GET-designer_email" type="email" name="designer_email" placeholder="例）sample@example.com" value="testtarou@gmail.com" required />
 
         <label for="GET-portfolio">作品URL</label><span class="hissu"> *</span><br>
-        <input class="form-style" id="GET-portfolio" type="url" name="portfolio" placeholder="例）https://lively-miyakonojo-7603.lolipop.io" value="https://lively-miyakonojo-7603.lolipop.io" required />
+        <input class="form-style" id="GET-portfolio" type="url" name="portfolio" placeholder="例）https://lively-miyakonojo-7603.lolipop.io" value="https://testtarou.co.jp" required />
 
         <label for="GET-remote_availability">リモート対応<span class="hissu"> *　</span>
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked />可　
