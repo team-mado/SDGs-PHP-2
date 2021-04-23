@@ -43,11 +43,12 @@ $remote_availability = $_POST["remote_availability"];
 
 // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
 // $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/v1616468990/sample.jpg";
-$v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf';
+$v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf
+_95_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
 $v3 = ',co_rgb:fff,w_1270,c_fit/v1618795101/banar1_mnwvwv.png';
-$img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
+$img = $v1.$img_in1."%0A"."デザイナー募集"."%0A".$img_in2.$v3;
 
 
 
@@ -81,12 +82,3 @@ if ($status == false) {
   header("Location:../ogp-send.php?id=$id");
 
 }
-
-
-?>
-
-
-
-
-
-

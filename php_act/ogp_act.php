@@ -19,15 +19,14 @@ $remote_availability = $_POST["remote_availability"];
 
 // https://res.cloudinary.com/defgonsxv/image/upload/      v1618795101/banar1_mnwvwv.png
 // $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_95_black:';
+https://res.cloudinary.com/defgonsxv/image/upload/v1618795101/banar1_mnwvwv.png
 $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf
-
-
-
 _95_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
-$v3 = ',co_rgb:fff,w_1270,c_fit/v1618795101/banar1_mnwvwv.png';
-$img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
+$v3 = ',co_rgb:fff,h_900,w_1270,c_fit/v1618795101/banar1_mnwvwv.png';
+// $img = $v1.$img_in1."%0A%0A"."デザイナー募集"."%0A".$img_in2.$v3;
+$img = $v1.$img_in1."%0A"."デザイナー募集"."%0A".$img_in2.$v3;
 
 
 
