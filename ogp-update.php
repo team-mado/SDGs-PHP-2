@@ -127,7 +127,7 @@ if (isset($_GET["id"])) {
   <header>
     <div class="header">
       <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt=""></a></div>
-      <div><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
+      <div><a href="php_act/logout.php"><img class="logout-bt" src="img/logout-bt.png" alt=""></a></div>
     </div>
   </header>
   <main>
@@ -271,7 +271,7 @@ if (isset($_GET["id"])) {
     <form action="php_act/ogp_update_act.php?id=<? echo($id) ?>" method="post" class="form">
     <div class="form-box">
       <label for="GET-project_title">プロジェクトタイトル（最大25文字）</label><br>
-      <input class="form-style" id="GET-project_title" maxlentgth="25" type="text" name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
+      <input class="form-style" id="GET-project_title"  type="text" maxlentgth="25"  name="project_title" placeholder="例）海洋ゴミを洋服に変える。FASHION × SEA プロジェクト" value="<? echo($project_title) ?>">
 
       <label for="">職種（最大3つ）</label><br>
       <? if($work0 == "グラフィック" || $work1 == "グラフィック"  || $work2 == "グラフィック") :?>
