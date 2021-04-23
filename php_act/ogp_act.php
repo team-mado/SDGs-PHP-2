@@ -20,8 +20,9 @@ $remote_availability = $_POST["remote_availability"];
 // https://res.cloudinary.com/defgonsxv/image/upload/      v1618795101/banar1_mnwvwv.png
 // $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_95_black:';
 https://res.cloudinary.com/defgonsxv/image/upload/v1618795101/banar1_mnwvwv.png
-$v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf
-_95_black:';
+$v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf_95_black:';
+// var_dump($v1);
+// exit;
 $img_in1 = $project_title;
 $img_in2 = $job_category;
 $v3 = ',co_rgb:fff,h_900,w_1270,c_fit/v1618795101/banar1_mnwvwv.png';
