@@ -230,6 +230,7 @@ if ($status == false) {
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート可" checked />可　
           <input class="form" id="GET-remote_availability" type="radio" name="remote_availability" value="リモート不可" />不可</label><br>
         <br>
+        <input type="hidden" name="id" value="<? echo($id) ?>">
         <div class="center">
           <button>
             <!-- <a href="hanasi.php"> -->

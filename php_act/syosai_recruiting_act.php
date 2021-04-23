@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
 
 
-$ogp_id = $_GET['id'];
+$ogp_id = $_post['id'];
 $designer_name = $_POST['designer_name'];
 $designer_email = $_POST['designer_email'];
 $portfolio = $_POST['portfolio'];
@@ -11,7 +11,6 @@ $remote_availability = $_POST['remote_availability'];
 
 
 $pdo = connect_to_db();
-
 
 
 $sql = 'INSERT INTO designer_table(id, ogp_id, designer_name, designer_email, portfolio, remote_availability) VALUES(NULL, :ogp_id, :designer_name, :designer_email, :portfolio, :remote_availability)';
