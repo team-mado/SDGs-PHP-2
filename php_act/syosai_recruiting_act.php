@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 include('functions.php');
 
 
-$ogp_id = $_post['id'];
+$ogp_id = $_POST['id'];
 $designer_name = $_POST['designer_name'];
 $designer_email = $_POST['designer_email'];
 $portfolio = $_POST['portfolio'];
