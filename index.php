@@ -70,16 +70,17 @@ if (!empty($_POST)) {
 
       <div>
           <br>
+          <br>
           <h2>
             SDGｓのプロジェクトを一気に告知！<br>
             担当デザイナーを<br>
             ツイッターから大募集！
-          </h2><br>
+          </h2>
           <br />
         <h1>SDGｓ×デザインの<br>
           マッチングサービス</h1>
           <img class="top-logo" src="img/home-logo.png" alt="">
-          <br>
+          
 
         <!-- モーダルここから -->
         <section id="modalArea" class="modalArea">
@@ -113,7 +114,7 @@ if (!empty($_POST)) {
 <br><br>
         <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
-        <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
+        <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br />
         <?php if(isset($error)) : ?>
           <p id="error">ログインに失敗しました</p>
         <?php endif; ?>

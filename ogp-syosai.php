@@ -78,7 +78,7 @@ if ($status == false) {
     <div><a href="ogp-ichiran.php"><img class="home-logo" src="img/home-logo.png" alt=""></a></div>
   </div>
 
-
+<br>
   <main>
     <div class="ogp-box">
       <img src="<? echo($img) ?>" alt="">

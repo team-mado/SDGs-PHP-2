@@ -17,7 +17,7 @@ bottom {
 }
 
 .top-logo {
-  margin-top: 8px;
+  margin-top: 10px;
   width: 90%;
 }
 
@@ -33,9 +33,4 @@ bottom {
   width: 200px;
   height: 300px;
 }
-
-#error {
-  color: red;
-}
-
 /*# sourceMappingURL=index.css.map */

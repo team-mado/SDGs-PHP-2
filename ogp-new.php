@@ -86,6 +86,7 @@ if (isset($_GET["id"])) {
     </div>
   </header>
   <main>
+  <br>
     <figure>
       <img class="ogp-img" src="img/banar-ogp-new.png" alt="">
     </figure>
