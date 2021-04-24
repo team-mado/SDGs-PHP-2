@@ -18,7 +18,8 @@ $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
 // https://res.cloudinary.com/defgonsxv/image/upload/      v1618795101/banar1_mnwvwv.png
-$v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_72_black:';
+$v1 = 'https://res.cloudinary.com/dtlfr2kxo/image/upload/l_text:font-noto-black.otf';
+// $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:Sawarabi%20Gothic_72_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;
 $v3 = ',co_rgb:fff,w_1490,c_fit/v1618795101/banar1_mnwvwv.png';

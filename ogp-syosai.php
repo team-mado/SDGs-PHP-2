@@ -80,6 +80,7 @@ if ($status == false) {
 
 
   <main>
+  <br>
     <div class="ogp-box">
       <img src="<? echo($img) ?>" alt="">
       <br>

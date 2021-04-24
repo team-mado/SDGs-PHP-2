@@ -65,21 +65,22 @@ if (!empty($_POST)) {
 
 <body>
   <main>
-
+<div class="main-box">
     <div class="button-box">
 
       <div>
+          <br>
           <br>
           <h2>
             SDGｓのプロジェクトを一気に告知！<br>
             担当デザイナーを<br>
             ツイッターから大募集！
-          </h2><br>
+          </h2>
           <br />
         <h1>SDGｓ×デザインの<br>
           マッチングサービス</h1>
           <img class="top-logo" src="img/home-logo.png" alt="">
-          <br>
+          
 
         <!-- モーダルここから -->
         <section id="modalArea" class="modalArea">
@@ -110,14 +111,17 @@ if (!empty($_POST)) {
 
 
         <!-- idでモーダル実装 -->
-<br><br>
+    <br><br>
         <button id="openModal" class="simple_square_btn1">ログイン</button>
         <br />
-        <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br /><br />
+        <a href="shinki.php"><button class="simple_square_btn1">新規登録</button></a><br />
         <!-- <p class="pw-text">PWをお忘れの方は<a href="mailto:design.up.sdgs@gmail.com?subject=【問合せ】パスワードの問い合わせ依頼依頼&amp;body=そのまま送信してください">こちら</a>から</p> -->
       </div>
        <img class="top-img" src="img/top-img.png" alt=""><br>
-   </div>   
+   </div>  
+
+
+</div> 
   </main>
 
   <!-- ↓body閉じタグ直前でjQueryを読み込む -->
