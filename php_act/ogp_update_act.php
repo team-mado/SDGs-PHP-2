@@ -11,9 +11,6 @@ $id = $_GET["id"];
 $clients_id = $_SESSION["id"];
 
 
-// var_dump($color_check);
-// var_dump($job_category);
-// exit;
 
 
 // $clients_id = $_SESSION["id"];
@@ -27,22 +24,6 @@ $production_period = $_POST["production_period"];
 $remote_availability = $_POST["remote_availability"];
 
 
-
-// $color_check = $_POST["color_check"];
-// $project_title = $_POST["project_title"];
-// $job_category = $_POST["job_category"];
-// $project_overview = $_POST["project_overview"];
-// $project_detail = $_POST["project_detail"];
-// $production_period = $_POST["production_period"];
-// $remote_availability = $_POST["remote_availability"];
-
-// var_dump($_POST);
-// exit;
-
-// https://res.cloudinary.com/defgonsxv/image/upload/      v1618795101/banar1_mnwvwv.png
-
-// $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/l_text:Sawarabi%20Gothic_30_bold:,co_rgb:333,w_500,c_fit/v1616471824/UbpRDEkE_uqbs0d.png";
-// $img = "https://res.cloudinary.com/dlqadjcsc/image/upload/v1616468990/sample.jpg";
 $v1 = 'https://res.cloudinary.com/defgonsxv/image/upload/l_text:zcekgbuh654xmkklci8z.otf_95_black:';
 $img_in1 = $project_title;
 $img_in2 = $job_category;

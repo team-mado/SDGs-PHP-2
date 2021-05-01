@@ -354,6 +354,7 @@ if (isset($_GET["id"])) {
         <a href="php_act/ogp_delite.php?id=<?= $id ?>"><img class="button-up" src="img/bt-sakujyo.png" alt=""></a>
         <!-- <a href="ogp-send.php"><img class="button-up" src="img/bt-save.png" alt=""></a> -->
       </div>
+        <a href="ogp-oubo.php?id=<? echo($id) ?>"><img class="button-up" src="img/1.png" alt=""></a>
     </div>
     <br>
     <br>
