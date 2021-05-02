@@ -116,7 +116,7 @@ if ($status1 == false) {
             <div class="oubo-data">
                 <ul>
                 <li><? echo($designer_name) ?><br></li>
-                <li><a href="mailto:<?echo($designer_email)?>">連絡をとる<br></li>
+                <li><a href="mailto:<?echo($designer_email)?>?subject=ご応募ありがとうございます&amp;">連絡をとる<br></li>
                 <li><a href="<? echo($portfolio) ?>">作品をみる</a><br></li>
                 <? if($remote_availability === "リモート可") :?>
                     <li><img src="./img/remote-1.png" alt=""><br></li>
