@@ -107,14 +107,14 @@ if ($status1 == false) {
         <br>
     <div id="scroll-box">
         <table class="st-tbl1">
-            <!-- <thead>
+            <thead>
                 <tr>
                     <th><p>お名前<p></th>
                     <th><p>メール<p></th>
                     <th><p>作品URL<p></th>
                     <th><p>リモート<p></th>
                 </tr>
-            </thead> -->
+            </thead>
             <!-- <div id="scroll-box"> -->
                 <tbody>
                     <?php foreach ($posts as $post) : ?>
@@ -144,18 +144,6 @@ if ($status1 == false) {
                 <!-- </div> -->
             </table>
   </div>
-
-<!-- 新たな応募者リスト -->
-<div class="oubo-data">
-    <ul>
-    <li><span>お名前</span><br></li>
-    <li><span>メール</span><br></li>
-    <li><span>作品URL</span><br></li>
-    <li><span>リモート</span><br></li>
-</ul>
-</div>
-
-
         <? endif;?>
             <!-- <a href="ogp-update.php?id=<? echo ($id) ?>">編集ページに戻る</a> -->
             <div class="button-box">
