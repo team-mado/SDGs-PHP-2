@@ -117,7 +117,7 @@ if ($status1 == false) {
                 <ul>
                 <li><? echo($designer_name) ?><br></li>
                 <li><a href="mailto:<?echo($designer_email)?>?subject=ご応募ありがとうございます&amp;">連絡をとる<br></li>
-                <li><a href="<? echo($portfolio) ?>">作品をみる</a><br></li>
+                <li><a href="<? echo($portfolio) ?>" target="_blank">作品をみる</a><br></li>
                 <? if($remote_availability === "リモート可") :?>
                     <li><img src="./img/remote-1.png" alt=""><br></li>
                     <? else:?>
@@ -134,6 +134,6 @@ if ($status1 == false) {
             <div class="button-box">
             <a href="ogp-update.php?id=<? echo ($id) ?>"><img class="bt-new" src="img/hensyu-back-bt.png" alt=""></a>
       </div>
-
+<br>
         </body>
         </html>
