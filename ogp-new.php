@@ -46,7 +46,7 @@ if (isset($_GET["id"])) {
     $color_check = $post["color_check"];
     $project_title = $post["project_title"];
     $job_category = $post["job_category"];
-    $project_overview = $post["project_overview "];
+    $project_overview = $post["project_overview"];
     $project_detail = $post["project_detail"];
     $production_period = $post["production_period"];
     $remote_availability = $post["remote_availability"];
