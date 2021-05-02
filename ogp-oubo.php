@@ -115,14 +115,14 @@ if ($status1 == false) {
 
             <div class="oubo-data">
                 <ul>
-                <!-- <li><span>お名前:</span><? echo($designer_name) ?><br></li> -->
                 <li><? echo($designer_name) ?><br></li>
-                <!-- <li><span>メール:</span><? echo($designer_email) ?><br></li> -->
                 <li><a href="mailto:<?echo($designer_email)?>">連絡をとる<br></li>
-                <!-- <li><span>作品URL:</span><?echo($portfolio)?><br></li> -->
                 <li><a href="<? echo($portfolio) ?>">作品をみる</a><br></li>
-                <!-- <li><span>リモート:</span><? echo($remote_availability) ?><br></li> -->
-                <li><? echo($remote_availability) ?><br></li>
+                <? if($remote_availability === "リモート可") :?>
+                    <li><img src="./img/remote-1.png" alt=""><br></li>
+                    <? else:?>
+                    <li><img src="./img/remote-2.png" alt=""><br></li>
+                <? endif;?>
                 </ul>
             </div>
             <br>

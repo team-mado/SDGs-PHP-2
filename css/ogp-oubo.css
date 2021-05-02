@@ -25,7 +25,6 @@ table.st-tbl1 td {
 
 table.st-tbl1 th {
   background: white;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -67,9 +66,10 @@ table.st-tbl1 th {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  border: 1px solid #CACACA;
-  border-radius: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
   padding: 30px;
+  line-height: 30px;
 }
 
 .oubo-data ul {
@@ -85,18 +85,9 @@ table.st-tbl1 th {
   font-weight: bold;
 }
 
-/* #url{
-  overflow-x: scroll;  
-  max-width: 100px;
-} */
-
-li {
-  word-break:break-all;
-  /* overflow-y:scroll; */
-  /* max-height: 30px; */
+li img {
+  height: 22px;
 }
-
-
 
 /* サイズが500px未満の端末の場合に適用*/
 @media screen and (max-width: 500px) {
@@ -114,4 +105,3 @@ li {
     padding: 0px;
   }
 }
-/*# sourceMappingURL=ogp-oubo.css.map */

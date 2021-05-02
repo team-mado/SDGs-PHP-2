@@ -84,7 +84,7 @@ table.st-tbl1 th {
   border: 1px solid black;
   border-radius: 5px;
   padding: 30px;
-
+  line-height : 30px; 
   ul {
     list-style: none;
     li {
@@ -95,6 +95,10 @@ table.st-tbl1 th {
       }
     }
   }
+}
+
+li img{
+  height:22px;
 }
 
 /* サイズが500px未満の端末の場合に適用*/
