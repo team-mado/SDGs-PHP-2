@@ -94,7 +94,6 @@ if ($status1 == false) {
     </div>
   </header>
   <br>
- 
     <? if($oubo_counts == "0") :?>
     <p>まだ応募はありません</p>
     <? else:?>
@@ -105,18 +104,6 @@ if ($status1 == false) {
 
     <? else:?>
         <br>
-    <div id="scroll-box">
-        <table class="st-tbl1">
-            <!-- <thead>
-                <tr>
-                    <th><p>お名前<p></th>
-                    <th><p>メール<p></th>
-                    <th><p>作品URL<p></th>
-                    <th><p>リモート<p></th>
-                </tr>
-            </thead> -->
-            <!-- <div id="scroll-box"> -->
-                <tbody>
                     <?php foreach ($posts as $post) : ?>
                         
                         <?php
@@ -125,36 +112,22 @@ if ($status1 == false) {
                     $portfolio  = $post["portfolio"];
                     $remote_availability  = $post["remote_availability"];
                     ?>
-                    <tr>
-                        <td>
-                            <div class="scroll"><? echo "<p> $designer_name</p>" ?></div>
-                        </td>
-                        <td>
-                            <div class="scroll"><? echo "<p> $designer_email</p>" ?></div>
-                        </td>
-                        <td>
-                            <div class="scroll"><? echo "<p> $portfolio</p>" ?></div>
-                        </td>
-                        <td>
-                            <div class="scroll"><? echo "<p> $remote_availability</p>" ?></div>
-                        </td>
-                    </tr>
+
+            <div class="oubo-data">
+                <ul>
+                <!-- <li><span>お名前:</span><? echo($designer_name) ?><br></li> -->
+                <li><? echo($designer_name) ?><br></li>
+                <!-- <li><span>メール:</span><? echo($designer_email) ?><br></li> -->
+                <li><? echo($designer_email) ?><br></li>
+                <!-- <li><span>作品URL:</span><? echo($portfolio) ?><br></li> -->
+                <li><? echo($portfolio) ?><br></li>
+                <!-- <li><span>リモート:</span><? echo($remote_availability) ?><br></li> -->
+                <li><? echo($remote_availability) ?><br></li>
+                </ul>
+            </div>
+            <br>
+
                     <?php endforeach; ?>
-                </tbody>
-                <!-- </div> -->
-            </table>
-  </div>
-
-<!-- 新たな応募者リスト -->
-<div class="oubo-data">
-    <ul>
-    <li><span>お名前</span><br></li>
-    <li><span>メール</span><br></li>
-    <li><span>作品URL</span><br></li>
-    <li><span>リモート</span><br></li>
-</ul>
-</div>
-
 
         <? endif;?>
             <!-- <a href="ogp-update.php?id=<? echo ($id) ?>">編集ページに戻る</a> -->

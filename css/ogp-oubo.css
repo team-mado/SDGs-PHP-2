@@ -85,6 +85,19 @@ table.st-tbl1 th {
   font-weight: bold;
 }
 
+/* #url{
+  overflow-x: scroll;  
+  max-width: 100px;
+} */
+
+li {
+  word-break:break-all;
+  /* overflow-y:scroll; */
+  /* max-height: 30px; */
+}
+
+
+
 /* サイズが500px未満の端末の場合に適用*/
 @media screen and (max-width: 500px) {
   #scroll-box {
